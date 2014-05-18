@@ -1,0 +1,1558 @@
+bplist00“2_WebSubresources_WebMainResource®#(-’	
+_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceResponseOQ// Copyright 2012 Google Inc. All rights reserved.
+// Container Version: 1
+(function(w,g){w[g]=w[g]||{};w[g].e=function(s){return eval(s);};})(window,'google_tag_manager');(function(){
+var m=this,ba=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";
+else if("function"==b&&"undefined"==typeof a.call)return"object";return b},ca=null;/*
+ jQuery v1.9.1 (c) 2005, 2012 jQuery Foundation, Inc. jquery.org/license. */
+var da=/\[object (Boolean|Number|String|Function|Array|Date|RegExp)\]/,ea=function(a){if(null==a)return String(a);var b=da.exec(Object.prototype.toString.call(Object(a)));return b?b[1].toLowerCase():"object"},fa=function(a,b){return Object.prototype.hasOwnProperty.call(Object(a),b)},ga=function(a){if(!a||"object"!=ea(a)||a.nodeType||a==a.window)return!1;try{if(a.constructor&&!fa(a,"constructor")&&!fa(a.constructor.prototype,"isPrototypeOf"))return!1}catch(b){return!1}for(var c in a);return void 0===
+c||fa(a,c)},ia=function(a,b){var c=b||("array"==ea(a)?[]:{}),d;for(d in a)if(fa(a,d)){var e=a[d];"array"==ea(e)?("array"!=ea(c[d])&&(c[d]=[]),c[d]=ia(e,c[d])):ga(e)?(ga(c[d])||(c[d]={}),c[d]=ia(e,c[d])):c[d]=e}return c};var ja=function(){},w=function(a){return"function"==typeof a},B=function(a){return"[object Array]"==Object.prototype.toString.call(Object(a))},ka=function(a){return"number"==ea(a)&&!isNaN(a)},la=function(a,b){if(Array.prototype.indexOf){var c=a.indexOf(b);return"number"==typeof c?c:-1}for(var d=0;d<a.length;d++)if(a[d]===b)return d;return-1},ma=function(a){return a?a.replace(/^\s+|\s+$/g,""):""},D=function(a){return Math.round(Number(a))||0},na=function(a){var b=[];if(B(a))for(var c=0;c<a.length;c++)b.push(String(a[c]));
+return b},G=function(){return new Date},oa=function(a,b){if(!ka(a)||!ka(b)||a>b)a=0,b=2147483647;return Math.round(Math.random()*(b-a)+a)},pa=function(){this.prefix="gtm.";this.ma={}};pa.prototype.set=function(a,b){this.ma[this.prefix+a]=b};pa.prototype.get=function(a){return this.ma[this.prefix+a]};pa.prototype.contains=function(a){return void 0!==this.get(a)};
+var qa=function(a,b,c){try{return a["0"](a,b||ja,c||ja)}catch(d){}return!1},sa=function(a,b){function c(b,c){a.contains(b)||a.set(b,[]);a.get(b).push(c)}for(var d=ma(b).split("&"),e=0;e<d.length;e++)if(d[e]){var f=d[e].indexOf("=");0>f?c(d[e],"1"):c(d[e].substring(0,f),d[e].substring(f+1))}},ta=function(a){var b=a?a.length:0;return 0<b?a[b-1]:""},ua=function(a){for(var b=0;b<a.length;b++)a[b]()},va=G().getTime(),wa=function(a,b,c){return a&&a.hasOwnProperty(b)?a[b]:c};var H=window,I=document,xa=navigator,J=function(a,b){var c=H[a],d="var "+a+";";if(m.execScript)m.execScript(d,"JavaScript");else if(m.eval)if(null==ca&&(m.eval("var _et_ = 1;"),"undefined"!=typeof m._et_?(delete m._et_,ca=!0):ca=!1),ca)m.eval(d);else{var e=m.document,f=e.createElement("script");f.type="text/javascript";f.defer=!1;f.appendChild(e.createTextNode(d));e.body.appendChild(f);e.body.removeChild(f)}else throw Error("goog.globalEval not available");H[a]=void 0===c?b:c;return H[a]},K=function(a,
+b,c,d){return(d||"http:"!=H.location.protocol?a:b)+c},ya=function(a){var b=I.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)},za=function(a,b){b&&(a.addEventListener?a.onload=b:a.onreadystatechange=function(){a.readyState in{loaded:1,complete:1}&&(a.onreadystatechange=null,b())})},M=function(a,b,c){var d=I.createElement("script");d.type="text/javascript";d.async=!0;d.src=a;za(d,b);c&&(d.onerror=c);ya(d)},Aa=function(a,b){var c=I.createElement("iframe");c.height="0";c.width="0";c.style.display=
+"none";c.style.visibility="hidden";ya(c);za(c,b);void 0!==a&&(c.src=a);return c},k=function(a,b,c){var d=new Image(1,1);d.onload=function(){d.onload=null;b&&b()};d.onerror=function(){d.onerror=null;c&&c()};d.src=a},N=function(a,b,c,d){a.addEventListener?a.addEventListener(b,c,!!d):a.attachEvent&&a.attachEvent("on"+b,c)},O=function(a){H.setTimeout(a,0)},Ba=!1,Da=[],Ea=function(a){if(!Ba){var b=I.createEventObject,c="complete"==I.readyState,d="interactive"==I.readyState;if(!a||"readystatechange"!=a.type||
+c||!b&&d){Ba=!0;for(var e=0;e<Da.length;e++)Da[e]()}}},Fa=0,Ia=function(){if(!Ba&&140>Fa){Fa++;try{I.documentElement.doScroll("left"),Ea()}catch(a){H.setTimeout(Ia,50)}}},Ka=function(a){var b=I.getElementById(a);if(b&&Ja(b,"id")!=a)for(var c=1;c<document.all[a].length;c++)if(Ja(document.all[a][c],"id")==a)return document.all[a][c];return b},Ja=function(a,b){return a&&b&&a.attributes[b]?a.attributes[b].value:null},La=function(a){return a.target||a.srcElement||{}},Ma=function(a,b){for(var c={},d=0;d<
+b.length;d++)c[b[d]]=!0;for(var e=a,d=0;e&&!c[String(e.tagName).toLowerCase()]&&100>d;d++)e=e.parentElement;e&&!c[String(e.tagName).toLowerCase()]&&(e=null);return e},Na=!1,Oa=[],Pa=function(){if(!Na){Na=!0;for(var a=0;a<Oa.length;a++)Oa[a]()}},Qa=function(a){a=a||H;var b=a.location.href,c=b.indexOf("#");return 0>c?"":b.substring(c+1)};var Ra=null,Sa=null;var Ta=new pa,Ua={},Va=ja,Wa=[],Xa=!1,$a={set:function(a,b){ia(Ya(a,b),Ua)},get:function(a){return P(a,2)}},ab=function(a){var b=!1;return function(){!b&&w(a)&&O(a);b=!0}},hb=function(){for(var a=!1;!Xa&&0<Wa.length;){Xa=!0;var b=Wa.shift();if(w(b))try{b.call($a)}catch(c){}else if(B(b))e:{var d=b;if("string"==ea(d[0])){for(var e=d[0].split("."),f=e.pop(),g=d.slice(1),h=Ua,n=0;n<e.length;n++){if(void 0===h[e[n]])break e;h=h[e[n]]}try{h[f].apply(h,g)}catch(q){}}}else{var l=b,p=void 0;for(p in l)if(l.hasOwnProperty(p)){var r=
+p,s=l[p];Ta.set(r,s);ia(Ya(r,s),Ua)}var E=!1,F=l.event;if(F){Sa=F;var v=ab(l.eventCallback),Q=l.eventTimeout;Q&&H.setTimeout(v,Number(Q));E=Va(F,v)}if(!Ra&&(Ra=l["gtm.start"])){}Sa=null;a=E||a}var x=b,u=Ua;gb();Xa=!1}return!a},P=function(a,b){if(2==b){for(var c=Ua,d=a.split("."),e=0;e<d.length;e++){if(void 0===c[d[e]])return;c=c[d[e]]}return c}return Ta.get(a)},Ya=function(a,b){for(var c={},d=c,e=a.split("."),f=0;f<e.length-1;f++)d=d[e[f]]={};d[e[e.length-1]]=b;return c};var ib={customPixels:["nonGooglePixels"],html:["customScripts","customPixels","nonGooglePixels","nonGoogleScripts","nonGoogleIframes"],customScripts:["html","customPixels","nonGooglePixels","nonGoogleScripts","nonGoogleIframes"],nonGooglePixels:[],nonGoogleScripts:["nonGooglePixels"],nonGoogleIframes:["nonGooglePixels"]},jb={customPixels:["customScripts","html"],html:["customScripts"],customScripts:["html"],nonGooglePixels:["customPixels","customScripts","html","nonGoogleScripts","nonGoogleIframes"],
+nonGoogleScripts:["customScripts","html"],nonGoogleIframes:["customScripts","html","nonGoogleScripts"]},kb=function(a,b){for(var c=[],d=0;d<a.length;d++)c.push(a[d]),c.push.apply(c,b[a[d]]||[]);return c},cb=function(){var a=P("gtm.whitelist"),b=a&&kb(na(a),ib),c=P("gtm.blacklist")||P("tagTypeBlacklist"),d=c&&kb(na(c),jb),e={};return function(f){var g=f&&f["0"];if(!g)return!0;if(void 0!==e[g.a])return e[g.a];var h=!0;if(a)e:{if(0>la(b,g.a))if(g.b&&0<g.b.length)for(var n=0;n<g.b.length;n++){if(0>
+la(b,g.b[n])){h=!1;break e}}else{h=!1;break e}h=!0}var q=!1;if(c){var l;if(!(l=0<=la(d,g.a)))e:{for(var p=g.b||[],r=new pa,s=0;s<d.length;s++)r.set(d[s],!0);for(s=0;s<p.length;s++)if(r.get(p[s])){l=!0;break e}l=!1}q=l}return e[g.a]=!h||q}};var lb=function(a,b,c,d,e){var f=a.hash?a.href.replace(a.hash,""):a.href,g=(a.protocol.replace(":","")||H.location.protocol.replace(":","")).toLowerCase();switch(b){case "protocol":f=g;break;case "host":f=(a.hostname||H.location.hostname).split(":")[0].toLowerCase();if(c){var h=/^www\d*\./.exec(f);h&&h[0]&&(f=f.substr(h[0].length))}break;case "port":f=String(1*(a.hostname?a.port:H.location.port)||("http"==g?80:"https"==g?443:""));break;case "path":var f="/"==a.pathname.substr(0,1)?a.pathname:"/"+
+a.pathname,n=f.split("/");0<=la(d||[],n[n.length-1])&&(n[n.length-1]="");f=n.join("/");break;case "query":f=a.search.replace("?","");if(e)e:{for(var q=f.split("&"),l=0;l<q.length;l++){var p=q[l].split("=");if(decodeURIComponent(p[0]).replace("+"," ")==e){f=decodeURIComponent(p.slice(1).join("=")).replace("+"," ");break e}}f=void 0}break;case "fragment":f=a.hash.replace("#","")}return f},mb=function(a){var b=I.createElement("a");b.href=a;return b};var _eu=function(a){var b=String(P("gtm.elementUrl")||a[""]||""),c=mb(b);return b};_eu.a="eu";_eu.b=["google"];var _e=function(){return Sa};_e.a="e";_e.b=["google"];var _f=function(a){var b=String(P("gtm.referrer")||I.referrer),c=mb(b);return b};_f.a="f";_f.b=["google"];var nb=function(a){var b=H.location,c=b.hash?b.href.replace(b.hash,""):b.href,d;if(d=a[""]?a[""]:P("gtm.url"))c=String(d),b=mb(c);return c},_u=nb;_u.a="u";_u.b=["google"];var _eq=function(a){return String(a[""])==String(a[""])};_eq.a="eq";_eq.b=["google"];var sb=function(a,b){return a<b?-1:a>b?1:0};var tb;e:{var ub=m.navigator;if(ub){var vb=ub.userAgent;if(vb){tb=vb;break e}}tb=""}var wb=function(a){return-1!=tb.indexOf(a)};var xb=wb("Opera")||wb("OPR"),T=wb("Trident")||wb("MSIE"),yb=wb("Gecko")&&-1==tb.toLowerCase().indexOf("webkit")&&!(wb("Trident")||wb("MSIE")),zb=-1!=tb.toLowerCase().indexOf("webkit"),Ab=function(){var a=m.document;return a?a.documentMode:void 0},Eb=function(){var a="",b;if(xb&&m.opera){var c=m.opera.version;return"function"==ba(c)?c():c}yb?b=/rv\:([^\);]+)(\)|;)/:T?b=/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/:zb&&(b=/WebKit\/(\S+)/);if(b)var d=b.exec(tb),a=d?d[1]:"";if(T){var e=Ab();if(e>parseFloat(a))return String(e)}return a}(),
+Fb={},W=function(a){var b;if(!(b=Fb[a])){for(var c=0,d=String(Eb).replace(/^[\s\xa0]+|[\s\xa0]+$/g,"").split("."),e=String(a).replace(/^[\s\xa0]+|[\s\xa0]+$/g,"").split("."),f=Math.max(d.length,e.length),g=0;0==c&&g<f;g++){var h=d[g]||"",n=e[g]||"",q=RegExp("(\\d*)(\\D*)","g"),l=RegExp("(\\d*)(\\D*)","g");do{var p=q.exec(h)||["","",""],r=l.exec(n)||["","",""];if(0==p[0].length&&0==r[0].length)break;c=sb(0==p[1].length?0:parseInt(p[1],10),0==r[1].length?0:parseInt(r[1],10))||sb(0==p[2].length,0==r[2].length)||
+sb(p[2],r[2])}while(0==c)}b=Fb[a]=0<=c}return b},Gb=m.document,Hb=Gb&&T?Ab()||("CSS1Compat"==Gb.compatMode?parseInt(Eb,10):5):void 0;if(yb||T){var Ib;if(Ib=T)Ib=T&&9<=Hb;Ib||yb&&W("1.9.1")}T&&W("9");var Jb=function(a){Jb[" "](a);return a};Jb[" "]=function(){};var Qb=function(a,b){var c="";T&&!Kb(a)&&(c='<script>document.domain="'+document.domain+'";\x3c/script>'+c);var d="<!DOCTYPE html><html><head><script>var inDapIF=true;\x3c/script>"+c+"</head><body>"+b+"</body></html>";if(Lb)a.srcdoc=d;else if(Mb){var e=a.contentWindow.document;e.open("text/html","replace");e.write(d);e.close()}else Pb(a,d)},Lb=zb&&"srcdoc"in document.createElement("iframe"),Mb=yb||zb||T&&W(11),Pb=function(a,b){T&&W(7)&&!W(10)&&6>Rb()&&Sb(b)&&(b=Tb(b));var c=function(){a.contentWindow.goog_content=
+b;a.src="javascript:window.goog_content"};T&&!Kb(a)?Ub(a,c):c()},Rb=function(){var a=navigator.userAgent.match(/Trident\/([0-9]+.[0-9]+)/);return a?parseFloat(a[1]):0},Kb=function(a){try{var b;var c=a.contentWindow;try{var d;if(d=!!c){var e;if(e=null!=c.location.href)r:{try{Jb(c.foo);e=!0;break r}catch(f){}e=!1}d=e}b=d}catch(g){b=!1}return b}catch(h){return!1}},Vb=0,Ub=function(a,b){var c="goog_rendering_callback"+Vb++;window[c]=b;T&&W(6)&&!W(7)?a.src="javascript:'<script>window.onload = function() { document.write(\\'<script>(function() {document.domain = \""+
+document.domain+'";var continuation = window.parent.'+c+";window.parent."+c+" = null;continuation()})()<\\\\/script>\\');document.close();};\x3c/script>'":a.src="javascript:'<script>(function() {document.domain = \""+document.domain+'";var continuation = window.parent.'+c+";window.parent."+c+" = null;continuation();})()\x3c/script>'"},Sb=function(a){for(var b=0;b<a.length;++b)if(127<a.charCodeAt(b))return!0;return!1},Tb=function(a){for(var b=unescape(encodeURIComponent(a)),c=Math.floor(b.length/2),
+d=[],e=0;e<c;++e)d[e]=String.fromCharCode(256*b.charCodeAt(2*e+1)+b.charCodeAt(2*e));1==b.length%2&&(d[c]=b.charAt(b.length-1));return d.join("")};/*
+ Copyright (c) 2013 Derek Brans, MIT license https://github.com/krux/postscribe/blob/master/LICENSE. Portions derived from simplehtmlparser, which is licensed under the Apache License, Version 2.0 */
+var bc=/(Firefox\D28\D)/g.test(xa.userAgent),dc=function(a,b,c,d){return function(e){e=e||H.event;var f=La(e),g=!1;if(3!==e.which||"CLICK"!=a&&"LINK_CLICK"!=a)if(2!==e.which&&(null!=e.which||4!=e.button)||"LINK_CLICK"!=a)if("LINK_CLICK"==a&&(f=Ma(f,["a","area"]),g=!f||!f.href||e.ctrlKey||e.shiftKey||e.altKey||!0===e.metaKey),e.defaultPrevented||!1===e.returnValue||e.P&&e.P()){if(!c&&f){var h={simulateDefault:!1};X(a,f,h,d)}}else{if(f){var h={},n=X(a,f,h,d),g=g||n||"LINK_CLICK"==a&&bc;h.simulateDefault=
+!n&&b&&!g;h.simulateDefault&&(g=cc(f,h)||g,!g&&e.preventDefault&&e.preventDefault());e.returnValue=n||!b||g;return e.returnValue}return!0}}},X=function(a,b,c,d){var e=d||2E3,f={"gtm.element":b,"gtm.elementClasses":b.className,"gtm.elementId":b["for"]||Ja(b,"id")||"","gtm.elementTarget":b.formTarget||b.target||""};switch(a){case "LINK_CLICK":f.event="gtm.linkClick";f["gtm.elementUrl"]=b.href;f.eventTimeout=e;f.eventCallback=ec(b,c);break;case "FORM_SUBMIT":f.event="gtm.formSubmit";var g=b.action;g&&
+g.tagName&&(g=b.cloneNode(!1).action);f["gtm.elementUrl"]=g;f.eventTimeout=e;f.eventCallback=fc(b,c);break;case "CLICK":f.event="gtm.click";f["gtm.elementUrl"]=b.formAction||b.action||b.href||b.src||b.code||b.codebase||"";break;default:return!0}return H["dataLayer"].push(f)},gc=function(a){var b=a.target;if(!b)switch(String(a.tagName).toLowerCase()){case "a":case "area":case "form":b="_self"}return b},cc=function(a,b){var c=!1,d=/(iPad|iPhone|iPod)/g.test(xa.userAgent),e=gc(a).toLowerCase();switch(e){case "":case "_self":case "_parent":case "_top":var f;
+f=(e||"_self").substring(1);b.targetWindow=H.frames&&H.frames[f]||H[f];break;case "_blank":d?(b.simulateDefault=!1,c=!0):(b.targetWindowName="gtm_autoEvent_"+G().getTime(),b.targetWindow=H.open("",b.targetWindowName));break;default:d&&!H.frames[e]?(b.simulateDefault=!1,c=!0):(H.frames[e]||(b.targetWindowName=e),b.targetWindow=H.frames[e]||H.open("",e))}return c},ec=function(a,b,c){return function(){b.simulateDefault&&(b.targetWindow?b.targetWindow.location.href=a.href:(c=c||G().getTime(),500>G().getTime()-
+c&&H.setTimeout(ec(a,b,c),25)))}},fc=function(a,b,c){return function(){if(b.simulateDefault)if(b.targetWindow){var d;b.targetWindowName&&(d=a.target,a.target=b.targetWindowName);I.gtmSubmitFormNow=!0;hc(a).call(a);b.targetWindowName&&(a.target=d)}else c=c||G().getTime(),500>G().getTime()-c&&H.setTimeout(fc(a,b,c),25)}},ic=function(a,b,c,d){var e,f;switch(a){case "CLICK":if(I.gtmHasClickListenerTag)return;I.gtmHasClickListenerTag=!0;e="click";f=function(a){var b=La(a);b&&X("CLICK",b,{},d);return!0};
+break;case "LINK_CLICK":if(I.gtmHasLinkClickListenerTag)return;I.gtmHasLinkClickListenerTag=!0;e="click";f=dc(a,b||!1,c||!1,d);break;case "FORM_SUBMIT":if(I.gtmHasFormSubmitListenerTag)return;I.gtmHasFormSubmitListenerTag=!0;e="submit";f=dc(a,b||!1,c||!1,d);break;default:return}N(I,e,f,!1)},hc=function(a){try{if(a.constructor&&a.constructor.prototype)return a.constructor.prototype.submit}catch(b){}if(a.gtmReplacedFormSubmit)return a.gtmReplacedFormSubmit;I.gtmFormElementSubmitter||(I.gtmFormElementSubmitter=
+I.createElement("form"));return I.gtmFormElementSubmitter.submit.call?I.gtmFormElementSubmitter.submit:a.submit};var lc,mc;
+var wc=function(a){return function(){}},xc=function(a){return function(){}};var Fc=function(a){var b=H||m,c=b.onerror,d=!1;zb&&!W("535.3")&&(d=!d);b.onerror=function(b,f,g,h,n){c&&c(b,f,g,h,n);a({message:b,fileName:f,Ra:g,jb:h,error:n});return d}};var gd=function(){this.f=[]};gd.prototype.set=function(a,b){this.f.push([a,b]);return this};gd.prototype.resolve=function(a,b){for(var c={},d=0;d<this.f.length;d++){var e=hd(this.f[d][0],a,b),f=hd(this.f[d][1],a,b);c[e]=f}return c};var id=function(a){this.index=a};id.prototype.resolve=function(a,b){var c=db[this.index];if(c&&!b(c)){var d=c["1"];if(a){if(a.get(d))return;a.set(d,!0)}c=hd(c,a,b);a&&a.set(d,!1);return qa(c)}};
+for(var _M=function(a){return new id(a)},kd=function(a){this.resolve=function(b,c){for(var d=[],e=0;e<a.length;e++)d.push(hd(jd[a[e]],b,c));return d.join("")}},_T=function(a){return new kd(arguments)},ld=function(a){function b(b){for(var d=1;d<a.length;d++)if(a[d]==b)return!0;return!1}this.resolve=function(c,d){if(a[0]instanceof id&&b(8)&&b(16))return'google_tag_manager["GTM-LQCS"].macro('+a[0].index+")";for(var e=String(hd(a[0],c,d)),f=1;f<a.length;f++)e=Z[a[f]](e);return e}},_E=function(a,b){return new ld(arguments)},fb=function(a,b){return hd(a,new pa,b)},hd=function(a,b,c){var d=a;if(a instanceof id||a instanceof gd||a instanceof kd||
+a instanceof ld)return a.resolve(b,c);if(B(a))for(var d=[],e=0;e<a.length;e++)d[e]=hd(a[e],b,c);else if(a&&"object"==typeof a){var d={},f;for(f in a)a.hasOwnProperty(f)&&(d[f]=hd(a[f],b,c))}return d},md=function(a,b){var c=b[a],d=c;if(c instanceof id||c instanceof ld||c instanceof kd)d=c;else if(B(c))for(var d=[],e=0;e<c.length;e++)d[e]=md(c[e],b);else if("object"==typeof c){var d=new gd,f;for(f in c)c.hasOwnProperty(f)&&d.set(b[f],md(c[f],b))}return d},pd=function(a,b){for(var c=b?b.split(","):[],
+d=0;d<c.length;d++){var e=c[d]=c[d].split(":");0==a&&(e[1]=jd[e[1]]);if(1==a)for(var f=nd(e[0]),e=c[d]={},g=0;g<f.length;g++){var h=od[f[g]];e[h[0]]=h[1]}if(2==a)for(g=0;4>g;g++)e[g]=nd(e[g])}return c},nd=function(a){var b=[];if(!a)return b;for(var c=0,d=0;d<a.length&&c<qd;c+=6,d++){var e=a&&a.charCodeAt(d)||65;if(65!=e){var f=0,f=65<e&&90>=e?e-65:97<=e&&122>=e?e-97+26:95==e?63:48<=e?e-48+52:62;1&f&&b.push(c);2&f&&b.push(c+1);4&f&&b.push(c+2);8&f&&b.push(c+3);16&f&&b.push(c+4);32&f&&b.push(c+5)}}return b},
+qd=6,rd=[_u,'url',_e,'event',_f,'referrer'],sd=[],td=0;td<rd.length;td++)sd[td]=md(td,rd);var jd=sd,od=pd(0,"0:0,1:1,0:2,1:3,0:4,1:5"),db=pd(1,"D,M,w"),ud=pd(1,""),$=pd(1,""),vd=pd(2,"");
+var gb=function(){};var Jd=function(){var a=this;this.t=!1;this.w=[];this.K=[];this.ka=function(){a.t||ua(a.w);a.t=!0};this.ja=function(){a.t||ua(a.K);a.t=!0};this.L=ja},Kd=function(){this.j=[];this.Z={};this.M=[];this.o=0};Kd.prototype.addListener=function(a){this.M.push(a)};var Ld=function(a,b,c,d){if(!c.t){a.j[b]=c;void 0!==d&&(a.Z[b]=d);a.o++;var e=function(){0<a.o&&a.o--;0<a.o||ua(a.M)};c.w.push(e);c.K.push(e)}};var Md=function(){var a=[];return function(b,c){if(void 0===a[b]){var d=ud[b]&&fb(ud[b],c);a[b]=[d&&qa(d),d]}return a[b]}},Nd=function(a,b){for(var c=b[0],d=0;d<c.length;d++)if(!a.d(c[d],a.c)[0])return!1;for(var e=b[2],d=0;d<e.length;d++)if(a.d(e[d],a.c)[0])return!1;return!0},Od=function(a,b){return function(){a["2"]=b.ka;a["3"]=b.ja;qa(a,b.ka,b.ja)}},Va=function(a,b){P("tagTypeBlacklist");for(var c={name:a,Da:b||ja,p:nd(),r:nd(),d:Md(),c:cb()},d=0;d<vd.length;d++)if(Nd(c,
+vd[d])){for(var e=c,f=vd[d],g=f[1],h=0;h<g.length;h++)e.p[g[h]]=!0;for(var n=f[3],h=0;h<n.length;h++)e.r[n[h]]=!0}var q=[];for(var l=0;l<qd;l++)if(c.p[l]&&!c.r[l])if(c.c($[l])){}else{q[l]=fb($[l],c.c);}c.A=q;for(var p=
+new Kd,r=0;r<qd;r++)if(c.p[r]&&!c.r[r]&&!c.c($[r])){var s=c.A[r],E=new Jd;E.w.push(wc(s));E.K.push(xc(s));E.L=Od(s,E);Ld(p,r,E,s[""])}p.addListener(c.Da);for(var F=[],v=0;v<p.j.length;v++){var Q=p.j[v];if(Q){var z=p.Z[v];void 0!==z?z!=v&&p.j[z]&&p.j[z].w.push(Q.L):F.push(v)}}for(v=0;v<F.length;v++)p.j[F[v]].L();0<p.o||ua(p.M);return 0<c.A.length};var Pd={macro:function(a){return db[a]&&fb(_M(a),cb())}};Pd.dataLayer=$a;Pd.Sa=function(){var a=H.google_tag_manager;a||(a=H.google_tag_manager={});a["GTM-LQCS"]||(a["GTM-LQCS"]=Pd)};Pd.Sa();
+(function(){var a=J("dataLayer",[]),b=J("google_tag_manager",{}),b=b["dataLayer"]=b["dataLayer"]||{};Da.push(function(){b.gtmDom||(b.gtmDom=!0,a.push({event:"gtm.dom"}))});Oa.push(function(){b.gtmLoad||(b.gtmLoad=!0,a.push({event:"gtm.load"}))});var c=a.push;a.push=function(){var b=[].slice.call(arguments,0);c.apply(a,b);for(Wa.push.apply(Wa,b);300<this.length;)this.shift();return hb()};Wa.push.apply(Wa,a.slice(0));O(hb)})();
+if("interactive"==I.readyState&&!I.createEventObject||"complete"==I.readyState)Ea();else{N(I,"DOMContentLoaded",Ea);N(I,"readystatechange",Ea);if(I.createEventObject&&I.documentElement.doScroll){var Qd=!0;try{Qd=!H.frameElement}catch(Sd){}Qd&&Ia()}N(H,"load",Ea)}"complete"===I.readyState?Pa():N(H,"load",Pa);var _vs="res_ts:1374771773321000,srv_cl:66584086,ds:live,cv:1";
+})()
+_text/javascriptUutf-8_2http://www.googletagmanager.com/gtm.js?id=GTM-LQCSOÖbplist00‘jkX$versionX$objectsY$archiverT$top Ü†Ø!"()012LMNOPQRSTUVWXYZ[\]^_`cdeU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ ÄÄ ÄÄÄ”#$%&'WNS.base[NS.relativeÄ ÄÄ_2http://www.googletagmanager.com/gtm.js?id=GTM-LQCS“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω‰"€˘»”345@KWNS.keysZNS.objects™6789:;<=>?Ä	Ä
+ÄÄÄÄÄÄÄÄ™ABCDEFGHIJÄÄÄÄÄÄÄÄÄÄÄVServer\Content-TypeTVary_X-XSS-ProtectionTDate_Content-Encoding_Alternate-Protocol^Content-LengthWExpires]Cache-Control_HTTP server (unknown)_text/javascript; charset=UTF-8_Accept-Encoding]1; mode=block_Sat, 17 May 2014 15:55:16 GMTTgzipW80:quicT8035_Sat, 17 May 2014 15:55:16 GMT_private, max-age=933“*+ab\NSDictionary¢a/ˇˇˇˇˇˇˇˇ_text/javascript“*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—lm_WebResourceResponseÄ    # - 2 7 [ a |  É Ü â å ê ì ö ù † £ ¶ © ´ ≠ Ø ± ≥ µ ∑ π ª Ω ø ¡ » – ‹ ﬁ ‡ ‚'069?HQSZbmxz|~ÄÇÑÜàäåóôõùü°£•ß©´≠¥¡∆ŸﬁÒ+CdvÑ§©±∂÷ÌÚˇ"6:N\nqá             n              â‘	Oú€(function(){var aa=encodeURIComponent,ba=Infinity,ca=setTimeout,da=isNaN,m=Math,ea=decodeURIComponent;function Ie(a,b){return a.onload=b}function Je(a,b){return a.onerror=b}function ha(a,b){return a.name=b}
+var n="push",ia="test",ja="slice",p="replace",ka="load",la="floor",ma="charAt",na="value",q="indexOf",oa="match",pa="port",qa="createElement",ra="path",r="name",g="getTime",u="host",v="toString",w="length",x="prototype",sa="clientWidth",y="split",ta="stopPropagation",ua="scope",z="location",va="search",A="protocol",wa="clientHeight",xa="href",B="substring",ya="apply",za="navigator",C="join",D="toLowerCase",E;function Aa(a,b){switch(b){case 0:return""+a;case 1:return 1*a;case 2:return!!a;case 3:return 1E3*a}return a}function Ba(a){return"function"==typeof a}function Ca(a){return void 0!=a&&-1<(a.constructor+"")[q]("String")}function F(a,b){return void 0==a||"-"==a&&!b||""==a}function Da(a){if(!a||""==a)return"";for(;a&&-1<" \n\r\t"[q](a[ma](0));)a=a[B](1);for(;a&&-1<" \n\r\t"[q](a[ma](a[w]-1));)a=a[B](0,a[w]-1);return a}function Ea(){return m.round(2147483647*m.random())}function Fa(){}
+function G(a,b){if(aa instanceof Function)return b?encodeURI(a):aa(a);H(68);return escape(a)}function I(a){a=a[y]("+")[C](" ");if(ea instanceof Function)try{return ea(a)}catch(b){H(17)}else H(68);return unescape(a)}var Ga=function(a,b,c,d){a.addEventListener?a.addEventListener(b,c,!!d):a.attachEvent&&a.attachEvent("on"+b,c)},Ha=function(a,b,c,d){a.removeEventListener?a.removeEventListener(b,c,!!d):a.detachEvent&&a.detachEvent("on"+b,c)};
+function Ia(a,b){if(a){var c=J[qa]("script");c.type="text/javascript";c.async=!0;c.src=a;c.id=b;var d=J.getElementsByTagName("script")[0];d.parentNode.insertBefore(c,d);return c}}function K(a){return a&&0<a[w]?a[0]:""}function L(a){var b=a?a[w]:0;return 0<b?a[b-1]:""}var Ja=function(){this.prefix="ga.";this.R={}};Ja[x].set=function(a,b){this.R[this.prefix+a]=b};Ja[x].get=function(a){return this.R[this.prefix+a]};Ja[x].contains=function(a){return void 0!==this.get(a)};function Ka(a){0==a[q]("www.")&&(a=a[B](4));return a[D]()}function La(a,b){var c,d={url:a,protocol:"http",host:"",path:"",d:new Ja,anchor:""};if(!a)return d;c=a[q]("://");0<=c&&(d.protocol=a[B](0,c),a=a[B](c+3));c=a[va]("/|\\?|#");if(0<=c)d.host=a[B](0,c)[D](),a=a[B](c);else return d.host=a[D](),d;c=a[q]("#");0<=c&&(d.anchor=a[B](c+1),a=a[B](0,c));c=a[q]("?");0<=c&&(Na(d.d,a[B](c+1)),a=a[B](0,c));d.anchor&&b&&Na(d.d,d.anchor);a&&"/"==a[ma](0)&&(a=a[B](1));d.path=a;return d}
+function Oa(a,b){function c(a){var b=(a.hostname||"")[y](":")[0][D](),c=(a[A]||"")[D](),c=1*a[pa]||("http:"==c?80:"https:"==c?443:"");a=a.pathname||"";0==a[q]("/")||(a="/"+a);return[b,""+c,a]}var d=b||J[qa]("a");d.href=J[z][xa];var e=(d[A]||"")[D](),f=c(d),Be=d[va]||"",k=e+"//"+f[0]+(f[1]?":"+f[1]:"");0==a[q]("//")?a=e+a:0==a[q]("/")?a=k+a:a&&0!=a[q]("?")?0>a[y]("/")[0][q](":")&&(a=k+f[2][B](0,f[2].lastIndexOf("/"))+"/"+a):a=k+f[2]+(a||Be);d.href=a;e=c(d);return{protocol:(d[A]||"")[D](),host:e[0],
+port:e[1],path:e[2],Oa:d[va]||"",url:a||""}}function Na(a,b){function c(b,c){a.contains(b)||a.set(b,[]);a.get(b)[n](c)}for(var d=Da(b)[y]("&"),e=0;e<d[w];e++)if(d[e]){var f=d[e][q]("=");0>f?c(d[e],"1"):c(d[e][B](0,f),d[e][B](f+1))}}function Pa(a,b){if(F(a)||"["==a[ma](0)&&"]"==a[ma](a[w]-1))return"-";var c=J.domain;return a[q](c+(b&&"/"!=b?b:""))==(0==a[q]("http://")?7:0==a[q]("https://")?8:0)?"0":a};var Qa=0;function Ra(a,b,c){1<=Qa||1<=100*m.random()||ld()||(a=["utmt=error","utmerr="+a,"utmwv=5.5.1","utmn="+Ea(),"utmsp=1"],b&&a[n]("api="+b),c&&a[n]("msg="+G(c[B](0,100))),M.w&&a[n]("aip=1"),Sa(a[C]("&")),Qa++)};var Ta=0,Ua={};function N(a){return Va("x"+Ta++,a)}function Va(a,b){Ua[a]=!!b;return a}
+var Wa=N(),Xa=Va("anonymizeIp"),Ya=N(),$a=N(),ab=N(),bb=N(),O=N(),P=N(),cb=N(),db=N(),eb=N(),fb=N(),gb=N(),hb=N(),ib=N(),jb=N(),kb=N(),lb=N(),nb=N(),ob=N(),pb=N(),qb=N(),rb=N(),sb=N(),tb=N(),ub=N(),vb=N(),wb=N(),xb=N(),yb=N(),zb=N(),Ab=N(),Bb=N(),Cb=N(),Db=N(),Eb=N(),Fb=N(!0),Gb=Va("currencyCode"),Hb=Va("page"),Ib=Va("title"),Jb=N(),Kb=N(),Lb=N(),Mb=N(),Nb=N(),Ob=N(),Pb=N(),Qb=N(),Rb=N(),Q=N(!0),Sb=N(!0),Tb=N(!0),Ub=N(!0),Vb=N(!0),Wb=N(!0),Zb=N(!0),$b=N(!0),ac=N(!0),bc=N(!0),cc=N(!0),R=N(!0),dc=N(!0),
+ec=N(!0),fc=N(!0),gc=N(!0),hc=N(!0),ic=N(!0),jc=N(!0),S=N(!0),kc=N(!0),lc=N(!0),mc=N(!0),nc=N(!0),oc=N(!0),pc=N(!0),qc=N(!0),rc=Va("campaignParams"),sc=N(),tc=Va("hitCallback"),uc=N();N();var vc=N(),wc=N(),xc=N(),yc=N(),zc=N(),Ac=N(),Bc=N(),Cc=N(),Dc=N(),Ec=N(),Fc=N(),Gc=N(),Hc=N(),Ic=N();N();var Mc=N(),Nc=N(),Oc=N(),Oe=Va("uaName"),Pe=Va("uaDomain"),Qe=Va("uaPath");var Re=function(){function a(a,c,d){T($[x],a,c,d)}a("_createTracker",$[x].r,55);a("_getTracker",$[x].oa,0);a("_getTrackerByName",$[x].u,51);a("_getTrackers",$[x].pa,130);a("_anonymizeIp",$[x].aa,16);a("_forceSSL",$[x].la,125);a("_getPlugin",Pc,120)},Se=function(){function a(a,c,d){T(U[x],a,c,d)}Qc("_getName",$a,58);Qc("_getAccount",Wa,64);Qc("_visitCode",Q,54);Qc("_getClientInfo",ib,53,1);Qc("_getDetectTitle",lb,56,1);Qc("_getDetectFlash",jb,65,1);Qc("_getLocalGifPath",wb,57);Qc("_getServiceMode",
+xb,59);V("_setClientInfo",ib,66,2);V("_setAccount",Wa,3);V("_setNamespace",Ya,48);V("_setAllowLinker",fb,11,2);V("_setDetectFlash",jb,61,2);V("_setDetectTitle",lb,62,2);V("_setLocalGifPath",wb,46,0);V("_setLocalServerMode",xb,92,void 0,0);V("_setRemoteServerMode",xb,63,void 0,1);V("_setLocalRemoteServerMode",xb,47,void 0,2);V("_setSampleRate",vb,45,1);V("_setCampaignTrack",kb,36,2);V("_setAllowAnchor",gb,7,2);V("_setCampNameKey",ob,41);V("_setCampContentKey",tb,38);V("_setCampIdKey",nb,39);V("_setCampMediumKey",
+rb,40);V("_setCampNOKey",ub,42);V("_setCampSourceKey",qb,43);V("_setCampTermKey",sb,44);V("_setCampCIdKey",pb,37);V("_setCookiePath",P,9,0);V("_setMaxCustomVariables",yb,0,1);V("_setVisitorCookieTimeout",cb,28,1);V("_setSessionCookieTimeout",db,26,1);V("_setCampaignCookieTimeout",eb,29,1);V("_setReferrerOverride",Jb,49);V("_setSiteSpeedSampleRate",Dc,132);a("_trackPageview",U[x].Fa,1);a("_trackEvent",U[x].F,4);a("_trackPageLoadTime",U[x].Ea,100);a("_trackSocial",U[x].Ga,104);a("_trackTrans",U[x].Ia,
+18);a("_sendXEvent",U[x].t,78);a("_createEventTracker",U[x].ia,74);a("_getVersion",U[x].qa,60);a("_setDomainName",U[x].B,6);a("_setAllowHash",U[x].va,8);a("_getLinkerUrl",U[x].na,52);a("_link",U[x].link,101);a("_linkByPost",U[x].ua,102);a("_setTrans",U[x].za,20);a("_addTrans",U[x].$,21);a("_addItem",U[x].Y,19);a("_clearTrans",U[x].ea,105);a("_setTransactionDelim",U[x].Aa,82);a("_setCustomVar",U[x].wa,10);a("_deleteCustomVar",U[x].ka,35);a("_getVisitorCustomVar",U[x].ra,50);a("_setXKey",U[x].Ca,83);
+a("_setXValue",U[x].Da,84);a("_getXKey",U[x].sa,76);a("_getXValue",U[x].ta,77);a("_clearXKey",U[x].fa,72);a("_clearXValue",U[x].ga,73);a("_createXObj",U[x].ja,75);a("_addIgnoredOrganic",U[x].W,15);a("_clearIgnoredOrganic",U[x].ba,97);a("_addIgnoredRef",U[x].X,31);a("_clearIgnoredRef",U[x].ca,32);a("_addOrganic",U[x].Z,14);a("_clearOrganic",U[x].da,70);a("_cookiePathCopy",U[x].ha,30);a("_get",U[x].ma,106);a("_set",U[x].xa,107);a("_addEventListener",U[x].addEventListener,108);a("_removeEventListener",
+U[x].removeEventListener,109);a("_addDevId",U[x].V);a("_getPlugin",Pc,122);a("_setPageGroup",U[x].ya,126);a("_trackTiming",U[x].Ha,124);a("_initData",U[x].v,2);a("_setVar",U[x].Ba,22);V("_setSessionTimeout",db,27,3);V("_setCookieTimeout",eb,25,3);V("_setCookiePersistence",cb,24,1);a("_setAutoTrackOutbound",Fa,79);a("_setTrackOutboundSubdomains",Fa,81);a("_setHrefExamineLimit",Fa,80)};function Pc(a){var b=this.plugins_;if(b)return b.get(a)}
+var T=function(a,b,c,d){a[b]=function(){try{return void 0!=d&&H(d),c[ya](this,arguments)}catch(a){throw Ra("exc",b,a&&a[r]),a;}}},Qc=function(a,b,c,d){U[x][a]=function(){try{return H(c),Aa(this.a.get(b),d)}catch(e){throw Ra("exc",a,e&&e[r]),e;}}},V=function(a,b,c,d,e){U[x][a]=function(f){try{H(c),void 0==e?this.a.set(b,Aa(f,d)):this.a.set(b,e)}catch(Be){throw Ra("exc",a,Be&&Be[r]),Be;}}},Te=function(a,b){return{type:b,target:a,stopPropagation:function(){throw"aborted";}}};var Rc=new RegExp(/(^|\.)doubleclick\.net$/i),Sc=function(a,b){return Rc[ia](J[z].hostname)?!0:"/"!==b?!1:0!=a[q]("www.google.")&&0!=a[q](".google.")&&0!=a[q]("google.")||-1<a[q]("google.org")?!1:!0},Tc=function(a){var b=a.get(bb),c=a.c(P,"/");Sc(b,c)&&a[ta]()};var Zc=function(){var a={},b={},c=new Uc;this.g=function(a,b){c.add(a,b)};var d=new Uc;this.e=function(a,b){d.add(a,b)};var e=!1,f=!1,Be=!0;this.T=function(){e=!0};this.j=function(a){this[ka]();this.set(sc,a,!0);a=new Vc(this);e=!1;d.cb(this);e=!0;b={};this.n();a.Ja()};this.load=function(){e&&(e=!1,this.Ka(),Wc(this),f||(f=!0,c.cb(this),Xc(this),Wc(this)),e=!0)};this.n=function(){if(e)if(f)e=!1,Xc(this),e=!0;else this[ka]()};this.get=function(c){Ua[c]&&this[ka]();return void 0!==b[c]?b[c]:a[c]};this.set=
+function(c,d,e){Ua[c]&&this[ka]();e?b[c]=d:a[c]=d;Ua[c]&&this.n()};this.Za=function(b){a[b]=this.b(b,0)+1};this.b=function(a,b){var c=this.get(a);return void 0==c||""===c?b:1*c};this.c=function(a,b){var c=this.get(a);return void 0==c?b:c+""};this.Ka=function(){if(Be){var b=this.c(bb,""),c=this.c(P,"/");Sc(b,c)||(a[O]=a[hb]&&""!=b?Yc(b):1,Be=!1)}}};Zc[x].stopPropagation=function(){throw"aborted";};
+var Vc=function(a){var b=this;this.q=0;var c=a.get(tc);this.Ua=function(){0<b.q&&c&&(b.q--,b.q||c())};this.Ja=function(){!b.q&&c&&ca(c,10)};a.set(uc,b,!0)};function $c(a,b){b=b||[];for(var c=0;c<b[w];c++){var d=b[c];if(""+a==d||0==d[q](a+"."))return d}return"-"}
+var bd=function(a,b,c){c=c?"":a.c(O,"1");b=b[y](".");if(6!==b[w]||ad(b[0],c))return!1;c=1*b[1];var d=1*b[2],e=1*b[3],f=1*b[4];b=1*b[5];if(!(0<=c&&0<d&&0<e&&0<f&&0<=b))return!1;a.set(Q,c);a.set(Vb,d);a.set(Wb,e);a.set(Zb,f);a.set($b,b);return!0},cd=function(a){var b=a.get(Q),c=a.get(Vb),d=a.get(Wb),e=a.get(Zb),f=a.b($b,1);return[a.b(O,1),void 0!=b?b:"-",c||"-",d||"-",e||"-",f][C](".")},dd=function(a){return[a.b(O,1),a.b(cc,0),a.b(R,1),a.b(dc,0)][C](".")},ed=function(a,b,c){c=c?"":a.c(O,"1");var d=
+b[y](".");if(4!==d[w]||ad(d[0],c))d=null;a.set(cc,d?1*d[1]:0);a.set(R,d?1*d[2]:10);a.set(dc,d?1*d[3]:a.get(ab));return null!=d||!ad(b,c)},fd=function(a,b){var c=G(a.c(Tb,"")),d=[],e=a.get(Fb);if(!b&&e){for(var f=0;f<e[w];f++){var Be=e[f];Be&&1==Be[ua]&&d[n](f+"="+G(Be[r])+"="+G(Be[na])+"=1")}0<d[w]&&(c+="|"+d[C]("^"))}return c?a.b(O,1)+"."+c:null},gd=function(a,b,c){c=c?"":a.c(O,"1");b=b[y](".");if(2>b[w]||ad(b[0],c))return!1;b=b[ja](1)[C](".")[y]("|");0<b[w]&&a.set(Tb,I(b[0]));if(1>=b[w])return!0;
+b=b[1][y](-1==b[1][q](",")?"^":",");for(c=0;c<b[w];c++){var d=b[c][y]("=");if(4==d[w]){var e={};ha(e,I(d[1]));e.value=I(d[2]);e.scope=1;a.get(Fb)[d[0]]=e}}return!0},hd=function(a,b){var c=Ue(a,b);return c?[a.b(O,1),a.b(ec,0),a.b(fc,1),a.b(gc,1),c][C]("."):""},Ue=function(a){function b(b,e){if(!F(a.get(b))){var f=a.c(b,""),f=f[y](" ")[C]("%20"),f=f[y]("+")[C]("%20");c[n](e+"="+f)}}var c=[];b(ic,"utmcid");b(nc,"utmcsr");b(S,"utmgclid");b(kc,"utmgclsrc");b(lc,"utmdclid");b(mc,"utmdsid");b(jc,"utmccn");
+b(oc,"utmcmd");b(pc,"utmctr");b(qc,"utmcct");return c[C]("|")},id=function(a,b,c){c=c?"":a.c(O,"1");b=b[y](".");if(5>b[w]||ad(b[0],c))return a.set(ec,void 0),a.set(fc,void 0),a.set(gc,void 0),a.set(ic,void 0),a.set(jc,void 0),a.set(nc,void 0),a.set(oc,void 0),a.set(pc,void 0),a.set(qc,void 0),a.set(S,void 0),a.set(kc,void 0),a.set(lc,void 0),a.set(mc,void 0),!1;a.set(ec,1*b[1]);a.set(fc,1*b[2]);a.set(gc,1*b[3]);Ve(a,b[ja](4)[C]("."));return!0},Ve=function(a,b){function c(a){return(a=b[oa](a+"=(.*?)(?:\\|utm|$)"))&&
+2==a[w]?a[1]:void 0}function d(b,c){c?(c=e?I(c):c[y]("%20")[C](" "),a.set(b,c)):a.set(b,void 0)}-1==b[q]("=")&&(b=I(b));var e="2"==c("utmcvr");d(ic,c("utmcid"));d(jc,c("utmccn"));d(nc,c("utmcsr"));d(oc,c("utmcmd"));d(pc,c("utmctr"));d(qc,c("utmcct"));d(S,c("utmgclid"));d(kc,c("utmgclsrc"));d(lc,c("utmdclid"));d(mc,c("utmdsid"))},ad=function(a,b){return b?a!=b:!/^\d+$/[ia](a)};var Uc=function(){this.filters=[]};Uc[x].add=function(a,b){this.filters[n]({name:a,s:b})};Uc[x].cb=function(a){try{for(var b=0;b<this.filters[w];b++)this.filters[b].s.call(W,a)}catch(c){}};function jd(a){100!=a.get(vb)&&a.get(Q)%1E4>=100*a.get(vb)&&a[ta]()}function kd(a){ld(a.get(Wa))&&a[ta]()}function md(a){"file:"==J[z][A]&&a[ta]()}function Ge(a){He()&&a[ta]()}function nd(a){a.get(Ib)||a.set(Ib,J.title,!0);a.get(Hb)||a.set(Hb,J[z].pathname+J[z][va],!0)};var od=new function(){var a=[];this.set=function(b){a[b]=!0};this.Xa=function(){for(var b=[],c=0;c<a[w];c++)a[c]&&(b[m[la](c/6)]=b[m[la](c/6)]^1<<c%6);for(c=0;c<b[w];c++)b[c]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"[ma](b[c]||0);return b[C]("")+"~"}};function H(a){od.set(a)};var W=window,J=document,ld=function(a){var b=W._gaUserPrefs;if(b&&b.ioo&&b.ioo()||a&&!0===W["ga-disable-"+a])return!0;try{var c=W.external;if(c&&c._gaUserPrefs&&"oo"==c._gaUserPrefs)return!0}catch(d){}return!1},He=function(){return W[za]&&"preview"==W[za].loadPurpose},We=function(a,b){ca(a,b)},pd=function(a){var b=[],c=J.cookie[y](";");a=new RegExp("^\\s*"+a+"=\\s*(.*?)\\s*$");for(var d=0;d<c[w];d++){var e=c[d][oa](a);e&&b[n](e[1])}return b},X=function(a,b,c,d,e,f){e=ld(e)?!1:Sc(d,c)?!1:He()?!1:!0;
+if(e){if(b&&0<=W[za].userAgent[q]("Firefox")){b=b[p](/\n|\r/g," ");e=0;for(var Be=b[w];e<Be;++e){var k=b.charCodeAt(e)&255;if(10==k||13==k)b=b[B](0,e)+"?"+b[B](e+1)}}b&&2E3<b[w]&&(b=b[B](0,2E3),H(69));a=a+"="+b+"; path="+c+"; ";f&&(a+="expires="+(new Date((new Date)[g]()+f)).toGMTString()+"; ");d&&(a+="domain="+d+";");J.cookie=a}};var qd,rd,sd=function(){if(!qd){var a={},b=W[za],c=W.screen;a.Q=c?c.width+"x"+c.height:"-";a.P=c?c.colorDepth+"-bit":"-";a.language=(b&&(b.language||b.browserLanguage)||"-")[D]();a.javaEnabled=b&&b.javaEnabled()?1:0;a.characterSet=J.characterSet||J.charset||"-";try{var d;var e=J.documentElement,f=J.body,Be=f&&f[sa]&&f[wa],b=[];e&&e[sa]&&e[wa]&&("CSS1Compat"===J.compatMode||!Be)?b=[e[sa],e[wa]]:Be&&(b=[f[sa],f[wa]]);d=0>=b[0]||0>=b[1]?"":b[C]("x");a.Wa=d}catch(k){H(135)}qd=a}},td=function(){sd();for(var a=
+qd,b=W[za],a=b.appName+b.version+a.language+b.platform+b.userAgent+a.javaEnabled+a.Q+a.P+(J.cookie?J.cookie:"")+(J.referrer?J.referrer:""),b=a[w],c=W.history[w];0<c;)a+=c--^b++;return Yc(a)},ud=function(a){sd();var b=qd;a.set(Lb,b.Q);a.set(Mb,b.P);a.set(Pb,b.language);a.set(Qb,b.characterSet);a.set(Nb,b.javaEnabled);a.set(Rb,b.Wa);if(a.get(ib)&&a.get(jb)){if(!(b=rd)){var c,d,e;d="ShockwaveFlash";if((b=(b=W[za])?b.plugins:void 0)&&0<b[w])for(c=0;c<b[w]&&!e;c++)d=b[c],-1<d[r][q]("Shockwave Flash")&&
+(e=d.description[y]("Shockwave Flash ")[1]);else{d=d+"."+d;try{c=new ActiveXObject(d+".7"),e=c.GetVariable("$version")}catch(f){}if(!e)try{c=new ActiveXObject(d+".6"),e="WIN 6,0,21,0",c.AllowScriptAccess="always",e=c.GetVariable("$version")}catch(Be){}if(!e)try{c=new ActiveXObject(d),e=c.GetVariable("$version")}catch(k){}e&&(e=e[y](" ")[1][y](","),e=e[0]+"."+e[1]+" r"+e[2])}b=e?e:"-"}rd=b;a.set(Ob,rd)}else a.set(Ob,"-")};var vd=function(a){if(Ba(a))this.s=a;else{var b=a[0],c=b.lastIndexOf(":"),d=b.lastIndexOf(".");this.h=this.i=this.l="";-1==c&&-1==d?this.h=b:-1==c&&-1!=d?(this.i=b[B](0,d),this.h=b[B](d+1)):-1!=c&&-1==d?(this.l=b[B](0,c),this.h=b[B](c+1)):c>d?(this.i=b[B](0,d),this.l=b[B](d+1,c),this.h=b[B](c+1)):(this.i=b[B](0,d),this.h=b[B](d+1));this.k=a[ja](1);this.Ma=!this.l&&"_require"==this.h;this.J=!this.i&&!this.l&&"_provide"==this.h}},Y=function(){T(Y[x],"push",Y[x][n],5);T(Y[x],"_getPlugin",Pc,121);T(Y[x],
+"_createAsyncTracker",Y[x].Sa,33);T(Y[x],"_getAsyncTracker",Y[x].Ta,34);this.I=new Ja;this.p=[]};E=Y[x];E.Na=function(a,b,c){var d=this.I.get(a);if(!Ba(d))return!1;b.plugins_=b.plugins_||new Ja;b.plugins_.set(a,new d(b,c||{}));return!0};E.push=function(a){var b=Z.Va[ya](this,arguments),b=Z.p.concat(b);for(Z.p=[];0<b[w]&&!Z.O(b[0])&&!(b.shift(),0<Z.p[w]););Z.p=Z.p.concat(b);return 0};E.Va=function(a){for(var b=[],c=0;c<arguments[w];c++)try{var d=new vd(arguments[c]);d.J?this.O(d):b[n](d)}catch(e){}return b};
+E.O=function(a){try{if(a.s)a.s[ya](W);else if(a.J)this.I.set(a.k[0],a.k[1]);else{var b="_gat"==a.i?M:"_gaq"==a.i?Z:M.u(a.i);if(a.Ma){if(!this.Na(a.k[0],b,a.k[2])){if(!a.Pa){var c=Oa(""+a.k[1]);var d=c[A],e=J[z][A];var f;if(f="https:"==d||d==e?!0:"http:"!=d?!1:"http:"==e){var Be;t:{var k=Oa(J[z][xa]);if(!(c.Oa||0<=c.url[q]("?")||0<=c[ra][q]("://")||c[u]==k[u]&&c[pa]==k[pa]))for(var s="http:"==c[A]?80:443,t=M.S,b=0;b<t[w];b++)if(c[u]==t[b][0]&&(c[pa]||s)==(t[b][1]||s)&&0==c[ra][q](t[b][2])){Be=!0;break t}Be=
+!1}f=Be&&!ld()}f&&(a.Pa=Ia(c.url))}return!0}}else a.l&&(b=b.plugins_.get(a.l)),b[a.h][ya](b,a.k)}}catch(Za){}};E.Sa=function(a,b){return M.r(a,b||"")};E.Ta=function(a){return M.u(a)};var yd=function(){function a(a,b,c,d){void 0==f[a]&&(f[a]={});void 0==f[a][b]&&(f[a][b]=[]);f[a][b][c]=d}function b(a,b,c){if(void 0!=f[a]&&void 0!=f[a][b])return f[a][b][c]}function c(a,b){if(void 0!=f[a]&&void 0!=f[a][b]){f[a][b]=void 0;var c=!0,d;for(d=0;d<Be[w];d++)if(void 0!=f[a][Be[d]]){c=!1;break}c&&(f[a]=void 0)}}function d(a){var b="",c=!1,d,e;for(d=0;d<Be[w];d++)if(e=a[Be[d]],void 0!=e){c&&(b+=Be[d]);for(var c=[],f=void 0,ga=void 0,ga=0;ga<e[w];ga++)if(void 0!=e[ga]){f="";ga!=mb&&void 0==
+e[ga-1]&&(f+=ga[v]()+Za);for(var Cd=e[ga],Jc="",Yb=void 0,Kc=void 0,Lc=void 0,Yb=0;Yb<Cd[w];Yb++)Kc=Cd[ma](Yb),Lc=Ma[Kc],Jc+=void 0!=Lc?Lc:Kc;f+=Jc;c[n](f)}b+=k+c[C](t)+s;c=!1}else c=!0;return b}var e=this,f=[],Be=["k","v"],k="(",s=")",t="*",Za="!",Ma={"'":"'0"};Ma[s]="'1";Ma[t]="'2";Ma[Za]="'3";var mb=1;e.Ra=function(a){return void 0!=f[a]};e.A=function(){for(var a="",b=0;b<f[w];b++)void 0!=f[b]&&(a+=b[v]()+d(f[b]));return a};e.Qa=function(a){if(void 0==a)return e.A();for(var b=a.A(),c=0;c<f[w];c++)void 0==
+f[c]||a.Ra(c)||(b+=c[v]()+d(f[c]));return b};e.f=function(b,c,d){if(!wd(d))return!1;a(b,"k",c,d);return!0};e.o=function(b,c,d){if(!xd(d))return!1;a(b,"v",c,d[v]());return!0};e.getKey=function(a,c){return b(a,"k",c)};e.N=function(a,c){return b(a,"v",c)};e.L=function(a){c(a,"k")};e.M=function(a){c(a,"v")};T(e,"_setKey",e.f,89);T(e,"_setValue",e.o,90);T(e,"_getKey",e.getKey,87);T(e,"_getValue",e.N,88);T(e,"_clearKey",e.L,85);T(e,"_clearValue",e.M,86)};function wd(a){return"string"==typeof a}
+function xd(a){return!("number"==typeof a||void 0!=Number&&a instanceof Number)||m.round(a)!=a||da(a)||a==ba?!1:!0};var zd=function(a){var b=W.gaGlobal;a&&!b&&(W.gaGlobal=b={});return b},Ad=function(){var a=zd(!0).hid;null==a&&(a=Ea(),zd(!0).hid=a);return a},Dd=function(a){a.set(Kb,Ad());var b=zd();if(b&&b.dh==a.get(O)){var c=b.sid;c&&(a.get(ac)?H(112):H(132),a.set(Zb,c),a.get(Sb)&&a.set(Wb,c));b=b.vid;a.get(Sb)&&b&&(b=b[y]("."),a.set(Q,1*b[0]),a.set(Vb,1*b[1]))}};var Ed,Fd=function(a,b,c,d){var e=a.c(bb,""),f=a.c(P,"/");d=void 0!=d?d:a.b(cb,0);a=a.c(Wa,"");X(b,c,f,e,a,d)},Xc=function(a){var b=a.c(bb,"");a.b(O,1);var c=a.c(P,"/"),d=a.c(Wa,"");X("__utma",cd(a),c,b,d,a.get(cb));X("__utmb",dd(a),c,b,d,a.get(db));X("__utmc",""+a.b(O,1),c,b,d);var e=hd(a,!0);e?X("__utmz",e,c,b,d,a.get(eb)):X("__utmz","",c,b,"",-1);(e=fd(a,!1))?X("__utmv",e,c,b,d,a.get(cb)):X("__utmv","",c,b,"",-1)},Wc=function(a){var b=a.b(O,1);if(!bd(a,$c(b,pd("__utma"))))return a.set(Ub,!0),!1;
+var c=!ed(a,$c(b,pd("__utmb")));a.set(bc,c);id(a,$c(b,pd("__utmz")));gd(a,$c(b,pd("__utmv")));Ed=!c;return!0},Gd=function(a){Ed||0<pd("__utmb")[w]||(X("__utmd","1",a.c(P,"/"),a.c(bb,""),a.c(Wa,""),1E4),0==pd("__utmd")[w]&&a[ta]())};var h=0,Jd=function(a){void 0==a.get(Q)?Hd(a):a.get(Ub)&&!a.get(Mc)?Hd(a):a.get(bc)&&Id(a)},Kd=function(a){a.get(hc)&&!a.get(ac)&&(Id(a),a.set(fc,a.get($b)))},Hd=function(a){h++;1<h&&H(137);var b=a.get(ab);a.set(Sb,!0);a.set(Q,Ea()^td(a)&2147483647);a.set(Tb,"");a.set(Vb,b);a.set(Wb,b);a.set(Zb,b);a.set($b,1);a.set(ac,!0);a.set(cc,0);a.set(R,10);a.set(dc,b);a.set(Fb,[]);a.set(Ub,!1);a.set(bc,!1)},Id=function(a){h++;1<h&&H(137);a.set(Wb,a.get(Zb));a.set(Zb,a.get(ab));a.Za($b);a.set(ac,!0);a.set(cc,
+0);a.set(R,10);a.set(dc,a.get(ab));a.set(bc,!1)};var Ld="daum:q eniro:search_word naver:query pchome:q images.google:q google:q yahoo:p yahoo:q msn:q bing:q aol:query aol:q lycos:q lycos:query ask:q cnn:query virgilio:qs baidu:wd baidu:word alice:qs yandex:text najdi:q seznam:q rakuten:qt biglobe:q goo.ne:MT search.smt.docomo:MT onet:qt onet:q kvasir:q terra:query rambler:query conduit:q babylon:q search-results:q avg:q comcast:q incredimail:q startsiden:q go.mail.ru:q centrum.cz:q 360.cn:q sogou:query tut.by:query globo:q ukr:q so.com:q auone:q".split(" "),
+Sd=function(a){if(a.get(kb)&&!a.get(Mc)){var b;b=!F(a.get(ic))||!F(a.get(nc))||!F(a.get(S))||!F(a.get(lc));for(var c={},d=0;d<Md[w];d++){var e=Md[d];c[e]=a.get(e)}(d=a.get(rc))?(H(149),e=new Ja,Na(e,d),d=e):d=La(J[z][xa],a.get(gb)).d;if("1"!=L(d.get(a.get(ub)))||!b)if(d=Xe(a,d)||Qd(a),d||b||!a.get(ac)||(Pd(a,void 0,"(direct)",void 0,void 0,void 0,"(direct)","(none)",void 0,void 0),d=!0),d&&(a.set(hc,Rd(a,c)),b="(direct)"==a.get(nc)&&"(direct)"==a.get(jc)&&"(none)"==a.get(oc),a.get(hc)||a.get(ac)&&
+!b))a.set(ec,a.get(ab)),a.set(fc,a.get($b)),a.Za(gc)}},Xe=function(a,b){function c(c,d){d=d||"-";var e=L(b.get(a.get(c)));return e&&"-"!=e?I(e):d}var d=L(b.get(a.get(nb)))||"-",e=L(b.get(a.get(qb)))||"-",f=L(b.get(a.get(pb)))||"-",Be=L(b.get("gclsrc"))||"-",k=L(b.get("dclid"))||"-",s=c(ob,"(not set)"),t=c(rb,"(not set)"),Za=c(sb),Ma=c(tb);if(F(d)&&F(f)&&F(k)&&F(e))return!1;var mb=!F(f)&&!F(Be),mb=F(e)&&(!F(k)||mb),Xb=F(Za);if(mb||Xb){var Bd=Nd(a),Bd=La(Bd,!0);(Bd=Od(a,Bd))&&!F(Bd[1]&&!Bd[2])&&(mb&&
+(e=Bd[0]),Xb&&(Za=Bd[1]))}Pd(a,d,e,f,Be,k,s,t,Za,Ma);return!0},Qd=function(a){var b=Nd(a),c=La(b,!0);(b=!(void 0!=b&&null!=b&&""!=b&&"0"!=b&&"-"!=b&&0<=b[q]("://")))||(b=c&&-1<c[u][q]("google")&&c.d.contains("q")&&"cse"==c[ra]);if(b)return!1;if((b=Od(a,c))&&!b[2])return Pd(a,void 0,b[0],void 0,void 0,void 0,"(organic)","organic",b[1],void 0),!0;if(b||!a.get(ac))return!1;t:{for(var b=a.get(Bb),d=Ka(c[u]),e=0;e<b[w];++e)if(-1<d[q](b[e])){a=!1;break t}Pd(a,void 0,d,void 0,void 0,void 0,"(referral)",
+"referral",void 0,"/"+c[ra]);a=!0}return a},Od=function(a,b){for(var c=a.get(zb),d=0;d<c[w];++d){var e=c[d][y](":");if(-1<b[u][q](e[0][D]())){var f=b.d.get(e[1]);if(f&&(f=K(f),!f&&-1<b[u][q]("google.")&&(f="(not provided)"),!e[3]||-1<b.url[q](e[3]))){f||H(151);t:{for(var c=f,d=a.get(Ab),c=I(c)[D](),Be=0;Be<d[w];++Be)if(c==d[Be]){c=!0;break t}c=!1}return[e[2]||e[0],f,c]}}}return null},Pd=function(a,b,c,d,e,f,Be,k,s,t){a.set(ic,b);a.set(nc,c);a.set(S,d);a.set(kc,e);a.set(lc,f);a.set(jc,Be);a.set(oc,
+k);a.set(pc,s);a.set(qc,t)},Md=[jc,ic,S,lc,nc,oc,pc,qc],Rd=function(a,b){function c(a){a=(""+a)[y]("+")[C]("%20");return a=a[y](" ")[C]("%20")}function d(c){var d=""+(a.get(c)||"");c=""+(b[c]||"");return 0<d[w]&&d==c}if(d(S)||d(lc))return H(131),!1;for(var e=0;e<Md[w];e++){var f=Md[e],Be=b[f]||"-",f=a.get(f)||"-";if(c(Be)!=c(f))return!0}return!1},Td=new RegExp(/^https?:\/\/(www\.)?google(\.com?)?(\.[a-z]{2}t?)?\/?$/i),jf=/^https?:\/\/r\.search\.yahoo\.com\/[^?]*$/i,Nd=function(a){a=Pa(a.get(Jb),a.get(P));
+try{if(Td[ia](a))return H(136),a+"?q=";if(jf[ia](a))return H(150),a+"?p=(not provided)"}catch(b){H(145)}return a};var Ud,Vd,Wd=function(a){Ud=a.c(S,"");Vd=a.c(kc,"")},Xd=function(a){var b=a.c(S,""),c=a.c(kc,"");b!=Ud&&(-1<c[q]("ds")?a.set(mc,void 0):!F(Ud)&&-1<Vd[q]("ds")&&a.set(mc,Ud))};var Zd=function(a){Yd(a,J[z][xa])?(a.set(Mc,!0),H(12)):a.set(Mc,!1)},Yd=function(a,b){if(!a.get(fb))return!1;var c=La(b,a.get(gb)),d=K(c.d.get("__utma")),e=K(c.d.get("__utmb")),f=K(c.d.get("__utmc")),Be=K(c.d.get("__utmx")),k=K(c.d.get("__utmz")),s=K(c.d.get("__utmv")),c=K(c.d.get("__utmk"));if(Yc(""+d+e+f+Be+k+s)!=c){d=I(d);e=I(e);f=I(f);Be=I(Be);f=$d(d+e+f+Be,k,s,c);if(!f)return!1;k=f[0];s=f[1]}if(!bd(a,d,!0))return!1;ed(a,e,!0);id(a,k,!0);gd(a,s,!0);ae(a,Be,!0);return!0},ce=function(a,b,c){var d;
+d=cd(a)||"-";var e=dd(a)||"-",f=""+a.b(O,1)||"-",Be=be(a)||"-",k=hd(a,!1)||"-";a=fd(a,!1)||"-";var s=Yc(""+d+e+f+Be+k+a),t=[];t[n]("__utma="+d);t[n]("__utmb="+e);t[n]("__utmc="+f);t[n]("__utmx="+Be);t[n]("__utmz="+k);t[n]("__utmv="+a);t[n]("__utmk="+s);d=t[C]("&");if(!d)return b;e=b[q]("#");if(c)return 0>e?b+"#"+d:b+"&"+d;c="";f=b[q]("?");0<e&&(c=b[B](e),b=b[B](0,e));return 0>f?b+"?"+d+c:b+"&"+d+c},$d=function(a,b,c,d){for(var e=0;3>e;e++){for(var f=0;3>f;f++){if(d==Yc(a+b+c))return H(127),[b,c];
+var Be=b[p](/ /g,"%20"),k=c[p](/ /g,"%20");if(d==Yc(a+Be+k))return H(128),[Be,k];Be=Be[p](/\+/g,"%20");k=k[p](/\+/g,"%20");if(d==Yc(a+Be+k))return H(129),[Be,k];try{var s=b[oa]("utmctr=(.*?)(?:\\|utm|$)");if(s&&2==s[w]&&(Be=b[p](s[1],G(I(s[1]))),d==Yc(a+Be+c)))return H(139),[Be,c]}catch(t){}b=I(b)}c=I(c)}};var de="|",fe=function(a,b,c,d,e,f,Be,k,s){var t=ee(a,b);t||(t={},a.get(Cb)[n](t));t.id_=b;t.affiliation_=c;t.total_=d;t.tax_=e;t.shipping_=f;t.city_=Be;t.state_=k;t.country_=s;t.items_=t.items_||[];return t},ge=function(a,b,c,d,e,f,Be){a=ee(a,b)||fe(a,b,"",0,0,0,"","","");var k;t:{if(a&&a.items_){k=a.items_;for(var s=0;s<k[w];s++)if(k[s].sku_==c){k=k[s];break t}}k=null}s=k||{};s.transId_=b;s.sku_=c;s.name_=d;s.category_=e;s.price_=f;s.quantity_=Be;k||a.items_[n](s);return s},ee=function(a,b){for(var c=
+a.get(Cb),d=0;d<c[w];d++)if(c[d].id_==b)return c[d];return null};var he,ie=function(a){if(!he){var b;b=J[z].hash;var c=W[r],d=/^#?gaso=([^&]*)/;if(c=(b=(b=b&&b[oa](d)||c&&c[oa](d))?b[1]:K(pd("GASO")))&&b[oa](/^(?:!([-0-9a-z.]{1,40})!)?([-.\w]{10,1200})$/i))Fd(a,"GASO",""+b,0),M._gasoDomain=a.get(bb),M._gasoCPath=a.get(P),a=c[1],Ia("https://www.google.com/analytics/web/inpage/pub/inpage.js?"+(a?"prefix="+a+"&":"")+Ea(),"_gasojs");he=!0}};var ae=function(a,b,c){c&&(b=I(b));c=a.b(O,1);b=b[y](".");2>b[w]||!/^\d+$/[ia](b[0])||(b[0]=""+c,Fd(a,"__utmx",b[C]("."),void 0))},be=function(a,b){var c=$c(a.get(O),pd("__utmx"));"-"==c&&(c="");return b?G(c):c},Ye=function(a){try{var b=La(J[z][xa],!1),c=ea(L(b.d.get("utm_referrer")))||"";c&&a.set(Jb,c);var d=ea(K(b.d.get("utm_expid")))||"";d&&(d=d[y](".")[0],a.set(Oc,""+d))}catch(e){H(146)}},l=function(a){var b=W.gaData&&W.gaData.expId;b&&a.set(Oc,""+b)};var ke=function(a,b){var c=m.min(a.b(Dc,0),100);if(a.b(Q,0)%100>=c)return!1;c=Ze()||$e();if(void 0==c)return!1;var d=c[0];if(void 0==d||d==ba||da(d))return!1;0<d?af(c)?b(je(c)):b(je(c[ja](0,1))):Ga(W,"load",function(){ke(a,b)},!1);return!0},me=function(a,b,c,d){var e=new yd;e.f(14,90,b[B](0,500));e.f(14,91,a[B](0,150));e.f(14,92,""+le(c));void 0!=d&&e.f(14,93,d[B](0,500));e.o(14,90,c);return e},af=function(a){for(var b=1;b<a[w];b++)if(da(a[b])||a[b]==ba||0>a[b])return!1;return!0},le=function(a){return da(a)||
+0>a?0:5E3>a?10*m[la](a/10):5E4>a?100*m[la](a/100):41E5>a?1E3*m[la](a/1E3):41E5},je=function(a){for(var b=new yd,c=0;c<a[w];c++)b.f(14,c+1,""+le(a[c])),b.o(14,c+1,a[c]);return b},Ze=function(){var a=W.performance||W.webkitPerformance;if(a=a&&a.timing){var b=a.navigationStart;if(0==b)H(133);else return[a.loadEventStart-b,a.domainLookupEnd-a.domainLookupStart,a.connectEnd-a.connectStart,a.responseStart-a.requestStart,a.responseEnd-a.responseStart,a.fetchStart-b,a.domInteractive-b,a.domContentLoadedEventStart-
+b]}},$e=function(){if(W.top==W){var a=W.external,b=a&&a.onloadT;a&&!a.isValidLoadTime&&(b=void 0);2147483648<b&&(b=void 0);0<b&&a.setPageReadyTime();return void 0==b?void 0:[b]}};var cf=function(a){if(a.get(Sb))try{var b;t:{var c=pd(a.get(Oe)||"_ga");if(c&&!(1>c[w])){for(var d=[],e=0;e<c[w];e++){var f;var Be=c[e][y]("."),k=Be.shift();if(("GA1"==k||"1"==k)&&1<Be[w]){var s=Be.shift()[y]("-");1==s[w]&&(s[1]="1");s[0]*=1;s[1]*=1;f={Ya:s,$a:Be[C](".")}}else f=void 0;f&&d[n](f)}if(1==d[w]){b=d[0].$a;break t}if(0!=d[w]){var t=a.get(Pe)||a.get(bb),d=bf(d,(0==t[q](".")?t.substr(1):t)[y](".")[w],0);if(1==d[w]){b=d[0].$a;break t}var Za=a.get(Qe)||a.get(P);(c=Za)?(1<c[w]&&"/"==c[ma](c[w]-
+1)&&(c=c.substr(0,c[w]-1)),0!=c[q]("/")&&(c="/"+c),Za=c):Za="/";d=bf(d,"/"==Za?1:Za[y]("/")[w],1);b=d[0].$a;break t}}b=void 0}if(b){var Ma=(""+b)[y](".");2==Ma[w]&&/[0-9.]/[ia](Ma)&&(H(114),a.set(Q,Ma[0]),a.set(Vb,Ma[1]),a.set(Sb,!1))}}catch(mb){H(115)}},bf=function(a,b,c){for(var d=[],e=[],f=128,Be=0;Be<a[w];Be++){var k=a[Be];if(k.Ya[c]==b)d[n](k);else if(k.Ya[c]==f)e[n](k);else k.Ya[c]<f&&(e=[k],f=k.Ya[c])}return 0<d[w]?d:e};var U=function(a,b,c){function d(a){return function(b){if((b=b.get(Nc)[a])&&b[w])for(var c=Te(e,a),d=0;d<b[w];d++)b[d].call(e,c)}}var e=this;this.a=new Zc;this.get=function(a){return this.a.get(a)};this.set=function(a,b,c){this.a.set(a,b,c)};this.set(Wa,b||"UA-XXXXX-X");this.set($a,a||"");this.set(Ya,c||"");this.set(ab,m.round((new Date)[g]()/1E3));this.set(P,"/");this.set(cb,63072E6);this.set(eb,15768E6);this.set(db,18E5);this.set(fb,!1);this.set(yb,50);this.set(gb,!1);this.set(hb,!0);this.set(ib,
+!0);this.set(jb,!0);this.set(kb,!0);this.set(lb,!0);this.set(ob,"utm_campaign");this.set(nb,"utm_id");this.set(pb,"gclid");this.set(qb,"utm_source");this.set(rb,"utm_medium");this.set(sb,"utm_term");this.set(tb,"utm_content");this.set(ub,"utm_nooverride");this.set(vb,100);this.set(Dc,1);this.set(Ec,!1);this.set(wb,"/__utm.gif");this.set(xb,1);this.set(Cb,[]);this.set(Fb,[]);this.set(zb,Ld[ja](0));this.set(Ab,[]);this.set(Bb,[]);this.B("auto");this.set(Jb,J.referrer);Ye(this.a);this.set(Nc,{hit:[],
+load:[]});this.a.g("0",Zd);this.a.g("1",Wd);this.a.g("2",Jd);this.a.g("3",cf);this.a.g("4",Sd);this.a.g("5",Xd);this.a.g("6",Kd);this.a.g("7",d("load"));this.a.g("8",ie);this.a.e("A",kd);this.a.e("B",md);this.a.e("C",Ge);this.a.e("D",Jd);this.a.e("E",jd);this.a.e("F",Tc);this.a.e("G",ne);this.a.e("H",Gd);this.a.e("I",nd);this.a.e("J",ud);this.a.e("K",Dd);this.a.e("L",l);this.a.e("M",d("hit"));this.a.e("N",oe);this.a.e("O",pe);0===this.get(ab)&&H(111);this.a.T();this.H=void 0};E=U[x];
+E.m=function(){var a=this.get(Db);a||(a=new yd,this.set(Db,a));return a};E.La=function(a){for(var b in a){var c=a[b];a.hasOwnProperty(b)&&this.set(b,c,!0)}};E.K=function(a){if(this.get(Ec))return!1;var b=this,c=ke(this.a,function(c){b.set(Hb,a,!0);b.t(c)});this.set(Ec,c);return c};E.Fa=function(a){a&&Ca(a)?(H(13),this.set(Hb,a,!0)):"object"===typeof a&&null!==a&&this.La(a);this.H=a=this.get(Hb);this.a.j("page");this.K(a)};
+E.F=function(a,b,c,d,e){if(""==a||!wd(a)||""==b||!wd(b)||void 0!=c&&!wd(c)||void 0!=d&&!xd(d))return!1;this.set(wc,a,!0);this.set(xc,b,!0);this.set(yc,c,!0);this.set(zc,d,!0);this.set(vc,!!e,!0);this.a.j("event");return!0};E.Ha=function(a,b,c,d,e){var f=this.a.b(Dc,0);1*e===e&&(f=e);if(this.a.b(Q,0)%100>=f)return!1;c=1*(""+c);if(""==a||!wd(a)||""==b||!wd(b)||!xd(c)||da(c)||0>c||0>f||100<f||void 0!=d&&(""==d||!wd(d)))return!1;this.t(me(a,b,c,d));return!0};
+E.Ga=function(a,b,c,d){if(!a||!b)return!1;this.set(Ac,a,!0);this.set(Bc,b,!0);this.set(Cc,c||J[z][xa],!0);d&&this.set(Hb,d,!0);this.a.j("social");return!0};E.Ea=function(){this.set(Dc,10);this.K(this.H)};E.Ia=function(){this.a.j("trans")};E.t=function(a){this.set(Eb,a,!0);this.a.j("event")};E.ia=function(a){this.v();var b=this;return{_trackEvent:function(c,d,e){H(91);b.F(a,c,d,e)}}};E.ma=function(a){return this.get(a)};
+E.xa=function(a,b){if(a)if(Ca(a))this.set(a,b);else if("object"==typeof a)for(var c in a)a.hasOwnProperty(c)&&this.set(c,a[c])};E.addEventListener=function(a,b){var c=this.get(Nc)[a];c&&c[n](b)};E.removeEventListener=function(a,b){for(var c=this.get(Nc)[a],d=0;c&&d<c[w];d++)if(c[d]==b){c.splice(d,1);break}};E.qa=function(){return"5.5.1"};E.B=function(a){this.get(hb);a="auto"==a?Ka(J.domain):a&&"-"!=a&&"none"!=a?a[D]():"";this.set(bb,a)};E.va=function(a){this.set(hb,!!a)};
+E.na=function(a,b){return ce(this.a,a,b)};E.link=function(a,b){if(this.a.get(fb)&&a){var c=ce(this.a,a,b);J[z].href=c}};E.ua=function(a,b){this.a.get(fb)&&a&&a.action&&(a.action=ce(this.a,a.action,b))};
+E.za=function(){this.v();var a=this.a,b=J.getElementById?J.getElementById("utmtrans"):J.utmform&&J.utmform.utmtrans?J.utmform.utmtrans:null;if(b&&b[na]){a.set(Cb,[]);for(var b=b[na][y]("UTM:"),c=0;c<b[w];c++){b[c]=Da(b[c]);for(var d=b[c][y](de),e=0;e<d[w];e++)d[e]=Da(d[e]);"T"==d[0]?fe(a,d[1],d[2],d[3],d[4],d[5],d[6],d[7],d[8]):"I"==d[0]&&ge(a,d[1],d[2],d[3],d[4],d[5],d[6])}}};E.$=function(a,b,c,d,e,f,Be,k){return fe(this.a,a,b,c,d,e,f,Be,k)};E.Y=function(a,b,c,d,e,f){return ge(this.a,a,b,c,d,e,f)};
+E.Aa=function(a){de=a||"|"};E.ea=function(){this.set(Cb,[])};E.wa=function(a,b,c,d){var e=this.a;if(0>=a||a>e.get(yb))a=!1;else if(!b||!c||128<b[w]+c[w])a=!1;else{1!=d&&2!=d&&(d=3);var f={};ha(f,b);f.value=c;f.scope=d;e.get(Fb)[a]=f;a=!0}a&&this.a.n();return a};E.ka=function(a){this.a.get(Fb)[a]=void 0;this.a.n()};E.ra=function(a){return(a=this.a.get(Fb)[a])&&1==a[ua]?a[na]:void 0};E.Ca=function(a,b,c){this.m().f(a,b,c)};E.Da=function(a,b,c){this.m().o(a,b,c)};
+E.sa=function(a,b){return this.m().getKey(a,b)};E.ta=function(a,b){return this.m().N(a,b)};E.fa=function(a){this.m().L(a)};E.ga=function(a){this.m().M(a)};E.ja=function(){return new yd};E.W=function(a){a&&this.get(Ab)[n](a[D]())};E.ba=function(){this.set(Ab,[])};E.X=function(a){a&&this.get(Bb)[n](a[D]())};E.ca=function(){this.set(Bb,[])};E.Z=function(a,b,c,d,e){if(a&&b){a=[a,b[D]()][C](":");if(d||e)a=[a,d,e][C](":");d=this.get(zb);d.splice(c?0:d[w],0,a)}};E.da=function(){this.set(zb,[])};
+E.ha=function(a){this.a[ka]();var b=this.get(P),c=be(this.a);this.set(P,a);this.a.n();ae(this.a,c);this.set(P,b)};E.ya=function(a,b){if(0<a&&5>=a&&Ca(b)&&""!=b){var c=this.get(Fc)||[];c[a]=b;this.set(Fc,c)}};E.V=function(a){a=""+a;if(a[oa](/^[A-Za-z0-9]{1,5}$/)){var b=this.get(Ic)||[];b[n](a);this.set(Ic,b)}};E.v=function(){this.a[ka]()};E.Ba=function(a){a&&""!=a&&(this.set(Tb,a),this.a.j("var"))};var ne=function(a){"trans"!==a.get(sc)&&500<=a.b(cc,0)&&a[ta]();if("event"===a.get(sc)){var b=(new Date)[g](),c=a.b(dc,0),d=a.b(Zb,0),c=m[la]((b-(c!=d?c:1E3*c))/1E3*1);0<c&&(a.set(dc,b),a.set(R,m.min(10,a.b(R,0)+c)));0>=a.b(R,0)&&a[ta]()}},pe=function(a){"event"===a.get(sc)&&a.set(R,m.max(0,a.b(R,10)-1))};var qe=function(){var a=[];this.add=function(b,c,d){d&&(c=G(""+c));a[n](b+"="+c)};this.toString=function(){return a[C]("&")}},re=function(a,b){(b||2!=a.get(xb))&&a.Za(cc)},se=function(a,b){b.add("utmwv","5.5.1");b.add("utms",a.get(cc));b.add("utmn",Ea());var c=J[z].hostname;F(c)||b.add("utmhn",c,!0);c=a.get(vb);100!=c&&b.add("utmsp",c,!0)},te=function(a,b){b.add("utmht",(new Date)[g]());b.add("utmac",Da(a.get(Wa)));a.get(Oc)&&b.add("utmxkey",a.get(Oc),!0);a.get(vc)&&b.add("utmni",1);var c=a.get(Ic);
+c&&0<c[w]&&b.add("utmdid",c[C]("."));ff(a,b);!1!==a.get(Xa)&&(a.get(Xa)||M.w)&&b.add("aip",1);M.bb||(M.bb=a.get(Wa));(1<M.ab()||M.bb!=a.get(Wa))&&b.add("utmmt",1);b.add("utmu",od.Xa())},ue=function(a,b){for(var c=a.get(Fc)||[],d=[],e=1;e<c[w];e++)c[e]&&d[n](e+":"+G(c[e][p](/%/g,"%25")[p](/:/g,"%3A")[p](/,/g,"%2C")));d[w]&&b.add("utmpg",d[C](","))},ff=function(a,b){function c(a,b){b&&d[n](a+"="+b+";")}var d=[];c("__utma",cd(a));c("__utmz",hd(a,!1));c("__utmv",fd(a,!0));c("__utmx",be(a));b.add("utmcc",
+d[C]("+"),!0)},ve=function(a,b){a.get(ib)&&(b.add("utmcs",a.get(Qb),!0),b.add("utmsr",a.get(Lb)),a.get(Rb)&&b.add("utmvp",a.get(Rb)),b.add("utmsc",a.get(Mb)),b.add("utmul",a.get(Pb)),b.add("utmje",a.get(Nb)),b.add("utmfl",a.get(Ob),!0))},we=function(a,b){a.get(lb)&&a.get(Ib)&&b.add("utmdt",a.get(Ib),!0);b.add("utmhid",a.get(Kb));b.add("utmr",Pa(a.get(Jb),a.get(P)),!0);b.add("utmp",G(a.get(Hb),!0),!0)},xe=function(a,b){for(var c=a.get(Db),d=a.get(Eb),e=a.get(Fb)||[],f=0;f<e[w];f++){var Be=e[f];Be&&
+(c||(c=new yd),c.f(8,f,Be[r]),c.f(9,f,Be[na]),3!=Be[ua]&&c.f(11,f,""+Be[ua]))}F(a.get(wc))||F(a.get(xc),!0)||(c||(c=new yd),c.f(5,1,a.get(wc)),c.f(5,2,a.get(xc)),e=a.get(yc),void 0!=e&&c.f(5,3,e),e=a.get(zc),void 0!=e&&c.o(5,1,e));c?b.add("utme",c.Qa(d),!0):d&&b.add("utme",d.A(),!0)},ye=function(a,b,c){var d=new qe;re(a,c);se(a,d);d.add("utmt","tran");d.add("utmtid",b.id_,!0);d.add("utmtst",b.affiliation_,!0);d.add("utmtto",b.total_,!0);d.add("utmttx",b.tax_,!0);d.add("utmtsp",b.shipping_,!0);d.add("utmtci",
+b.city_,!0);d.add("utmtrg",b.state_,!0);d.add("utmtco",b.country_,!0);xe(a,d);ve(a,d);we(a,d);(b=a.get(Gb))&&d.add("utmcu",b,!0);c||(ue(a,d),te(a,d));return d[v]()},ze=function(a,b,c){var d=new qe;re(a,c);se(a,d);d.add("utmt","item");d.add("utmtid",b.transId_,!0);d.add("utmipc",b.sku_,!0);d.add("utmipn",b.name_,!0);d.add("utmiva",b.category_,!0);d.add("utmipr",b.price_,!0);d.add("utmiqt",b.quantity_,!0);xe(a,d);ve(a,d);we(a,d);(b=a.get(Gb))&&d.add("utmcu",b,!0);c||(ue(a,d),te(a,d));return d[v]()},
+Ae=function(a,b){var c=a.get(sc);if("page"==c)c=new qe,re(a,b),se(a,c),xe(a,c),ve(a,c),we(a,c),b||(ue(a,c),te(a,c)),c=[c[v]()];else if("event"==c)c=new qe,re(a,b),se(a,c),c.add("utmt","event"),xe(a,c),ve(a,c),we(a,c),b||(ue(a,c),te(a,c)),c=[c[v]()];else if("var"==c)c=new qe,re(a,b),se(a,c),c.add("utmt","var"),!b&&te(a,c),c=[c[v]()];else if("trans"==c)for(var c=[],d=a.get(Cb),e=0;e<d[w];++e){c[n](ye(a,d[e],b));for(var f=d[e].items_,Be=0;Be<f[w];++Be)c[n](ze(a,f[Be],b))}else"social"==c?b?c=[]:(c=new qe,
+re(a,b),se(a,c),c.add("utmt","social"),c.add("utmsn",a.get(Ac),!0),c.add("utmsa",a.get(Bc),!0),c.add("utmsid",a.get(Cc),!0),xe(a,c),ve(a,c),we(a,c),ue(a,c),te(a,c),c=[c[v]()]):"feedback"==c?b?c=[]:(c=new qe,re(a,b),se(a,c),c.add("utmt","feedback"),c.add("utmfbid",a.get(Gc),!0),c.add("utmfbpr",a.get(Hc),!0),xe(a,c),ve(a,c),we(a,c),ue(a,c),te(a,c),c=[c[v]()]):c=[];return c},oe=function(a){var b,c=a.get(xb),d=a.get(uc),e=d&&d.Ua,f=0;if(0==c||2==c){var Be=a.get(wb)+"?";b=Ae(a,!0);for(var k=0,s=b[w];k<
+s;k++)Sa(b[k],e,Be,!0),f++}if(1==c||2==c)for(b=Ae(a),k=0,s=b[w];k<s;k++)try{Sa(b[k],e),f++}catch(t){t&&Ra(t[r],void 0,t.message)}d&&(d.q=f)};var Ne=function(){return"https:"==J[z][A]||M.G?"https://ssl.google-analytics.com":"http://www.google-analytics.com"},Ce=function(a){ha(this,"len");this.message=a+"-8192"},De=function(a){ha(this,"ff2post");this.message=a+"-2036"},Sa=function(a,b,c,d){b=b||Fa;if(d||2036>=a[w])gf(a,b,c);else if(8192>=a[w]){if(0<=W[za].userAgent[q]("Firefox")&&![].reduce)throw new De(a[w]);df(a,b)||ef(a,b)||Ee(a,b)}else throw new Ce(a[w]);},gf=function(a,b,c){c=c||Ne()+"/__utm.gif?";var d=new Image(1,1);d.src=c+a;Ie(d,
+function(){Ie(d,null);Je(d,null);b()});Je(d,function(){Ie(d,null);Je(d,null);b()})},ef=function(a,b){var c;c=W.XDomainRequest;if(!c)return!1;c=new c;c.open("POST",Ne()+"/p/__utm.gif");Je(c,function(){b()});Ie(c,b);c.send(a);return!0},df=function(a,b){var c=W.XMLHttpRequest;if(!c)return!1;var d=new c;if(!("withCredentials"in d))return!1;d.open("POST",Ne()+"/p/__utm.gif",!0);d.withCredentials=!0;d.setRequestHeader("Content-Type","text/plain");d.onreadystatechange=function(){4==d.readyState&&(b(),d=
+null)};d.send(a);return!0},Ee=function(a,b){if(J.body){a=aa(a);try{var c=J[qa]('<iframe name="'+a+'"></iframe>')}catch(d){c=J[qa]("iframe"),ha(c,a)}c.height="0";c.width="0";c.style.display="none";c.style.visibility="hidden";var e=J[z],e=Ne()+"/u/post_iframe.html#"+aa(e[A]+"//"+e[u]+"/favicon.ico"),f=function(){c.src="";c.parentNode&&c.parentNode.removeChild(c)};Ga(W,"beforeunload",f);var Be=!1,k=0,s=function(){if(!Be){try{if(9<k||c.contentWindow[z][u]==J[z][u]){Be=!0;f();Ha(W,"beforeunload",f);b();
+return}}catch(a){}k++;ca(s,200)}};Ga(c,"load",s);J.body.appendChild(c);c.src=e}else We(function(){Ee(a,b)},100)};var $=function(){this.G=this.w=!1;this.C={};this.D=[];this.U=0;this.S=[["www.google-analytics.com","","/plugins/"]];this._gasoCPath=this._gasoDomain=this.bb=void 0;Re();Se()};E=$[x];E.oa=function(a,b){return this.r(a,void 0,b)};E.r=function(a,b,c){b&&H(23);c&&H(67);void 0==b&&(b="~"+M.U++);a=new U(b,a,c);M.C[b]=a;M.D[n](a);return a};E.u=function(a){a=a||"";return M.C[a]||M.r(void 0,a)};E.pa=function(){return M.D[ja](0)};E.ab=function(){return M.D[w]};E.aa=function(){this.w=!0};
+E.la=function(){this.G=!0};var Fe=function(a){if("prerender"==J.visibilityState)return!1;a();return!0};var M=new $;var hf=W._gat;hf&&Ba(hf._getTracker)?M=hf:W._gat=M;var Z=new Y;(function(a){if(!Fe(a)){H(123);var b=!1,c=function(){!b&&Fe(a)&&(b=!0,Ha(J,"visibilitychange",c))};Ga(J,"visibilitychange",c)}})(function(){var a=W._gaq,b=!1;if(a&&Ba(a[n])&&(b="[object Array]"==Object[x][v].call(Object(a)),!b)){Z=a;return}W._gaq=Z;b&&Z[n][ya](Z,a)});function Yc(a){var b=1,c=0,d;if(a)for(b=0,d=a[w]-1;0<=d;d--)c=a.charCodeAt(d),b=(b<<6&268435455)+c+(c<<14),c=b&266338304,b=0!=c?b^c>>21:b;return b};})();
+_text/javascript_%http://www.google-analytics.com/ga.jsO±bplist00‘rsX$versionX$objectsY$archiverT$top Ü†Ø%"()012PQRSTUVWXYZ[\]^_`abcdefghklmU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ Ä"Ä$ÄÄ#Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_%http://www.google-analytics.com/ga.js“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω‰8q»”345BOWNS.keysZNS.objects¨6789:;<=>?@AÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄ¨CDEFGHIJKLMNÄÄÄÄÄÄÄÄÄÄÄÄ Ä!\Content-TypeSAge_Content-EncodingVServer_Alternate-ProtocolWExpires]Cache-ControlTDate^Content-Length_X-Content-Type-OptionsTVary]Last-Modified_text/javascriptT3642TgzipVGolfe2W80:quic_Sun, 18 May 2014 02:54:34 GMT_public, max-age=43200_Sat, 17 May 2014 14:54:34 GMTU15790Wnosniff_Accept-Encoding_Thu, 08 May 2014 18:54:47 GMT“*+ij\NSDictionary¢i/ˇˇˇˇˇˇˇˇ_text/javascript“*+no_NSHTTPURLResponse£pq/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—tu_WebResourceResponseÄ    # - 2 7 _ e Ä É á ä ç ê î ó û ° § ß ™ ≠ Ø ± ≥ µ ∑ π ª Ω ø ¡ √ ≈ Ã ‘ ‡ ‚ ‰ Ê'-06?HJQYdqsuwy{}ÅÉÖáâñòöúû†¢§¶®™¨Æ∞Ω¡‘€¯38FX]biqë©…œ◊È	'9>RVjxäç£             v              •‘	OŸ/* 
+Allow two "div"s to have equal heigth, no matter how long or short their contents are.
+*/
+
+matchColumns=function(){ 
+
+     var divs,contDivs,maxHeight,divHeight,d; 
+	
+     // get all <div> elements in the document 
+
+     divs=document.getElementsByTagName('div'); 
+
+     contDivs=[]; 
+
+     // initialize maximum height value 
+
+     maxHeight=0; 
+
+     // iterate over all <div> elements in the document 
+
+     for(var i=0;i<divs.length;i++){ 
+
+          // make collection with <div> elements with class attribute 'container' 
+
+          if(/\bcolumn\b/.test(divs[i].className)){ 
+
+                d=divs[i]; 
+
+                contDivs[contDivs.length]=d; 
+
+                // determine height for <div> element 
+
+                if(d.offsetHeight){ 
+
+                     divHeight=d.offsetHeight; 					
+
+                } 
+
+                else if(d.style.pixelHeight){ 
+
+                     divHeight=d.style.pixelHeight;					 
+
+                } 
+
+                // calculate maximum height 
+
+                maxHeight=Math.max(maxHeight,divHeight); 
+
+          } 
+
+     } 
+
+     // assign maximum height value to all of container <div> elements 
+
+     for(var i=0;i<contDivs.length;i++){ 
+
+          contDivs[i].style.height=maxHeight + "px"; 
+
+     } 
+
+} 
+
+// Runs the script when page loads 
+
+window.onload=function(){ 
+
+     if(document.getElementsByTagName){ 
+
+          matchColumns();			 
+
+     } 
+
+} 
+
+
+_application/javascript_1http://www.un.org/javascripts/matching_columns.jsO—bplist00‘jkX$versionX$objectsY$archiverT$top Ü†Ø!"()012LMNOPQRSTUVWXYZ[\]^_`cdeU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ ÄÄ ÄÄÄ”#$%&'WNS.base[NS.relativeÄ ÄÄ_1http://www.un.org/javascripts/matching_columns.js“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω·!Íº»”345@KWNS.keysZNS.objects™6789:;<=>?Ä	Ä
+ÄÄÄÄÄÄÄÄ™ABCDEFGHIJÄÄÄÄÄÄÄÄÄÄÄVServer\Content-TypeZSet-Cookie]Last-ModifiedTEtag]Accept-RangesTDate^Content-LengthZKeep-AliveZConnectionVApache_application/javascript_NSC_t_f_xg-bqbdif_iuuq_mc_wt=ffffffff09f23d4345525d5f4f58455e445a4a423660;expires=Sat, 17-May-2014 16:10:13 GMT;path=/;httponly_Thu, 29 Dec 2011 17:26:42 GMT_"5d9-4b53e6b70d8e0"Ubytes_Sat, 17 May 2014 15:55:13 GMTT1497_timeout=5, max=93ZKeep-Alive“*+ab\NSDictionary¢a/Ÿ_application/javascript“*+fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—lm_WebResourceResponseÄ    # - 2 7 [ a |  É Ü â å ê ì ö ù † £ ¶ © ´ ≠ Ø ± ≥ µ ∑ π ª Ω ø ¡ » – ‹ ﬁ ‡ ‚&/58>GPRYalwy{}ÅÉÖáâãñòöúû†¢§¶®™¨≥¿ÀŸﬁÏÒ 6∏ÿÓÙ-8=JMPinÇÜö®∫Ω”             n              ’‘	Ox/* 
+GLOBAL STYLE SHEET CONSISTS OF THE FOLLOWING: 
+ 
+"reset" styles which strip the styles of default settings,  such as padding,  bold,  etc.
+"base" styles reapply the properties.
+"global" styles are styles that are common on all html pages.
+*/
+
+/***************************************************************
+ ************************** RESET ******************************
+ ***************************************************************/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { 
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset, img { 
+	border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before, 
+q:after {
+	content: '';
+}
+
+abbr, acronym {
+	border: 0;
+}
+
+/* *** latin conventions *** */
+
+caption, th {
+	text-align: left;
+}
+
+
+/***************************************************************
+ ************************** BASE *******************************
+ ***************************************************************/
+
+/*
+p {
+	font-size: 82%;
+	color: #333333;
+}
+*/
+
+h1,  h2,  h3 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight: bold; 
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+blockquote, ul, ol, dl {
+	margin: 1em;
+	/*font-size: 82%;*/
+}
+
+th, td {
+	border: 1px solid #000;
+	padding: .5em;
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+}
+
+caption {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+p, fieldset, table {
+	margin-bottom: 1em;
+}
+
+/* *** latin conventions *** */
+
+h1 {
+	font-size: 138.5%;
+}
+
+h2 {
+	font-size: 123.1%;
+}
+
+h3 {
+	font-size: 108%;
+}
+
+em {
+	font-style: italic;
+}
+
+ol, ul, dl {
+	margin-left: .5em;
+}
+
+ol li {
+	list-style: decimal outside;	
+}
+
+ul li {
+	list-style: disc outside;
+}
+
+dl dd {
+	margin-left: 1em;
+}
+
+
+/***************************************************************
+ ******** Global CSS: Styles common on all html pages **********
+ ***************************************************************/
+
+html { 
+	min-height: 100%;
+	margin-bottom: 1px; 
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif; /* *** latin conventions *** */
+	font-size: 81.3%;
+}
+
+#main {
+	width: 64em;
+	background-color: #FFF;
+	border: 1px solid #333;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Skip Links */
+ 
+#skiplink {
+	width: 20em;
+	clear: both;
+	font-size: .9em;
+	display: inline;
+}
+
+#skiplink ul {
+	margin: 0;
+}
+
+#skiplink  ul li {
+	display: inline;
+}
+
+#skiplink a:focus, #skiplink a:active {
+	color: #fff;
+	background-color: #000;
+}
+
+/* Branding Bar */
+
+#brandbar {
+	height: 1.9em;
+	background-color: #C2C6CF;
+	background-image: url(../common/images/brandbarbkgd.jpg);
+	background-repeat: repeat-x;
+}
+
+#brandbar .unicon { /* *** latin conventions *** */
+	padding-top: .2em;
+	padding-right: .4em;
+}
+
+#brandbar .welcome { /* *** latin conventions *** */
+	color: #333;
+	display: block;
+	float: left;
+	font-size: .9em;
+	padding-top: .5em;
+}
+
+#brandbar .welcome a {
+	text-decoration: none;
+	color: #1e1e1e;
+}
+
+#brandbar a:hover {
+	text-decoration: underline;
+	color: #1e1e1e;
+}
+
+#brandbar #searchfrm { /* *** latin conventions *** */
+	float: right;
+	text-align: right;
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+#brandbar #searchfrm label { /*hidden*/
+	position: absolute;
+	overflow: hidden;
+	font-size: 88%;
+	top: -500px;
+}
+
+#brandbar #searchfrm .button {
+	font-size: 78%;
+}
+
+#brandbar #searchfrm .textbox {
+	font-size: 90%;
+	width: 12em;
+}
+
+/* Languages Bar */
+
+#languages {
+	height: 1.8em;
+	font-size: .9em;
+}
+
+#languages ul {
+	text-align: right; /* *** latin convention *** */
+	margin: 0;
+}
+
+#languages ul li {
+	display: inline;
+	padding-right: 1em; /* *** latin convention *** */
+}
+
+#languages ul li#arabic {
+	direction: rtl; /* *** latin convention *** */
+	font-size: 1.15em;
+	font-family: Tahoma, Arial, "Arabic Transparent";
+}
+
+#languages ul li#chinese {
+	font-size: .95em;
+}
+
+/* Top Banner */
+
+#topbanner {
+	clear: none;
+	width: 100%;
+	float: left;  /* *** latin convention *** */
+	height: 124px;
+}
+
+#topbanner #hiddentitle, #topbanner #hiddentitle span {
+	background-repeat: no-repeat;
+	margin-bottom: -90px;
+}
+
+#topbanner h1 {
+	text-align: left;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+#topbanner  h1 span {
+	display: block;
+	position: relative;
+	z-index: 1;	
+}
+
+
+/* Footer */
+
+#footer {
+	text-align: center;
+	clear: both;
+	font-size: .9em;
+	height: 2em;
+	padding-top: .5em;
+}
+
+#footer ul li  {
+	display:inline;
+	padding-left:0.2em;
+}
+
+#footer2 ul li  {
+	display:inline;
+}
+Xtext/css_#http://www.un.org/css/global_en.cssObplist00‘vwX$versionX$objectsY$archiverT$top Ü†Ø'"()012RSTUVWXYZ[\]^_`abcdefghijklopqU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ Ä$Ä&ÄÄ%Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_#http://www.un.org/css/global_en.css“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω·-Â»”345CQWNS.keysZNS.objects≠6789:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄ≠DEFGHIJKLMNOPÄÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#\Content-TypeZKeep-AliveZSet-CookieVServer^ntCoent-Length_Content-Encoding]Cache-ControlTDate^Content-LengthZConnection]Accept-RangesTEtag]Last-ModifiedXtext/css_timeout=5, max=89_NSC_t_f_xg-bqbdif_iuuq_mc_wt=ffffffff09f23d4345525d5f4f58455e445a4a423660;expires=Sat, 17-May-2014 16:10:13 GMT;path=/;httponlyVApacheT4984TgzipWprivate_Sat, 17 May 2014 15:55:13 GMTT1599ZKeep-AliveUbytes_"1378-4eff62e158c57"_Tue, 14 Jan 2014 23:02:01 GMT“*+mn\NSDictionary¢m/xXtext/css“*+rs_NSHTTPURLResponse£tu/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—xy_WebResourceResponseÄ    # - 2 7 a g Ç Ö â å è í ñ ô † £ ¶ © ¨ Ø ± ≥ µ ∑ π ª Ω ø ¡ √ ≈ « Œ ÷ ‚ ‰ Ê Ë'-06?HJQYdrtvxz|~ÄÇÑÜàäåöúû†¢§¶®™¨Æ∞≤¥∂√ŒŸ‡Ô$/=BPYmÔˆ˚ (-8>UuzáäçñõØ≥«’ÁÍ              z              ‘	 !"Ov/* THIS STYLE SHEET IS COMMON AMONG ALL NON_THEMATIC PAGES. */
+
+/* THIS WAS THE _DEV VERSION. It was renamed without the _dev on 19 02 09 by Robert and Elimira*/
+/* LANGUAGE BAR */
+
+#languages {
+	background-color: #E1E3F8;
+}
+#languages ul li#english  {
+	color: #039;
+}	
+#languages ul li a:link, #languages ul li a:visited, #languages ul li a:hover, #languages ul li a:active {
+	color:#333;
+	text-decoration:none;
+}
+#languages ul li a:hover { color: #0958FF; }
+/* Banner Height */
+
+#topbanner #hiddentitle, #hiddentitle span {
+	height: 124px;}
+
+/* MAIN NAVIGATION (left): navigation links */
+
+body
+{color:#333}
+
+#mainnav {
+	float: left;
+	width: 19%;
+	background-color: #EBEEF5;
+	padding-bottom:1em;
+}
+#mainnav .theme {
+	font-weight: bold;
+}
+
+#mainnav h2 {
+	background-color: #C7CFE2;
+	font-weight: bold;
+	color: #011E49;
+	margin: 0px;
+	padding-top: 0.2em;
+	padding-right: 0.4em;
+	padding-bottom: 0.2em;
+	padding-left: 0.7em;
+	font-size: 1em;
+}
+#mainnav ul {
+	margin: 0px;
+}
+
+#mainnav ul li {
+	list-style-type: none;
+}
+
+#mainnav ul li a {
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #B8C2DC;
+	font-size: 0.9em;
+	padding-right: 0.7em;
+	padding-bottom: 0.4em;
+	padding-left: 0.7em;
+	padding-top: 0.3em;
+}	
+	
+#mainnav ul li a:hover  {
+	background-color: #D6DEF5;
+}
+#mainnav ul li a:visited {
+	color: #00275B;
+}
+#mainnav  a:link, #mainnav  a:active    {
+	color:#00275B;
+}
+
+.pdfnote {
+	text-align: left;
+	display: block;
+	font-size: 85%;
+	padding-left: 0.7em;
+	color:#333333;
+}
+
+
+/* PAGE CONTENTS */
+
+#content {
+	width: 79%;
+	float: left;
+	margin: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 1em;
+	padding-left: 0.7em;
+}
+
+#content h2 {
+	color: #02327A;
+	padding-bottom: .4em;
+	}
+#content h2.alphabet {
+font-size: 1em;
+}
+	
+#content  p.toppara {
+	padding-top: 2em;
+}
+
+#content a:link, #content a:visited, #content a:hover, #content a:active {
+	color:#02327A;
+	text-decoration: underline;
+}
+
+#content ul li {
+	list-style-type: none;
+}
+#content ul ul li  {
+/*	font-size: 120%; */
+}
+
+#content ul ul ul li {
+/*	font-size: 140%; */
+}
+
+/* BOXED TEXT */
+
+#content #boxtext {
+	display: block;
+	background-color: #EBEEF5;
+	border: 1px dotted #6666FF;
+	padding-bottom: 0.3em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	float: left;
+	width: 98%;
+}
+
+#content #boxtext h2 {
+	padding-bottom: 0.2em;
+	background-color: #D9DEEC;
+	display: block;
+	padding-left: 0.5em;
+	border-style: none;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0.6em;
+	margin-left: 0px;
+	padding-top: .2em;
+}
+#content #boxtext p {
+	padding-right: 0.7em;
+	padding-left: 0.7em;
+	color: #10215A;
+}
+#content #boxtext .top {
+	padding-top: 0.6em;
+}
+
+
+
+/* FOOTER BAR */
+#footer {
+	height: 1.9em;
+	background-color: #0D317D;
+	color: #E1E3F8;		
+}
+
+#footer ul {
+	margin-top: 0em;
+}
+#footer ul li  {
+	display: inline;
+}
+#footer ul li a {
+	color: #E1E3F8;
+	text-decoration: none;
+}
+#footer ul li a:visited {	
+	
+	color: #E1E3F8;
+	text-decoration: none;
+}
+#footer ul li a:hover {	
+	text-decoration: underline;
+	color: #999BBF;
+	
+}
+Xtext/css_,http://www.un.org/en/css/common_nontheme.cssObplist00‘vwX$versionX$objectsY$archiverT$top Ü†Ø'"()012RSTUVWXYZ[\]^_`abcdefghijklopqU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ Ä$Ä&ÄÄ%Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_,http://www.un.org/en/css/common_nontheme.css“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω·.Œ»”345CQWNS.keysZNS.objects≠6789:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄ≠DEFGHIJKLMNOPÄÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#\Content-TypeZKeep-AliveZSet-CookieVServer_Content-Encoding^Cteonnt-Length]Cache-ControlTDate^Content-LengthZConnection]Accept-RangesTEtag]Last-ModifiedXtext/css_timeout=5, max=100_NSC_t_f_xg-bqbdif_iuuq_mc_wt=ffffffff09f23d4345525d5f4f58455e445a4a423660;expires=Sat, 17-May-2014 16:10:13 GMT;path=/;httponlyVApacheTgzipT3190Wprivate_Sat, 17 May 2014 15:55:13 GMTT1123ZKeep-AliveUbytes_"c76-4b816a6bc6b42"_Fri, 03 Feb 2012 22:15:33 GMT“*+mn\NSDictionary¢m/vXtext/css“*+rs_NSHTTPURLResponse£tu/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—xy_WebResourceResponseÄ    # - 2 7 a g Ç Ö â å è í ñ ô † £ ¶ © ¨ Ø ± ≥ µ ∑ π ª Ω ø ¡ √ ≈ « Œ ÷ ‚ ‰ Ê Ë'069?HQSZbm{}ÅÉÖáâãçèëìï£•ß©´≠Ø±≥µ∑πªΩøÃ◊‚È¸-8FKYbw˘ 
+27BH^~Éêìñü§∏º–ﬁÛ	             z              ‘	$%&'O/* Style sheet for UDHR */
+
+@media print {
+* { background: #fff; color: #000; }
+html { font: 100%/1.5 georgia, serif; }
+
+div#content {float:none}
+
+div#udhr {float:none}
+
+div#topbanner {float:none}
+
+div#mainnav {display:none;width:0%; float:none}
+.column {float:none}
+
+body {float:none}
+}
+
+html {
+overflow-y: scroll; /* IE */
+min-height: 100%; margin-bottom: 1px;  /* FIREFOX */
+}
+
+body {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	background-color: #872A09;
+	background-repeat: repeat-x;
+	background-image: url(images/grad.jpg);
+}
+	
+/* MAIN CONTAINER - HOMEPAGE*/
+
+#main {
+	width: 60em;
+	margin: 0px auto;
+	background-color: #FFFFFF;
+	border: 1px solid #300906;
+}	
+
+ /* SKIP TO NAVIGATION AND SKIP TO TEXT*/
+ 
+#skiplink {
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+	font-size: 10px;
+	display: inline;
+	color: #C9600D;
+}
+#skiplink a {
+	color:#C9600D;
+}
+#skiplink a:focus, div#skiplink a:active
+{
+	color:#F9F1E4;
+	background-color: #300906;
+}
+
+/* TOP BANNER */
+
+#topbanner {
+	clear: none;
+	background-image: url(images/grad.jpg);
+	background-repeat: repeat-x;
+	height:147px;
+	
+}
+
+
+
+#hiddentitle, #hiddentitle span {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(images/banner.jpg);
+	background-repeat: no-repeat;
+	height: 147px;
+}
+
+#hiddentitle span {
+	margin-bottom: -75px;
+}
+
+h1 {
+	font-size: 15px;
+	padding:0;
+	margin:0;
+	text-align: center;
+	color: #300906;
+}
+h1 span {
+	display: block;
+	position: relative;
+	z-index: 1;	
+}
+
+ /* LEFT MENU NAVIGATION LINKS - HOMEPAGE*/
+#clear {
+	width: 176px;
+	height: 6px;
+	background-color: #E1C893;
+	padding-top: 1px;
+}
+
+#horiznav  {
+	float: left;
+	width: 100%;
+	background-color: #EE9408;
+}
+
+#horiznav ul {	
+	margin: 0;
+	padding: 0;
+}
+
+#horiznav ul li {
+list-style-type: none;
+float: left;
+margin: 0;
+}
+
+#horiznav ul li a {
+font-weight: bold;
+color: #333333;
+text-decoration: none;
+display: block;
+text-align: center;
+border-right: 1px solid #e5b64b;
+/*padding: 3px 30px; ORIGINAL*/
+padding: 3px 47px;
+border-bottom: 2px solid #EE9408;
+}
+
+#horiznav ul li.first a {
+width: 140px;
+padding: 3px 0;
+}
+#horiznav ul li.last a{
+width: 138px;
+padding: 3px 0;
+border: none;
+}
+
+#horiznav ul li a:hover {
+background-color: #FCE7A4;
+text-decoration: none;
+border-bottom: 2px solid #660000;
+}
+
+#mainnav  {
+	float: left;
+	width: 18%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FBCC60;
+	padding-bottom: 20px;
+	clear: left;
+}
+
+#mainnav ul {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-weight: normal;
+	list-style-type: none;
+}
+#mainnav ul li.first {
+	margin-top: 6px;
+}
+
+#mainnav.column a   {
+	margin:0;
+	padding: 4px 10px 4px 14px;
+	color:#000000;
+	text-decoration:none;
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e5b64b;
+}
+
+#mainnav.column ul li a:visited{
+color:#611f09;
+}
+
+#mainnav.column ul li a:hover{
+background-color:#FFFFFF;
+border-left-color:#ee940a;
+border-left-style:solid;
+border-left-width:4px;
+}
+
+
+/* Languages */
+
+#languages{
+background-color:#df8b07;
+}
+
+#main #languages ul li {
+color:#FFFFFF;
+}
+#main #languages ul li a{
+color:#7c090c;
+}
+
+
+
+/* PAGE CONTENT ATTRIBUTES */
+
+#content{
+width:80%;
+}
+#content2{
+width: 94%;
+margin: 0 auto;
+_padding: 0 20px;
+}
+#content h2, #content2 h2 {
+	color: #7F0D0D;	
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+	padding-top: 1em;
+}
+
+#content h3, #content2 h3 {
+	color: #660000;	
+	font-weight: bold;
+
+}
+	
+#content a:link, #content2 a:link {
+	color: #A80E13;
+}
+#content a:visited, #content2 a:visited {
+	color: #513403;
+	
+}
+#content a:hover, #content2 a:hover{ 
+	color: #660000;
+}
+#content a:active,  #content2 a:active {
+	color: #513403;
+}
+
+
+#content ul li,  #content2 ul li{
+	
+	color: #300906;
+	list-style-type:disc;
+	padding-top: 0;
+	padding-right: 0%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	list-style-position:inside;
+}
+
+.photo {
+	width: auto;
+	float: left;
+	margin: 0 0;
+	margin-left: none;
+	padding-top: 0;
+}
+
+.photoright350 {
+	width: 350px;
+	float: right;
+	margin-left: 4em;
+	margin-right: 2em;
+	margin-bottom: 0;
+	padding-top: 0;
+}
+
+.photocredit {
+	text-align:left;
+	padding: 5px 0;
+	color: #8B2D0B;
+	font-size: 94%;
+}
+
+
+/* BOX QUOTE */
+blockquote {
+	display: block;
+	left: 300px;
+	background-color: #FCE7A4;
+	padding: 2%;
+	margin: 2%;
+	border-top-width: 5px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #EE9408;
+	border-bottom-color: #EE9408;
+	
+}
+blockquote p {
+	margin: 0px;
+	padding: 1% 2% 0 1%;
+	line-height: 150%;
+	font-size: 0.8em;
+}
+
+blockquote .credit {
+	text-align: right;
+	font-style: oblique;
+	display: block;
+	padding-right: 2%;
+	padding-bottom: 3px;
+	font-size: 0.8em;
+	margin-top: 12px;
+}
+
+.totop p a{
+float:right;
+width:100%;
+padding-right:3px;
+clear:both;
+}
+
+
+#footer {
+	background-color: #660000;
+}
+
+#textbox {
+	display: block;
+	left: 300px;
+	background-color: #fae0b6;
+	padding: 2%;
+	margin: 0px;
+	border-top-width: 5px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #EE9408;
+	border-bottom-color: #EE9408;
+}
+
+#textbox h3 {
+	color: #660000;
+	font-size: 0.75em;
+	padding: 0 0 1px;
+	font-weight: bold;
+	border-bottom-width: 1px;
+}
+
+#textbox p {
+	margin: 0px;
+	padding: 0 1% 0 1%;
+	line-height: 150%;
+	font-size: 0.8em;
+}
+
+#textbox .credit {
+	text-align: right;
+	font-style: oblique;
+	display: block;
+	padding-right: 2%;
+	padding-bottom: 3px;
+	font-size: 0.8em;
+	margin-top: 12px;
+}
+
+.namebox {
+	display: block;
+	background-color: #F4D17F;
+	padding: 2%;
+	margin-left: 10px;
+	border-top-width: 5px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #872A09;
+	border-bottom-color: #872A09;
+	height: 464px;
+	float: left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 190px;
+}Xtext/css_.http://www.un.org/en/documents/udhr/styles.cssO'bplist00‘vwX$versionX$objectsY$archiverT$top Ü†Ø'"()012RSTUVWXYZ[\]^_`abcdefghijklopqU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ Ä$Ä&ÄÄ%Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_.http://www.un.org/en/documents/udhr/styles.css“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω‰ùN»”345CQWNS.keysZNS.objects≠6789:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄ≠DEFGHIJKLMNOPÄÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#\Content-TypeZKeep-AliveZSet-CookieVServer^ntCoent-Length_Content-Encoding]Cache-ControlTDate^Content-LengthZConnection]Accept-RangesTEtag]Last-ModifiedXtext/css_timeout=5, max=95_NSC_t_f_xg-bqbdif_iuuq_mc_wt=ffffffff09f23d4345525d5f4f58455e445a4a423660;expires=Sat, 17-May-2014 16:10:16 GMT;path=/;httponlyVApacheT6163TgzipWprivate_Sat, 17 May 2014 15:55:16 GMTT1870ZKeep-AliveUbytes_"1813-4e5a6b099231e"_Thu, 05 Sep 2013 17:59:57 GMT“*+mn\NSDictionary¢m/ˇˇˇˇˇˇˇˇXtext/css“*+rs_NSHTTPURLResponse£tu/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—xy_WebResourceResponseÄ    # - 2 7 a g Ç Ö â å è í ñ ô † £ ¶ © ¨ Ø ± ≥ µ ∑ π ª Ω ø ¡ √ ≈ « Œ ÷ ‚ ‰ Ê Ë)28;AJSU\do}ÅÉÖáâãçèëìïó•ß©´≠Ø±≥µ∑πªΩø¡ŒŸ‰Î˙ /:HM[dx˙38CI`ÄÖíïûß¨¿ƒÿÊ¯˚             z              ‘	)*+,OÛ/* Style sheet for media: print */
+
+/* EXAMPLE */
+
+*
+{background-color:#FFF !important;
+background:none !important;
+float:none !important;}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	margin-top: 0;
+	font-size: 12pt;
+	color: #000000;}
+
+acronym, abbr {border-bottom: none;}
+ 
+#main {
+	width: 95%;
+	margin: 0 auto;
+	border: none;}
+
+#topbanner {
+	width: 100%;
+	border-bottom: #333333 1px solid;
+	height:auto;
+	padding-bottom:10pt}
+	
+#topbanner #hiddentitle {
+	height: auto;
+	margin: 0;
+	padding: 0;}
+	
+#topbanner h1 {
+	font-size: 150%;
+	padding: 0;
+	margin: 12px;
+	text-align: center;}
+	
+#skiplink, #brandbar, #languages, #topbanner h1 span, #mainnav, #footer, #thematicnav, #resources {
+	display: none !important;}
+
+#content {
+	width: 100%;
+	margin: 0;
+	padding: 12px;}
+
+#topbanner h1, #content h2, #content h3, #content h4 {color: #000000;}
+	
+#content a:link {color:#666666; text-decoration:underline;}
+
+#content ul li {list-style-type:circle}
+
+
+Xtext/css_http://www.un.org/css/print.cssObplist00‘vwX$versionX$objectsY$archiverT$top Ü†Ø'"()012RSTUVWXYZ[\]^_`abcdefghijklopqU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ Ä$Ä&ÄÄ%Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_http://www.un.org/css/print.css“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω·.å&»”345CQWNS.keysZNS.objects≠6789:;<=>?@ABÄ	Ä
+ÄÄÄÄÄÄÄÄÄÄÄ≠DEFGHIJKLMNOPÄÄÄÄÄÄÄÄÄÄÄ Ä!Ä"Ä#\Content-TypeZKeep-AliveZSet-CookieVServer_Content-Encoding^Cteonnt-Length]Cache-ControlTDate^Content-LengthZConnection]Accept-RangesTEtag]Last-ModifiedXtext/css_timeout=5, max=99_NSC_t_f_xg-bqbdif_iuuq_mc_wt=ffffffff09f23d4345525d5f4f58455e445a4a423660;expires=Sat, 17-May-2014 16:10:13 GMT;path=/;httponlyVApacheTgzipT1011Wprivate_Sat, 17 May 2014 15:55:13 GMTS512ZKeep-AliveUbytes_"3f3-4c2335fd8b1a9"_Mon, 11 Jun 2012 14:43:34 GMT“*+mn\NSDictionary¢m/ÛXtext/css“*+rs_NSHTTPURLResponse£tu/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—xy_WebResourceResponseÄ    # - 2 7 a g Ç Ö â å è í ñ ô † £ ¶ © ¨ Ø ± ≥ µ ∑ π ª Ω ø ¡ √ ≈ « Œ ÷ ‚ ‰ Ê Ë
+#),2;DFMU`nprtvxz|~ÄÇÑÜàñòöúû†¢§¶®™¨Æ∞≤ø ’‹Ô˛ +9>LUiÎÚ˜¸$(39OotÅÑáêï©≠¡œ·‰˙             z              ¸‘	./01OÎˇÿˇ‡ JFIF   d d  ˇÏ Ducky     <  ˇÓ Adobe d¿   ˇ€ Ñ 		
+
+
+
+ˇ¿    ˇƒ ê                                       1!3"b4Aqë°Ç¢¬#5U7          !Q1AëaqÅ"R#±—·2BÇ‚3SDˇ⁄   ? ∫Æ™â÷’Ã‚ß€Fëå@Àºj∫'P¿ŸNSØúÆQ¿ 7V⁄4®ó4:“ˆÒYz¶j\Ô)Ì‹R&u5xÚIÑZÑpæîbY8Ùà¶+4=‚U'fPÃ9r_ü`àñ‡±ªO+KãLîıÒRdÎø#mÚßúˆØ‚>fÔˆ‡Øﬂ8utDxÕ«©∞ΩŒ>õ*¸Ï∏+eØì	º‹mÍRæ$∑zJ≤NE"$‡%igPd@∂ADú,®úä*WJ°Ú≤Î…õhmS£™¿¿”tµ∂:=â’+±ÜsEÿÑ≠s#Qƒº$îx-	J¥`¡¯;GH%Y∏ë,J∏"©J$P@°zG1oÏ√©n=ÍÖƒ@˚§_√“]vxÇ.^ò˛pÂ›4{ƒz N%æï¡+¨&‚54∞ÎXπö|ÏÒÓ˝)ô¨íh›ä/~æé=î0«~Ø™–iˆŒgÔ≠Í8ﬁ_jÕX´D/Í#„Å|›¥ﬁÔ≈iæ%“~ç∞_ˇŸZimage/jpeg_&http://www.un.org/en/images/unicon.jpgOõbplist00‘ijX$versionX$objectsY$archiverT$top Ü†Ø "()012LMNOPQRSTUVWXYZ[\]^_`cdU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ ÄÄÄÄÄ”#$%&'WNS.base[NS.relativeÄ ÄÄ_&http://www.un.org/en/images/unicon.jpg“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#Aπ'Ω·=Tv»”345@KWNS.keysZNS.objects™6789:;<=>?Ä	Ä
+ÄÄÄÄÄÄÄÄ™ACDEFGHIJÄÄÄÄÄÄÄÄÄÄÄVServer\Content-TypeZSet-Cookie]Last-ModifiedTEtag]Accept-RangesTDate^Content-LengthZKeep-AliveZConnectionVApacheZimage/jpeg_NSC_t_f_xg-bqbdif_iuuq_mc_wt=ffffffff09f23d4345525d5f4f58455e445a4a423660;expires=Sat, 17-May-2014 16:10:14 GMT;path=/;httponly_Fri, 03 Feb 2012 16:07:50 GMT_"2eb-4b81183adc1a1"Ubytes_Sat, 17 May 2014 15:55:14 GMTS747_timeout=5, max=91ZKeep-Alive“*+ab\NSDictionary¢a/Î“*+ef_NSHTTPURLResponse£gh/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—kl_WebResourceResponseÄ    # - 2 7 Z ` { ~ Ç Ö à ã è í ô ú ü ¢ • ® ™ ¨ Æ ∞ ≤ ¥ ∂ ∏ ∫ º æ ¿ « œ € › ﬂ ·
+#),2;DFMU`kmoqsuwy{}äåéêíîñòöúû†ß¥øÕ“‡ÂÙˇ
+ûæ‘⁄˙˛"/25:NRftÜâü             m              °’345678_WebResourceFrameNameO^≤<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>The Universal Declaration of Human Rights</title>
+<meta name="dc.description" content="This is the United Nations site for The Universal Declaration of Human Rights. Here you will find information and links.">
+<meta name="keywords" content="The Universal Declaration of Human Rights, UDHR, Declaration of Human Rights, Human Rights Declaration, Human Rights Charter, The Un and Human Rights">
+<meta name="dc.title" content="The Universal Declaration of Human Rights">
+<meta name="dc.subject" content="The Universal Declaration of Human Rights, UDHR, Declaration of Human Rights, Human Rights Declaration, Human Rights Charter, The Un and Human Rights">
+<meta name="dc.language" content="EN">
+<script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-LQCS"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script language="javascript" src="/javascripts/matching_columns.js" type="text/javascript"></script>
+<link href="/css/global_en.css" rel="stylesheet" type="text/css">
+<link href="/en/css/common_nontheme.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="/css/print.css" rel="stylesheet" type="text/css" media="print">
+<style type="text/css">
+<!--
+#mainnav ul li#home a     {
+	background-color: #CAD8ED;
+	color: #001E44;
+	background-image: url(images/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 7px;
+}
+
+#horiznav ul li#home a {
+background-color: #FCE7A4;
+text-decoration: none;
+border-bottom: 2px solid #660000;
+}
+-->
+
+</style>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4803886-1']);
+  _gaq.push(['_setDomainName', 'un.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-LQCS');</script>
+<!-- End Google Tag Manager -->
+<a name="atop"></a>
+<div id="skiplink">
+  <ul>
+    <li><a href="#mainnav">Skip to main navigation</a> </li>
+    <li><a href="#content">Skip to content</a></li>
+  </ul>
+</div>
+<!-- end div dkiplink -->
+<div id="main">
+  <div id="brandbar">
+    
+<img src="/en/images/unicon.jpg" height="18" width="21" alt="" class="unicon" align="left">
+<span class="welcome"><a href="/en/index.shtml">Welcome to the United Nations. It's your world.</a></span>
+<div>
+	<form id="searchfrm" name="gs" method="get" action="http://search.un.org/search">
+    <input type="hidden" name="ie" value="utf8">
+    <input type="hidden" name="site" value="un_org">
+    <input type="hidden" name="output" value="xml_no_dtd">
+    <input type="hidden" name="client" value="UN_Website_en">
+    <input type="hidden" name="num" value="10">
+	<input name="lr" type="hidden" value="lang_en">
+    <input type="hidden" name="proxystylesheet" id="proxystylesheet" value="UN_Website_en">
+    <input type="hidden" name="oe" value="utf8">
+    <label for="search">UN Search</label>
+    <input class="textbox" type="text" name="q" id="search" size="22" onfocus="this.value='';" value="Search UN Website">
+    <input class="button" type="submit" name="Submit" value="Go">
+ </form>
+</div>
+   
+  </div>
+  <!-- end div brandbar -->
+  <div id="languages">
+    <ul>
+      <li id="arabic" lang="ar" xml:lang="ar"><a href="/ar/documents/udhr/">ÿπÿ±ÿ®Ÿä</a></li>
+      <li id="chinese" lang="zh-cn" xml:lang="zh-cn"><a href="/zh/documents/udhr/">‰∏≠Êñá</a></li>
+      <li lang="en" xml:lang="en">English</li>
+      <li lang="fr" xml:lang="fr"><a href="/fr/documents/udhr/">Fran√ßais</a></li>
+      <li lang="ru" xml:lang="ru"><a href="/ru/documents/udhr/">–†—É—Å—Å–∫–∏–π</a></li>
+      <li lang="es" xml:lang="es"><a href="/es/documents/udhr/">Espa√±ol</a></li>
+    </ul>
+  </div>
+  <!-- end div languages -->
+  <div id="topbanner">
+    <h1 id="hiddentitle"><span></span>The Universal Declaration of Human Rights </h1>
+  </div>
+  <div id="horiznav">
+    <!-- This is the navigation menu file for the website: server-side include -->
+
+<ul>
+  <li id="home" class="first"><a href="index.shtml">Full Text</a></li>
+  <li id="history"><a href="history.shtml">History</a></li>
+<!--  <li id="gallery"><a href="gallery.shtml">Photo Gallery</a></li>-->
+  <li id="law"><a href="hr_law.shtml">Human Rights Law</a></li> 
+  <li id="drafters"><a href="drafters.shtml">Drafters</a></li>  
+  <li id="resources" class="last"><a href="resources.shtml">Resources</a></li> 
+</ul>
+
+  </div>
+  <!-- end div topbanner -->
+  <div id="mainnav" class="column" style="height: 4829px;"><a name="navigation"></a>
+    <!-- This is the navigation menu file for the website: server-side include -->
+
+<ul>
+  <li id="genocide"><a href="index.shtml#ap">Preamble </a></li>
+  <li id="ch1"><a href="index.shtml#a1"> Article 1 </a></li>
+  <li><a href="index.shtml#a2">Article 2 </a></li>
+  <li><a href="index.shtml#a3">Article 3 </a></li>
+  <li><a href="index.shtml#a4">Article 4 </a></li>
+  <li><a href="index.shtml#a5">Article 5 </a></li>
+  <li><a href="index.shtml#a6">Article 6 </a></li>
+  <li><a href="index.shtml#a7">Article 7 </a></li>
+  <li><a href="index.shtml#a8">Article 8 </a></li>
+  <li><a href="index.shtml#a9">Article 9 </a></li>
+  <li><a href="index.shtml#a10">Article 10 </a></li>
+  <li><a href="index.shtml#a11">Article 11 </a></li>
+  <li><a href="index.shtml#a12">Article 12 </a></li>
+  <li><a href="index.shtml#a13">Article 13 </a></li>
+  <li><a href="index.shtml#a14">Article 14 </a></li>
+  <li><a href="index.shtml#a15">Article 15 </a></li>
+  <li><a href="index.shtml#a16">Article 16 </a></li>
+  <li><a href="index.shtml#a17">Article 17 </a></li>
+  <li><a href="index.shtml#a18">Article 18 </a></li>
+  <li><a href="index.shtml#a19">Article 19 </a></li>
+  <li><a href="index.shtml#a20">Article 20 </a></li>
+  <li><a href="index.shtml#a21">Article 21 </a></li>
+  <li><a href="index.shtml#a22">Article 22 </a></li>
+  <li><a href="index.shtml#a23">Article 23 </a></li>
+  <li><a href="index.shtml#a24">Article 24 </a></li>
+  <li><a href="index.shtml#a25">Article 25 </a></li>
+  <li><a href="index.shtml#a26">Article 26 </a></li>
+  <li><a href="index.shtml#a27">Article 27 </a></li>
+  <li><a href="index.shtml#a28">Article 28 </a></li>
+  <li><a href="index.shtml#a29">Article 29 </a></li>
+  <li><a href="index.shtml#a30">Article 30 </a></li>
+  <li><a href="/en/rights/">Human Rights Homepage </a></li>
+</ul>
+
+  </div>
+  <!-- end div mainnav -->
+  <a name="text"></a>
+  <div id="content" class="column" style="height: 4829px;">
+    <h2 align="left"><a name="ap" id="ap"></a>PREAMBLE</h2>
+    <p> Whereas recognition of the inherent dignity and of the equal and  inalienable rights of all members of the human family is the foundation  of freedom, justice and peace in the world, </p>
+    <p> Whereas disregard and contempt for human rights have resulted in  barbarous acts which have outraged the conscience of mankind, and the  advent of a world in which human beings shall enjoy freedom of speech  and belief and freedom from fear and want has been proclaimed as the  highest aspiration of the common people, </p>
+    <p> Whereas it is essential, if man is not to be compelled to have  recourse, as a last resort, to rebellion against tyranny and  oppression, that human rights should be protected by the rule of law, </p>
+    <p> Whereas it is essential to promote the development of friendly relations between nations, </p>
+    <p> Whereas the peoples of the United Nations have in the Charter  reaffirmed their faith in fundamental human rights, in the dignity and  worth of the human person and in the equal rights of men and women and  have determined to promote social progress and better standards of life  in larger freedom, </p>
+    <p> Whereas Member States have pledged themselves to achieve, in  co-operation with the United Nations, the promotion of universal  respect for and observance of human rights and fundamental freedoms, </p>
+    <p> Whereas a common understanding of these rights and freedoms is of  the greatest importance for the full realization of this pledge,</p>
+    <p> <strong>Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMAN RIGHTS</strong> as a common standard of achievement for all peoples and all nations, to  the end that every individual and every organ of society, keeping this  Declaration constantly in mind, shall strive by teaching and education  to promote respect for these rights and freedoms and by progressive  measures, national and international, to secure their universal and  effective recognition and observance, both among the peoples of Member  States themselves and among the peoples of territories under their  jurisdiction.</p>
+    <p>&nbsp;</p>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a1" id="a1"></a>Article 1.</h3>
+    <ul>
+      <li>All human beings are born free and equal in dignity and rights. They are   endowed with reason and conscience and should act towards one another in a   spirit of brotherhood.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a2" id="a2"></a>Article 2.</h3>
+    <ul>
+      <li>Everyone is entitled to all the rights and freedoms set forth in this   Declaration, without distinction of any kind, such as race, colour, sex,   language, religion, political or other opinion, national or social origin,   property, birth or other status. Furthermore, no distinction shall be made on   the basis of the political, jurisdictional or international status of the   country or territory to which a person belongs, whether it be independent,   trust, non-self-governing or under any other limitation of sovereignty.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a3" id="a3"></a>Article 3.</h3>
+    <ul>
+      <li>Everyone has the right to life, liberty and security of person.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a4" id="a4"></a>Article 4.</h3>
+    <ul>
+      <li>No one shall be held in slavery or servitude; slavery and the slave trade   shall be prohibited in all their forms.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a5" id="a5"></a>Article 5.</h3>
+    <ul>
+      <li>No one shall be subjected to torture or to cruel, inhuman or degrading   treatment or punishment.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a6" id="a6"></a>Article 6.</h3>
+    <ul>
+      <li> Everyone has the right to recognition everywhere as a person before the   law.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a7" id="a7"></a>Article 7.</h3>
+    <ul>
+      <li> All are equal before the law and are entitled without any discrimination to   equal protection of the law. All are entitled to equal protection against any   discrimination in violation of this Declaration and against any incitement to   such discrimination.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a8" id="a8"></a>Article 8.</h3>
+    <ul>
+      <li> Everyone has the right to an effective remedy by the competent national   tribunals for acts violating the fundamental rights granted him by the   constitution or by law.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a9" id="a9"></a>Article 9.</h3>
+    <ul>
+      <li> No one shall be subjected to arbitrary arrest, detention or exile.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a10" id="a10"></a>Article 10.</h3>
+    <ul>
+      <li> Everyone is entitled in full equality to a fair and public hearing by an   independent and impartial tribunal, in the determination of his rights and   obligations and of any criminal charge against him.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a11" id="a11"></a>Article 11.</h3>
+    <ul>
+      <li> (1) Everyone charged with a penal offence has the right to be presumed   innocent until proved guilty according to law in a public trial at which he has   had all the guarantees necessary for his defence.</li>
+      <li> (2) No one shall be held guilty of any penal offence on account of any act or   omission which did not constitute a penal offence, under national or   international law, at the time when it was committed. Nor shall a heavier   penalty be imposed than the one that was applicable at the time the penal   offence was committed.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a12" id="a12"></a>Article 12.</h3>
+    <ul>
+      <li> No one shall be subjected to arbitrary interference with his privacy, family,   home or correspondence, nor to attacks upon his honour and reputation. Everyone   has the right to the protection of the law against such interference or   attacks.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a13" id="a13"></a>Article 13.</h3>
+    <ul>
+      <li> (1) Everyone has the right to freedom of movement and residence within the   borders of each state.</li>
+      <li> (2) Everyone has the right to leave any country, including his own, and to   return to his country.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a14" id="a14"></a>Article 14.</h3>
+    <ul>
+      <li> (1) Everyone has the right to seek and to enjoy in other countries asylum   from persecution.</li>
+      <li> (2) This right may not be invoked in the case of prosecutions genuinely   arising from non-political crimes or from acts contrary to the purposes and   principles of the United Nations.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a15" id="a15"></a>Article 15.</h3>
+    <ul>
+      <li> (1) Everyone has the right to a nationality.</li>
+      <li> (2) No one shall be arbitrarily deprived of his nationality nor denied the   right to change his nationality.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a16" id="a16"></a>Article 16.</h3>
+    <ul>
+      <li> (1) Men and women of full age, without any limitation due to race,   nationality or religion, have the right to marry and to found a family. They are   entitled to equal rights as to marriage, during marriage and at its   dissolution.</li>
+      <li> (2) Marriage shall be entered into only with the free and full consent of the   intending spouses.</li>
+      <li> (3) The family is the natural and fundamental group unit of society and is   entitled to protection by society and the State.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a17" id="a17"></a>Article 17.</h3>
+    <ul>
+      <li> (1) Everyone has the right to own property alone as well as in association   with others.</li>
+      <li> (2) No one shall be arbitrarily deprived of his property.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a18" id="a18"></a>Article 18.</h3>
+    <ul>
+      <li> Everyone has the right to freedom of thought, conscience and religion; this   right includes freedom to change his religion or belief, and freedom, either   alone or in community with others and in public or private, to manifest his   religion or belief in teaching, practice, worship and observance.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a19" id="a19"></a>Article 19.</h3>
+    <ul>
+      <li> Everyone has the right to freedom of opinion and expression; this right   includes freedom to hold opinions without interference and to seek, receive and   impart information and ideas through any media and regardless of   frontiers.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a20" id="a20"></a>Article 20.</h3>
+    <ul>
+      <li> (1) Everyone has the right to freedom of peaceful assembly and   association.</li>
+      <li> (2) No one may be compelled to belong to an association.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a21" id="a21"></a>Article 21.</h3>
+    <ul>
+      <li> (1) Everyone has the right to take part in the government of his country,   directly or through freely chosen representatives.</li>
+      <li> (2) Everyone has the right of equal access to public service in his   country.</li>
+      <li> (3) The will of the people shall be the basis of the authority of government;   this will shall be expressed in periodic and genuine elections which shall be by   universal and equal suffrage and shall be held by secret vote or by equivalent   free voting procedures.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a22" id="a22"></a>Article 22.</h3>
+    <ul>
+      <li> Everyone, as a member of society, has the right to social security and is   entitled to realization, through national effort and international co-operation   and in accordance with the organization and resources of each State, of the   economic, social and cultural rights indispensable for his dignity and the free   development of his personality.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a23" id="a23"></a>Article 23.</h3>
+    <ul>
+      <li> (1) Everyone has the right to work, to free choice of employment, to just and   favourable conditions of work and to protection against unemployment.</li>
+      <li> (2) Everyone, without any discrimination, has the right to equal pay for   equal work.</li>
+      <li> (3) Everyone who works has the right to just and favourable remuneration   ensuring for himself and his family an existence worthy of human dignity, and   supplemented, if necessary, by other means of social protection.</li>
+      <li> (4) Everyone has the right to form and to join trade unions for the   protection of his interests.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a24" id="a24"></a>Article 24.</h3>
+    <ul>
+      <li> Everyone has the right to rest and leisure, including reasonable limitation   of working hours and periodic holidays with pay.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a25" id="a25"></a>Article 25.</h3>
+    <ul>
+      <li> (1) Everyone has the right to a standard of living adequate for the health   and well-being of himself and of his family, including food, clothing, housing   and medical care and necessary social services, and the right to security in the   event of unemployment, sickness, disability, widowhood, old age or other lack of   livelihood in circumstances beyond his control.</li>
+      <li> (2) Motherhood and childhood are entitled to special care and assistance. All   children, whether born in or out of wedlock, shall enjoy the same social   protection.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a26" id="a26"></a>Article 26.</h3>
+    <ul>
+      <li> (1) Everyone has the right to education. Education shall be free, at least in   the elementary and fundamental stages. Elementary education shall be compulsory.   Technical and professional education shall be made generally available and   higher education shall be equally accessible to all on the basis of merit.</li>
+      <li> (2) Education shall be directed to the full development of the human   personality and to the strengthening of respect for human rights and fundamental   freedoms. It shall promote understanding, tolerance and friendship among all   nations, racial or religious groups, and shall further the activities of the   United Nations for the maintenance of peace.</li>
+      <li> (3) Parents have a prior right to choose the kind of education that shall be   given to their children.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a27" id="a27"></a>Article 27.</h3>
+    <ul>
+      <li> (1) Everyone has the right freely to participate in the cultural life of the   community, to enjoy the arts and to share in scientific advancement and its   benefits.</li>
+      <li> (2) Everyone has the right to the protection of the moral and material   interests resulting from any scientific, literary or artistic production of   which he is the author.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a28" id="a28"></a>Article 28.</h3>
+    <ul>
+      <li> Everyone is entitled to a social and international order in which the rights   and freedoms set forth in this Declaration can be fully realized.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+
+    <h3><a name="a29" id="a29"></a>Article 29.</h3>
+    <ul>
+      <li> (1) Everyone has duties to the community in which alone the free and full   development of his personality is possible.</li>
+      <li> (2) In the exercise of his rights and freedoms, everyone shall be subject   only to such limitations as are determined by law solely for the purpose of   securing due recognition and respect for the rights and freedoms of others and   of meeting the just requirements of morality, public order and the general   welfare in a democratic society.</li>
+      <li> (3) These rights and freedoms may in no case be exercised contrary to the   purposes and principles of the United Nations.</li>
+    </ul>
+    <div class="totop">
+      <p align="right"><a href="#atop">^ Top</a></p>
+    </div>
+    <h3><a name="a30" id="a30"></a>Article 30.</h3>
+    <ul>
+      <li> Nothing in this Declaration may be interpreted as implying for any State,   group or person any right to engage in any activity or to perform any act aimed   at the destruction of any of the rights and freedoms set forth herein.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="bannerfooter">&nbsp;</div>
+  <div id="footer">
+    <ul>
+        <li><a href="/en/aboutun/copyright/">Copyright </a> |</li> 
+        <li><a href="/en/aboutun/terms/">Terms of Use </a> |</li> 
+        <li><a href="/en/aboutun/privacy/">Privacy Notice </a> | </li> 
+        <li><a href="/en/siteindex/">Site Index </a> |</li> 
+        <li><a href="/en/aboutun/fraudalert/">Fraud Alert </a> |</li> 
+		<li><a href="/en/aboutun/help/">Help </a> </li> 
+</ul> 
+  </div>
+</div>
+	 
+
+
+</body></html>Ytext/htmlUUTF-8P_$http://www.un.org/en/documents/udhr/            1   :   E   W   m   ã   ö   ∞  Q≈  Q◊  Q›  R  Võ  V§  ÛÉ  Ûï  ÛΩ  ¯r  ¯{  ˛X  ˛q  ˛• z É ˇ  . H Q (À (‘ ) .& ./ FF FO FÄ K´ K¥ O´ O¥ O÷ TÍ TÛ W‚ WÌ X \µ \¿ \◊ ªç ªó ªù ªû             9             ª≈
