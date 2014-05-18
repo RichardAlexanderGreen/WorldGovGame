@@ -1,0 +1,4014 @@
+bplist00ÒI_WebSubresources_WebMainResource¬$*05:@EÔ	
+_WebResourceData_WebResourceMIMEType^WebResourceURL_WebResourceResponseO=J/**
+ * CSS in this file is used by *all* skins (that have any CSS at all).  Be
+ * careful what you put in here, since what looks good in one skin may not in
+ * another, but don't ignore the poor non-Monobook users either.
+ */
+
+/* Colored watchlist and recent changes numbers */
+.mw-plusminus-pos { color: #006400; } /* dark green */
+.mw-plusminus-neg { color: #8b0000; } /* dark red */
+.mw-plusminus-null { color: #aaa; } /* gray */
+
+/* Comment and username portions of RC entries */
+span.comment {
+	font-style: italic;
+}
+
+span.changedby {
+	font-size: 95%;
+}
+
+/* Math */
+.texvc { direction: ltr; unicode-bidi: embed; }
+img.tex { vertical-align: middle; }
+span.texhtml { font-family: serif; }
+
+/* add a bit of margin space between the preview and the toolbar */
+/* this replaces the ugly <p><br /></p> we used to insert into the page source */
+#wikiPreview.ontop { margin-bottom: 1em; }
+
+/* Stop floats from intruding into edit area in previews */
+#editform, #toolbar, #wpTextbox1 { clear: both; }
+
+div#mw-js-message {
+	margin: 1em 5%;
+	padding: 0.5em 2.5%;
+	border: solid 1px #ddd;
+	background-color: #fcfcfc;
+}
+
+/* Edit section links */
+.editsection {
+	float: right;
+	margin-left: 5px;
+}
+
+/**
+ * File histories
+ */
+h2#filehistory {
+	clear: both;
+}
+
+table.filehistory th,
+table.filehistory td {
+	vertical-align:top;
+}
+table.filehistory th {
+	text-align: left;
+}
+table.filehistory td.mw-imagepage-filesize,
+table.filehistory th.mw-imagepage-filesize {
+	white-space:nowrap;
+}
+
+table.filehistory td.filehistory-selected {
+	font-weight: bold;
+}
+
+/*
+ * rev_deleted stuff
+ */
+li span.deleted, span.history-deleted {
+	text-decoration: line-through;
+	color: #888;
+	font-style: italic;
+}
+
+/**
+ * Patrol stuff
+ */
+.not-patrolled {
+	background-color: #ffa;
+}
+
+.unpatrolled {
+	font-weight: bold;
+	color: red;
+}
+
+div.patrollink {
+	font-size: 75%;
+	text-align: right;
+}
+
+/**
+ * Forms
+ */
+body.ltr td.mw-label { text-align: right; }
+body.ltr td.mw-input { text-align: left; }
+body.ltr td.mw-submit { text-align: left; }
+body.rtl td.mw-label { text-align: left; }
+body.rtl td.mw-input { text-align: right; }
+body.rtl td.mw-submit { text-align: right; }
+
+td.mw-label { vertical-align: top; }
+.prefsection td.mw-label { width: 20%; }
+.prefsection table { width: 100%; }
+td.mw-submit { white-space: nowrap; }
+
+table.mw-htmlform-nolabel td.mw-label { width: 0 !important; }
+
+/**
+ * Image captions
+ */
+body.rtl .thumbcaption { text-align:right; }
+body.rtl .magnify { float:left; }
+
+body.ltr .thumbcaption { text-align:left; }
+body.ltr .magnify { float:right; }
+
+/**
+ * Hidden categories
+ */
+.mw-hidden-cats-hidden { display: none; }
+.catlinks-allhidden { display: none; }
+
+/* Convenience links to edit block, delete and protect reasons */
+p.mw-ipb-conveniencelinks, p.mw-protect-editreasons,
+p.mw-filedelete-editreasons, p.mw-delete-editreasons,
+p.mw-revdel-editreasons {
+	font-size: 90%;
+	float: right;
+}
+
+/* Search results */
+.searchresults {
+}
+
+.searchresults p {
+	margin-left: 0.4em;
+	margin-top: 1em;
+	margin-bottom: 1.2em;
+}
+
+div.searchresult {
+	font-size: 95%;
+	width:38em;
+}
+
+.mw-search-results {
+	margin-left: 0.4em;
+}
+
+.mw-search-results li {
+	padding-bottom: 1em;
+	list-style:none;
+	list-style-image:none;
+}
+.mw-search-results li a {
+	font-size: 108%;
+}
+
+.mw-search-result-data {
+	color: green;
+	font-size: 97%;
+}
+
+.mw-search-formheader {
+	background-color: #f3f3f3;
+	margin-top: 1em;
+	border: 1px solid silver;
+}
+.mw-search-formheader div.search-types {
+	float:left;
+	padding-left: 0.25em;
+}
+.rtl .mw-search-formheader div.search-types {
+	float: right;
+}
+.mw-search-formheader div.search-types ul {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+}
+.mw-search-formheader div.search-types ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.mw-search-formheader div.search-types ul li a {
+	display: block;
+	padding: 0.5em;
+}
+.mw-search-formheader div.search-types ul li.current a {
+	color: #333333;
+	cursor: default;
+}
+.mw-search-formheader div.search-types ul li.current a:hover {
+	text-decoration: none;
+}
+.mw-search-formheader div.results-info {
+	float: right;
+	padding: 0.5em;
+	padding-right: 0.75em;
+}
+.mw-search-formheader div.results-info ul {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+}
+.mw-search-formheader div.results-info ul li {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+fieldset#mw-searchoptions {
+	margin: 0;
+	padding-left: 0.75em !important;
+	padding-right: 0.75em !important;
+	padding-bottom: 0.5em !important;
+	padding-top: 0.5em !important;
+	border: none;
+	background-color: #f9f9f9;
+	border: 1px solid silver !important;
+	border-top-width: 0 !important;
+}
+fieldset#mw-searchoptions legend {
+	display: none;
+}
+fieldset#mw-searchoptions h4 {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+.rtl fieldset#mw-searchoptions h4 {
+	float: right;
+}
+fieldset#mw-searchoptions div#mw-search-togglebox {
+	float: right;
+}
+.rtl fieldset#mw-searchoptions div#mw-search-togglebox {
+	float: left;
+}
+
+fieldset#mw-searchoptions div#mw-search-togglebox label {
+	margin-right: 0.25em;
+}
+fieldset#mw-searchoptions div#mw-search-togglebox input {
+	margin-left: 0.25em;
+}
+fieldset#mw-searchoptions table {
+	float: left;
+	margin-right: 3em;
+}
+fieldset#mw-searchoptions table td {
+	padding-right: 1em;
+}
+.rtl fieldset#mw-searchoptions table td {
+	padding-left: 1em;
+	padding-right: 0;
+}
+body.rtl fieldset#mw-searchoptions table {
+	margin-right: 0;
+	margin-left: 3em;
+	float: right;
+}
+fieldset#mw-searchoptions div.divider {
+	clear: both;
+	border-bottom: 1px solid #DDDDDD;
+	padding-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+td#mw-search-menu {
+	padding-left:6em;
+	font-size:85%;
+}
+
+div#mw-search-interwiki {
+	float: right;
+	width: 18em;
+	border-style: solid;
+	border-color: #AAAAAA;
+	border-width: 1px;
+	margin-top: 2ex;
+}
+
+.rtl div#mw-search-interwiki {
+	float: left;
+}
+
+div#mw-search-interwiki li {
+	font-size: 95%;
+}
+
+.mw-search-interwiki-more {
+	float: right;
+	font-size: 90%;
+}
+
+.rtl .mw-search-interwiki-more {
+	float: left;
+}
+
+div#mw-search-interwiki-caption {
+	text-align: center;
+	font-weight: bold;
+	font-size: 95%;
+}
+
+.mw-search-interwiki-project {
+	font-size: 97%;
+	text-align: left;
+	padding-left: 0.2em;
+	padding-right: 0.15em;
+	padding-bottom: 0.2em;
+	padding-top: 0.15em;
+	background-color:#ececec;
+	border-top:1px solid #BBBBBB;
+}
+
+.rtl .mw-search-interwiki-project {
+	text-align: right;
+}
+
+span.searchalttitle {
+	font-size: 95%;
+}
+
+div.searchdidyoumean {
+	font-size: 127%;
+	margin-top: 0.8em;
+	/* Note that this color won't affect the link, as desired. */
+	color: #c00;
+}
+
+div.searchdidyoumean em {
+	font-weight: bold;
+}
+
+.searchmatch {
+	font-weight: bold;
+}
+
+table#mw-search-top-table {
+	background-color: transparent;
+}
+
+
+/*
+ * Advanced PowerSearch box
+ */
+
+td#mw-search-togglebox {
+        text-align: right;
+}
+
+table#mw-search-powertable {
+	width:100%;
+}
+
+form#powersearch {
+	clear: both;
+}
+
+
+/*
+ * UserRights stuff
+ */
+.mw-userrights-disabled {
+	color: #888;
+}
+
+table.mw-userrights-groups * td,table.mw-userrights-groups * th {
+	padding-right: 1.5em;
+}
+
+/*
+ * OpenSearch ajax suggestions
+ */
+.os-suggest {
+	overflow: auto;
+	overflow-x: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	background-color: white;
+	background-color: Window;
+	border-style: solid;
+	border-color: #AAAAAA;
+	border-width: 1px;
+	z-index:99;
+	font-size:95%;
+}
+
+table.os-suggest-results {
+	font-size: 95%;
+	cursor: pointer;
+	border: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.os-suggest-result, .os-suggest-result-hl {
+	white-space: nowrap;
+	background-color: white;
+	background-color: Window;
+	color: black;
+	color: WindowText;
+	padding: 2px;
+}
+.os-suggest-result-hl,
+.os-suggest-result-hl-webkit {
+	background-color: #4C59A6;
+	color: white;
+}
+.os-suggest-result-hl {
+	/* System colors are misimplemented in Safari 3.0 and earlier,
+	   making highlighted text illegible... */
+	background-color: Highlight;
+	color: HighlightText;
+}
+
+.os-suggest-toggle {
+	position: relative;
+	left: 1ex;
+	font-size: 65%;
+}
+.os-suggest-toggle-def {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 65%;
+	visibility: hidden;
+}
+
+/* Page history styling */
+/* the auto-generated edit comments */
+.autocomment { color: gray; }
+#pagehistory .history-user {
+    margin-left: 0.4em;
+    margin-right: 0.2em;
+}
+#pagehistory span.minor { font-weight: bold; }
+#pagehistory li { border: 1px solid white; }
+#pagehistory li.selected {
+    background-color: #f9f9f9;
+    border: 1px dashed #aaa;
+}
+
+/** Generic minor/bot/newpage styling */
+.newpage, .minor, .bot {
+	font-weight: bold;
+}
+
+/* Special:Contributions styling */
+.mw-uctop {
+	font-weight: bold;
+}
+
+/* Special:ListGroupRights styling */
+table.mw-listgrouprights-table tr  {
+	vertical-align: top;
+}
+.listgrouprights-revoked { text-decoration: line-through; }
+
+/* Special:Statistics styling */
+td.mw-statistics-numbers {
+	text-align: right;
+}
+
+/* Special:SpecialPages styling */
+h4.mw-specialpagesgroup {
+	background-color: #dcdcdc;
+	padding: 2px;
+	margin: .3em 0em 0em 0em;
+}
+.mw-specialpagerestricted {
+	font-weight: bold;
+}
+
+#shared-image-dup, #shared-image-conflict {
+	font-style: italic;
+}
+
+/* Special:EmailUser styling */
+table.mw-emailuser-table {
+	width: 98%;
+}
+td#mw-emailuser-sender, td#mw-emailuser-recipient {
+	font-weight: bold;
+}
+
+/* Special:Allpages styling */
+table.allpageslist {
+	background-color: transparent;
+}
+table.mw-allpages-table-form, table.mw-allpages-table-chunk {
+	background-color: transparent;
+	width: 100%;
+}
+td.mw-allpages-alphaindexline {
+	text-align: right;
+}
+td.mw-allpages-nav, p.mw-allpages-nav {
+	text-align: right;
+	font-size: smaller;
+	margin-bottom: 1em;
+}
+table.mw-allpages-table-form tr  {
+	vertical-align: top;
+}
+
+/* Special:Prefixindex styling */
+table#mw-prefixindex-list-table,
+table#mw-prefixindex-nav-table {
+	width: 98%;
+	background-color: transparent;
+}
+td#mw-prefixindex-nav-form  {
+	font-size: smaller;
+	margin-bottom: 1em;
+	text-align: right;
+	vertical-align: top;
+}
+
+/*
+ * Recreating deleted page warning
+ * Reupload file warning
+ * Page protection warning
+ * incl. log entries for these warnings
+ */
+div.mw-warning-with-logexcerpt {
+	padding: 3px;
+	margin-bottom: 3px;
+	border: 2px solid #2F6FAB;
+	clear: both;
+}
+div.mw-warning-with-logexcerpt ul li {
+	font-size: 90%;
+}
+
+/* (show/hide) revision deletion links */
+span.mw-revdelundel-link,
+strong.mw-revdelundel-link {
+	font-size: 90%;
+}
+span.mw-revdelundel-hidden,
+input.mw-revdelundel-hidden {
+	visibility: hidden;
+}
+
+td.mw-revdel-checkbox, th.mw-revdel-checkbox {
+	padding-right: 10px;
+	text-align: center;
+}
+
+/* feed links */
+a.feedlink {
+	background: url("images/feed-icon.png") center left no-repeat;
+	padding-left: 16px;
+}
+
+/* Plainlinks - this can be used to switch 
+ * off special external link styling */
+.plainlinks a {
+		background: none !important;
+		padding: 0 !important;
+}
+
+/* wikitable class for skinning normal tables */
+table.wikitable {
+    margin: 1em 1em 1em 0;
+    background: #f9f9f9;
+    border: 1px #aaa solid;
+    border-collapse: collapse;
+}
+.wikitable th, .wikitable td {
+    border: 1px #aaa solid;
+    padding: 0.2em;
+}
+.wikitable th {
+    background: #f2f2f2;
+    text-align: center;
+}
+.wikitable caption {
+    font-weight: bold;
+}
+
+/* hide initially collapsed collapsable tables */
+table.collapsed tr.collapsable {
+	display: none;
+}
+
+/* success and error messages */
+.success {
+	color: green;
+	font-size: larger;
+}
+.error {
+	color: red;
+	font-size: larger;
+}
+.errorbox, .successbox {
+	font-size: larger;
+	border: 2px solid;
+	padding: .5em 1em;
+	float: left;
+	margin-bottom: 2em;
+	color: #000;
+}
+.errorbox {
+	border-color: red;
+	background-color: #fff2f2;
+}
+.successbox {
+	border-color: green;
+	background-color: #dfd;
+}
+.errorbox h2, .successbox h2 {
+	font-size: 1em;
+	font-weight: bold;
+	display: inline;
+	margin: 0 .5em 0 0;
+	border: none;
+}
+
+.visualClear {
+	clear: both;
+}
+
+#mw_trackbacks {
+	border: solid 1px #bbbbff;
+	background-color: #eeeeff;
+	padding: 0.2em;
+}
+
+/*
+  Table pager (e.g. Special:Imagelist)
+  - remove underlines from the navigation link
+  - collapse borders
+  - set the borders to outsets (similar to Special:Allmessages)
+  - remove line wrapping for all td and th, set background color
+  - restore line wrapping for the last two table cells (description and size)
+*/
+.TablePager { min-width: 80%; }
+.TablePager_nav a { text-decoration: none; }
+.TablePager { border-collapse: collapse; }
+.TablePager, .TablePager td, .TablePager th { 
+	border: 1px solid #aaaaaa;
+	padding: 0 0.15em 0 0.15em;
+}
+.TablePager th { background-color: #eeeeff }
+.TablePager td { background-color: #ffffff }
+.TablePager tr:hover td { background-color: #eeeeff }
+
+.imagelist td, .imagelist th { white-space: nowrap }
+.imagelist .TablePager_col_links { background-color: #eeeeff }
+.imagelist .TablePager_col_img_description { white-space: normal }
+.imagelist th.TablePager_sort { background-color: #ccccff }
+
+ /* Allmessages table */
+#mw-allmessagestable .allmessages-customised td.am_default {
+	background-color: #fcffc4;
+}
+
+#mw-allmessagestable tr.allmessages-customised:hover td.am_default {
+	background-color: #faff90;
+}
+
+#mw-allmessagestable td.am_actual {
+	background-color: #e2ffe2;
+}
+
+#mw-allmessagestable tr.allmessages-customised:hover + tr.allmessages-customised td.am_actual {
+	background-color: #b1ffb1;
+}
+
+/* filetoc */
+ul#filetoc {
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#filetoc li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 2em;
+}
+
+/* Classes for EXIF data display */
+table.mw_metadata {
+	font-size: 0.8em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;
+	width: 300px;
+}
+
+table.mw_metadata caption {
+	font-weight: bold;
+}
+
+table.mw_metadata th {
+	font-weight: normal;
+}
+
+table.mw_metadata td {
+	padding: 0.1em;
+}
+
+table.mw_metadata {
+	border: none;
+	border-collapse: collapse;
+}
+
+table.mw_metadata td, table.mw_metadata th {
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+
+table.mw_metadata th {
+	background-color: #f9f9f9;
+}
+
+table.mw_metadata td {
+	background-color: #fcfcfc;
+}
+
+/* Galleries */
+table.gallery {
+	border: 1px solid #ccc;
+	margin: 2px;
+	padding: 2px;
+	background-color: white;
+}
+
+table.gallery tr {
+	vertical-align: top;
+}
+
+table.gallery td {
+	vertical-align: top;
+	background-color: #f9f9f9;
+	border: solid 2px white;
+}
+table.gallery caption {
+	font-weight: bold;
+}
+
+div.gallerybox {
+	margin: 2px;
+}
+
+div.gallerybox div.thumb {
+	text-align: center;
+	border: 1px solid #ccc;
+	margin: 2px;
+}
+
+div.gallerytext {
+	overflow: hidden;
+	font-size: 94%;
+	padding: 2px 4px;
+}
+
+table.mw-enhanced-rc {
+	background: none;
+	border:0;
+	border-spacing:0;
+}
+td.mw-enhanced-rc {
+	white-space:nowrap;
+	padding:0;
+	vertical-align:top;
+	font-family:monospace
+}
+
+#mw-addcategory-prompt {
+	display: inline;
+	margin-left: 1em;
+}
+ 
+#mw-addcategory-prompt input {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+ 
+.mw-remove-category {
+	padding: 8px;
+	background-image: url(images/remove.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+ 
+.mw-ajax-addcategory {
+	padding-left: 20px;
+	background-image: url(images/add.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+.mw-ajax-loader {
+	background-image: url(images/ajax-loader.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 16px;
+	position: relative;
+	top: -16px;
+}
+
+.mw-small-spinner {
+	padding: 10px !important;
+	margin-right: 0.6em;
+	background-image: url(images/spinner.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Sort arrows added by SortableTables */
+a.sortheader {
+	margin: 0 0.3em;
+}
+Xtext/css_7http://metagovernment.org/w/skins/common/shared.css?270Oñbplist00ÔbcX$versionX$objectsY$archiverT$top † ¯"()012HIJKLMNOPQRSTUVWX[\]U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_7http://metagovernment.org/w/skins/common/shared.css?270Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]–CÈÓ345>GWNS.keysZNS.objects¨6789:;<=€	€
+€€€€€€¨?@ABCDEF€€€€€€€€€VServer\Content-Type]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApacheXtext/css_Thu, 25 Nov 2010 16:35:32 GMT_Sun, 18 May 2014 21:26:38 GMTUbytesU15690_timeout=5, max=384ZKeep-AliveÒ*+YZ\NSDictionary¢Y/=JXtext/cssÒ*+^__NSHTTPURLResponse£`a/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑde_WebResourceResponse€    # - 2 7 W ] x {  ‚ … ˆ Œ  – ™ œ Ÿ ¢ ¥ § © « ­ ¯ ± ³ µ · ¹ » ½ Ä Ì Ø Ú Ü Ş(17:@IRT[cnwy{}ƒ…‡’”–˜šœ ¢©¶ÄÉ×æñü,LRXmx}Š™²¶ÊØêí             f              ÔO‚/*
+** MediaWiki Print style sheet for CSS2-capable browsers.
+** Copyright Gabriel Wicke, http://www.aulinx.de/
+**
+** Derived from the plone (http://plone.org/) styles
+** Copyright Alexander Limi
+*/
+
+/* Thanks to A List Apart (http://alistapart.com/) for useful extras */
+a.stub,
+a.new{ color:#ba0000; text-decoration:none; }
+
+#toc { 
+    /*border:1px solid #2f6fab;*/
+    border:1px solid #aaaaaa;
+    background-color:#f9f9f9;
+    padding:5px;
+}
+.tocindent {
+	margin-left: 2em;
+}
+.tocline {
+	margin-bottom: 0px;
+}
+
+/* images */
+div.floatright { 
+    float: right;
+    clear: right;
+    margin: 0;
+    position:relative;
+    border: 0.5em solid White;
+    border-width: 0.5em 0 0.8em 1.4em;
+}
+div.floatright p { font-style: italic;} 
+div.floatleft { 
+    float: left; 
+    margin: 0.3em 0.5em 0.5em 0;
+    position:relative;
+    border: 0.5em solid White;
+    border-width: 0.5em 1.4em 0.8em 0;
+}
+div.floatleft p { font-style: italic; } 
+/* thumbnails */
+div.thumb {
+    margin-bottom: 0.5em;
+    border-style: solid; border-color: White;
+    width: auto;
+    overflow: hidden;
+}
+div.thumbinner {
+    border:1px solid #cccccc;
+    padding: 3px !important;
+    background-color:#f9f9f9;
+    font-size: 94%;
+    text-align: center;
+}
+html .thumbimage {
+    border:1px solid #cccccc;
+}
+html .thumbcaption {
+    border: none;
+    padding: 0.3em 0 0.1em 0;
+}
+div.magnify { display: none; }
+div.tright {
+    float: right;
+    clear: right;
+    border-width: 0.5em 0 0.8em 1.4em;
+}
+div.tleft {
+    float: left;
+    margin-right:0.5em;
+    border-width: 0.5em 1.4em 0.8em 0;
+}
+img.thumbborder {
+	border: 1px solid #dddddd;
+}
+
+/* table standards */
+table.rimage {
+    float:right; 
+    width:1pt; 
+    position:relative;
+    margin-left:1em; 
+    margin-bottom:1em;
+    text-align:center;
+}
+
+body {
+    background: White;
+    /*font-size: 11pt !important;*/
+    color: Black;
+    margin: 0;
+    padding: 0;
+}
+
+.noprint,
+div#jump-to-nav,
+div.top,
+div#column-one,
+#colophon,
+.editsection,
+.toctoggle,
+.tochidden,
+div#f-poweredbyico,
+div#f-copyrightico,
+li#viewcount,
+li#about,
+li#disclaimer,
+li#privacy,
+#mw-hidden-catlinks {
+    /* Hides all the elements irrelevant for printing */
+    display: none;
+}
+
+ul { 
+    list-style-type: square;
+}
+
+#content {
+    background: none;
+    border: none ! important;
+    padding: 0 ! important;
+    margin: 0 ! important;
+}
+#footer {
+	background : white;
+	color : black;
+    border-top: 1px solid black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+p, .documentDescription {
+    margin: 1em 0 ! important;
+    line-height: 1.2em;
+}
+
+.tocindent p {
+	margin: 0 0 0 0 ! important;
+}
+
+pre {
+    border: 1pt dashed black;
+    white-space: pre;
+    font-size: 8pt;
+    overflow: auto;
+    padding: 1em 0;
+	background : white;
+	color : black;
+}
+
+table.listing,
+table.listing td {
+    border: 1pt solid black;
+    border-collapse: collapse;
+}
+
+a {
+    color: Black !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+a:link, a:visited {
+    color: #520;
+    background: transparent;
+    text-decoration: underline;
+}
+
+#content a.external.text:after, #content a.external.autonumber:after {
+    /* Expand URLs for printing */
+    content: " (" attr(href) ") ";
+}
+
+#globalWrapper {
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+#content {
+	background : white;
+	color : black;
+}
+
+#column-content {
+    margin: 0 !important;
+}
+
+#column-content #content {
+    padding: 1em;
+    margin: 0 !important;
+}
+/* MSIE/Win doesn't understand 'inherit' */
+a, a.external, a.new, a.stub {
+	color: black ! important;
+	text-decoration: none ! important;
+}
+
+/* Continue ... */
+a, a.external, a.new, a.stub {
+	color: inherit ! important;
+	text-decoration: inherit ! important;
+}
+
+img { border: none; }
+img.tex { vertical-align: middle; }
+span.texhtml { font-family: serif; }
+
+#siteNotice { display: none; }
+
+div.gallerybox {
+	border: 1px solid #cccccc;
+	background-color:#f9f9f9;
+	width:  150px;
+}
+
+div.gallerytext {
+	overflow: visible;
+}       
+
+/*
+** Diff rendering
+*/
+table.diff { background:white; }
+td.diff-otitle { background:#ffffff; }
+td.diff-ntitle { background:#ffffff; }
+td.diff-addedline {
+    background:#ccffcc;
+    font-size: smaller;
+    border: solid 2px black;
+}
+td.diff-deletedline {
+    background:#ffffaa;
+    font-size: smaller;
+    border: dotted 2px black;
+}
+td.diff-context {
+    background:#eeeeee;
+    font-size: smaller;
+}
+.diffchange {
+    color: silver;
+    font-weight: bold;
+    text-decoration: underline;
+}
+Xtext/css_<http://metagovernment.org/w/skins/common/commonPrint.css?270Oõbplist00ÔbcX$versionX$objectsY$archiverT$top † ¯"()012HIJKLMNOPQRSTUVWX[\]U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_<http://metagovernment.org/w/skins/common/commonPrint.css?270Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]•½@ÈÓ345>GWNS.keysZNS.objects¨6789:;<=€	€
+€€€€€€¨?@ABCDEF€€€€€€€€€VServer\Content-Type]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApacheXtext/css_Thu, 25 Nov 2010 16:34:59 GMT_Sun, 18 May 2014 21:26:38 GMTUbytesT4482_timeout=5, max=384ZKeep-AliveÒ*+YZ\NSDictionary¢Y/‚Xtext/cssÒ*+^__NSHTTPURLResponse£`a/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑde_WebResourceResponse€    # - 2 7 W ] x {  ‚ … ˆ Œ  – ™ œ Ÿ ¢ ¥ § © « ­ ¯ ± ³ µ · ¹ » ½ Ä Ì Ø Ú Ü Ş"-6<?ENWY`hs|~€‚„†ˆŠŒ•—™›Ÿ¡£¥§®»ÉÎÜëö1QW\q|‘”¢¶ºÎÜîñ             f              	ÔOZ?/*
+** MediaWiki 'monobook' style sheet for CSS2-capable browsers.
+** Copyright Gabriel Wicke - http://wikidev.net/
+** License: GPL (http://www.gnu.org/copyleft/gpl.html)
+**
+** Loosely based on http://www.positioniseverything.net/ordered-floats.html by Big John
+** and the Plone 2.0 styles, see http://plone.org/ (Alexander Limi,Joe Geldart & Tom Croucher,
+** Michael Zeltner and Geir BÃ¦kholt)
+** All you guys rock :)
+*/
+
+#column-content {
+	width: 100%;
+	float: right;
+	margin: 0 0 .6em -12.2em;
+	padding: 0;
+}
+#content {
+	margin: 2.8em 0 0 12.2em;
+	padding: 0 1em 1em 1em;
+	position: relative;
+	z-index: 2;
+}
+#column-one {
+	padding-top: 160px;
+}
+#content {
+	background: white;
+	color: black;
+	border: 1px solid #aaa;
+	border-right: none;
+	line-height: 1.5em;
+}
+/* the left column width is specified in class .portlet */
+
+/* Font size:
+** We take advantage of keyword scaling- browsers won't go below 9px
+** More at http://www.w3.org/2003/07/30-font-size
+** http://style.cleverchimp.com/font_size_intervals/altintervals.html
+*/
+
+body {
+	font: x-small sans-serif;
+	background: #f9f9f9 url(headbg.jpg) 0 0 no-repeat;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+/* scale back up to a sane default */
+#globalWrapper {
+	font-size: 127%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* general styles */
+
+table {
+	font-size: 100%;
+	color: black;
+	/* we don't want the bottom borders of <h2>s to be visible through
+	   floated tables */
+	background-color: white;
+}
+fieldset table {
+	/* but keep table layouts in forms clean... */
+	background: none;
+}
+a {
+	text-decoration: none;
+	color: #002bb8;
+	background: none;
+}
+a:visited {
+	color: #5a3696;
+}
+a:active {
+	color: #faa700;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.stub {
+	color: #772233;
+}
+a.new, #p-personal a.new {
+	color: #ba0000;
+}
+a.new:visited, #p-personal a.new:visited {
+	color: #a55858;
+}
+
+img {
+	border: none;
+	vertical-align: middle;
+}
+p {
+	margin: .4em 0 .5em 0;
+	line-height: 1.5em;
+}
+p img {
+	margin: 0;
+}
+
+hr {
+	height: 1px;
+	color: #aaa;
+	background-color: #aaa;
+	border: 0;
+	margin: .2em 0 .2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	padding-top: .5em;
+	padding-bottom: .17em;
+	border-bottom: 1px solid #aaa;
+}
+h1 { font-size: 188%; }
+h1 .editsection { font-size: 53%; }
+h2 { font-size: 150%; }
+h2 .editsection { font-size: 67%; }
+h3, h4, h5, h6 {
+	border-bottom: none;
+	font-weight: bold;
+}
+h3 { font-size: 132%; }
+h3 .editsection { font-size: 76%; font-weight: normal; }
+h4 { font-size: 116%; }
+h4 .editsection { font-size: 86%; font-weight: normal; }
+h5 { font-size: 100%; }
+h5 .editsection { font-weight: normal; }
+h6 { font-size: 80%;  }
+h6 .editsection { font-size: 125%; font-weight: normal; }
+
+ul {
+	line-height: 1.5em;
+	list-style-type: square;
+	margin: .3em 0 0 1.5em;
+	padding: 0;
+	list-style-image: url(bullet.gif);
+}
+ol {
+	line-height: 1.5em;
+	margin: .3em 0 0 3.2em;
+	padding: 0;
+	list-style-image: none;
+}
+li {
+	margin-bottom: .1em;
+}
+dt {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+dl {
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+dd {
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-bottom: .1em;
+}
+
+fieldset {
+	border: 1px solid #2f6fab;
+	margin: 1em 0 1em 0;
+	padding: 0 1em 1em;
+	line-height: 1.5em;
+}
+fieldset.nested {
+	margin: 0 0 0.5em 0;
+	padding: 0 0.5em 0.5em;
+}
+legend {
+	padding: .5em;
+	font-size: 95%;
+}
+form {
+	border: none;
+	margin: 0;
+}
+
+textarea {
+	width: 100%;
+	padding: .1em;
+}
+
+input.historysubmit {
+	padding: 0 .3em .3em .3em !important;
+	font-size: 94%;
+	cursor: pointer;
+	height: 1.7em !important;
+	margin-left: 1.6em;
+}
+select {
+	vertical-align: top;
+}
+abbr, acronym, .explain {
+	border-bottom: 1px dotted black;
+	color: black;
+	background: none;
+	cursor: help;
+}
+q {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}
+/* disabled for now
+blockquote {
+	font-family: Times, "Times New Roman", serif;
+	font-style: italic;
+}*/
+code {
+	background-color: #f9f9f9;
+}
+pre {
+	padding: 1em;
+	border: 1px dashed #2f6fab;
+	color: black;
+	background-color: #f9f9f9;
+	line-height: 1.1em;
+}
+
+/*
+** the main content area
+*/
+
+#siteSub {
+	display: none;
+}
+#jump-to-nav {
+	display: none;
+}
+
+#contentSub, #contentSub2 {
+	font-size: 84%;
+	line-height: 1.2em;
+	margin: 0 0 1.4em 1em;
+	color: #7d7d7d;
+	width: auto;
+}
+span.subpages {
+	display: block;
+}
+
+/* Some space under the headers in the content area */
+#bodyContent h1, #bodyContent h2 {
+	margin-bottom: .6em;
+}
+#bodyContent h3, #bodyContent h4, #bodyContent h5 {
+	margin-bottom: .3em;
+}
+#firstHeading {
+	margin-bottom: .1em;
+	/* These two rules hack around bug 2013 (fix for more limited bug 11325).
+	   When bug 2013 is fixed properly, they should be removed. */
+	line-height: 1.2em;
+	padding-bottom: 0;
+}
+
+/* user notification thing */
+.usermessage {
+	background-color: #ffce7b;
+	border: 1px solid #ffa500;
+	color: black;
+	font-weight: bold;
+	margin: 2em 0 1em;
+	padding: .5em 1em;
+	vertical-align: middle;
+}
+#siteNotice {
+	text-align: center;
+	font-size: 95%;
+	padding: 0 0.9em;
+}
+#siteNotice p {
+	margin: 0;
+	padding: 0;
+}
+
+.catlinks {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	margin-top: 1em;
+	clear: both;
+}
+/* currently unused, intended to be used by a metadata box
+in the bottom-right corner of the content area */
+.documentDescription {
+	/* The summary text describing the document */
+	font-weight: bold;
+	display: block;
+	margin: 1em 0;
+	line-height: 1.5em;
+}
+.documentByLine {
+	text-align: right;
+	font-size: 90%;
+	clear: both;
+	font-weight: normal;
+	color: #76797c;
+}
+
+/* emulate center */
+.center {
+	width: 100%;
+	text-align: center;
+}
+*.center * {
+	margin-left: auto;
+	margin-right: auto;
+}
+/* small for tables and similar */
+.small, .small * {
+	font-size: 94%;
+}
+table.small {
+	font-size: 100%;
+}
+
+/*
+** content styles
+*/
+
+#toc,
+.toc,
+.mw-warning {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}
+
+.mw-warning {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+/* images */
+div.floatright, table.floatright {
+	clear: right;
+	float: right;
+	position: relative;
+	margin: 0 0 .5em .5em;
+	border: 0;
+/*
+	border: .5em solid white;
+	border-width: .5em 0 .8em 1.4em;
+*/
+}
+div.floatright p { font-style: italic; }
+div.floatleft, table.floatleft {
+	float: left;
+	clear: left;
+	position: relative;
+	margin: 0 .5em .5em 0;
+	border: 0;
+/*
+	margin: .3em .5em .5em 0;
+	border: .5em solid white;
+	border-width: .5em 1.4em .8em 0;
+*/
+}
+div.floatleft p { font-style: italic; }
+/* thumbnails */
+div.thumb {
+	margin-bottom: .5em;
+	border-style: solid;
+	border-color: white;
+	width: auto;
+}
+div.thumbinner {
+	border: 1px solid #ccc;
+	padding: 3px !important;
+	background-color: #f9f9f9;
+	font-size: 94%;
+	text-align: center;
+	overflow: hidden;
+}
+html .thumbimage {
+	border: 1px solid #ccc;
+}
+html .thumbcaption {
+	border: none;
+	text-align: left;
+	line-height: 1.4em;
+	padding: 3px !important;
+	font-size: 94%;
+}
+div.magnify {
+	float: right;
+	border: none !important;
+	background: none !important;
+}
+div.magnify a, div.magnify img {
+	display: block;
+	border: none !important;
+	background: none !important;
+}
+div.tright {
+	clear: right;
+	float: right;
+	border-width: .5em 0 .8em 1.4em;
+}
+div.tleft {
+	float: left;
+	clear: left;
+	margin-right: .5em;
+	border-width: .5em 1.4em .8em 0;
+}
+img.thumbborder {
+	border: 1px solid #dddddd;
+}
+.hiddenStructure {
+	display: none;
+}
+
+/*
+** classes for special content elements like town boxes
+** intended to be referenced directly from the wiki src
+*/
+
+/*
+** User styles
+*/
+/* table standards */
+table.rimage {
+	float: right;
+	position: relative;
+	margin-left: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.toccolours {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+
+/*
+** edit views etc
+*/
+.special li {
+	line-height: 1.4em;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+** keep the whitespace in front of the ^=, hides rule from konqueror
+** this is css3, the validator doesn't like it when validating as css2
+*/
+#bodyContent a.external,
+#bodyContent a.external[href ^="gopher://"] {
+	background: url(external.png) center right no-repeat;
+	padding: 0 13px;
+}
+.rtl #bodyContent a.external,
+.rtl #bodyContent a.external[href ^="gopher://"] {
+	background-image: url(external-rtl.png);
+}
+#bodyContent a.external[href ^="https://"],
+.link-https {
+	background: url(lock_icon.gif) center right no-repeat;
+	padding: 0 16px;
+}
+#bodyContent a.external[href ^="mailto:"],
+.link-mailto {
+	background: url(mail_icon.gif) center right no-repeat;
+	padding: 0 18px;
+}
+#bodyContent a.external[href ^="news://"] {
+	background: url(news_icon.png) center right no-repeat;
+	padding: 0 18px;
+}
+#bodyContent a.external[href ^="ftp://"],
+.link-ftp {
+	background: url(file_icon.gif) center right no-repeat;
+	padding: 0 18px;
+}
+#bodyContent a.external[href ^="irc://"],
+.link-irc {
+	background: url(discussionitem_icon.gif) center right no-repeat;
+	padding: 0 18px;
+}
+#bodyContent a.external[href $=".ogg"], #bodyContent a.external[href $=".OGG"],
+#bodyContent a.external[href $=".mid"], #bodyContent a.external[href $=".MID"],
+#bodyContent a.external[href $=".midi"], #bodyContent a.external[href $=".MIDI"],
+#bodyContent a.external[href $=".mp3"], #bodyContent a.external[href $=".MP3"],
+#bodyContent a.external[href $=".wav"], #bodyContent a.external[href $=".WAV"],
+#bodyContent a.external[href $=".wma"], #bodyContent a.external[href $=".WMA"],
+.link-audio {
+	background: url("audio.png") center right no-repeat;
+	padding: 0 13px;
+}
+#bodyContent a.external[href $=".ogm"], #bodyContent a.external[href $=".OGM"],
+#bodyContent a.external[href $=".avi"], #bodyContent a.external[href $=".AVI"],
+#bodyContent a.external[href $=".mpeg"], #bodyContent a.external[href $=".MPEG"],
+#bodyContent a.external[href $=".mpg"], #bodyContent a.external[href $=".MPG"],
+.link-video {
+	background: url("video.png") center right no-repeat;
+	padding: 0 13px;
+}
+#bodyContent a.external[href $=".pdf"], #bodyContent a.external[href $=".PDF"],
+#bodyContent a.external[href *=".pdf#"], #bodyContent a.external[href *=".PDF#"],
+#bodyContent a.external[href *=".pdf?"], #bodyContent a.external[href *=".PDF?"],
+.link-document {
+	background: url("document.png") center right no-repeat;
+	padding: 0 12px;
+}
+
+/* for rtl wikis */
+.rtl #bodyContent a.external {
+	background-position: left;
+	padding-right: 0;
+}
+.rtl a.feedlink {
+	background-position: right;
+	padding-right: 16px;
+	padding-left: 0;
+}
+
+/* correction for ltr wikis */
+.ltr #bodyContent a.external {
+	padding-left: 0;
+}
+
+/* disable interwiki styling */
+#bodyContent a.extiw,
+#bodyContent a.extiw:active {
+	color: #36b;
+}
+#bodyContent a.external {
+	color: #36b;
+}
+/*
+** Structural Elements
+*/
+
+/*
+** general portlet styles (elements in the quickbar)
+*/
+.portlet {
+	border: none;
+	margin: 0 0 .5em;
+	padding: 0;
+	float: none;
+	width: 11.6em;
+	overflow: hidden;
+}
+.portlet h4 {
+	font-size: 95%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.portlet h5 {
+	background: transparent;
+	padding: 0 1em 0 .5em;
+	display: inline;
+	height: 1em;
+	text-transform: lowercase;
+	font-size: 91%;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.portlet h6 {
+	background: #ffae2e;
+	border: 1px solid #2f6fab;
+	border-style: solid solid none solid;
+	padding: 0 1em 0 1em;
+	text-transform: lowercase;
+	display: block;
+	font-size: 1em;
+	height: 1.2em;
+	font-weight: normal;
+	white-space: nowrap;
+}
+.pBody {
+	font-size: 95%;
+	background-color: white;
+	color: black;
+	border-collapse: collapse;
+	border: 1px solid #aaa;
+	padding: 0 .8em .3em .5em;
+}
+.portlet h1,
+.portlet h2,
+.portlet h3,
+.portlet h4 {
+	margin: 0;
+	padding: 0;
+}
+.portlet ul {
+	line-height: 1.5em;
+	list-style-type: square;
+	list-style-image: url(bullet.gif);
+	font-size: 95%;
+}
+.portlet li {
+	padding: 0;
+	margin: 0;
+}
+
+/*
+** Logo properties
+*/
+
+#p-logo {
+	top: 0;
+	left: 0;
+	position: absolute; /*needed to use z-index */
+	z-index: 3;
+	height: 155px;
+	width: 12em;
+	overflow: visible;
+}
+#p-logo h5 {
+	display: none;
+}
+#p-logo a,
+#p-logo a:hover {
+	display: block;
+	height: 155px;
+	width: 12.2em;
+	background-repeat: no-repeat;
+	background-position: 35% 50% !important;
+	text-decoration: none;
+}
+
+/*
+** Search portlet
+*/
+#p-search {
+	position: relative;
+	z-index: 3;
+}
+input.searchButton {
+	margin-top: 1px;
+	font-size: 95%;
+}
+#searchGoButton {
+	padding-left: .5em;
+	padding-right: .5em;
+	font-weight: bold;
+}
+#searchInput {
+	width: 10.9em;
+	margin: 0;
+	font-size: 95%;
+}
+#p-search .pBody {
+	padding: .5em .4em .4em .4em;
+	text-align: center;
+}
+#p-search #searchform div div {
+	margin-top: .4em;
+	font-size: 95%;
+}
+/*
+** the personal toolbar
+*/
+#p-personal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+#p-personal {
+	width: 100%;
+	white-space: nowrap;
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: none;
+	overflow: visible;
+	line-height: 1.2em;
+}
+#p-personal h5 {
+	display: none;
+}
+#p-personal .portlet,
+#p-personal .pBody {
+	z-index: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	overflow: visible;
+	background: none;
+}
+/* this is the ul contained in the portlet */
+#p-personal ul {
+	border: none;
+	line-height: 1.4em;
+	color: #2f6fab;
+	padding: 0 2em 0 3em;
+	margin: 0;
+	text-align: right;
+	list-style: none;
+	z-index: 0;
+	background: none;
+	cursor: default;
+}
+#p-personal li {
+	z-index: 0;
+	border: none;
+	padding: 0;
+	display: inline;
+	color: #2f6fab;
+	margin-left: 1em;
+	line-height: 1.2em;
+	background: none;
+}
+#p-personal li a {
+	text-decoration: none;
+	color: #005896;
+	padding-bottom: .2em;
+	background: none;
+}
+#p-personal li a:hover {
+	background-color: white;
+	padding-bottom: .2em;
+	text-decoration: none;
+}
+#p-personal li.active a:hover {
+	background-color: transparent;
+}
+/* the icon in front of the user name, single quotes
+in bg url to hide it from iemac */
+li#pt-userpage,
+li#pt-anonuserpage,
+li#pt-login {
+	background: url(user.gif) top left no-repeat;
+	padding-left: 20px;
+	text-transform: none;
+}
+#p-personal ul {
+	text-transform: lowercase;
+}
+#p-personal li.active {
+	font-weight: bold;
+}
+/*
+** the page-related actions- page/talk, edit etc
+*/
+#p-cactions {
+	position: absolute;
+	top: 1.3em;
+	left: 11.5em;
+	margin: 0;
+	white-space: nowrap;
+	width: 76%;
+	line-height: 1.1em;
+	overflow: visible;
+	background: none;
+	border-collapse: collapse;
+	padding-left: 1em;
+	list-style: none;
+	font-size: 95%;
+}
+#p-cactions ul {
+	list-style: none;
+}
+#p-cactions li {
+	display: inline;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	padding: 0 0 .1em 0;
+	margin: 0 .3em 0 0;
+	overflow: visible;
+	background: white;
+}
+#p-cactions li.selected {
+	border-color: #fabd23;
+	padding: 0 0 .2em 0;
+	font-weight: bold;
+}
+#p-cactions li a {
+	background-color: #fbfbfb;
+	color: #002bb8;
+	border: none;
+	padding: 0 .8em .3em;
+	position: relative;
+	z-index: 0;
+	margin: 0;
+	text-decoration: none;
+}
+#p-cactions li.selected a {
+	z-index: 3;
+	padding: 0 1em .2em!important;
+	background-color: white;
+}
+#p-cactions .new a {
+	color: #ba0000;
+}
+#p-cactions li a:hover {
+	z-index: 3;
+	text-decoration: none;
+	background-color: white;
+}
+#p-cactions h5 {
+	display: none;
+}
+#p-cactions li.istalk {
+	margin-right: 0;
+}
+#p-cactions li.istalk a {
+	padding-right: .5em;
+}
+#p-cactions #ca-addsection a {
+	padding-left: .4em;
+	padding-right: .4em;
+}
+/* offsets to distinguish the tab groups */
+li#ca-talk {
+	margin-right: 1.6em;
+}
+li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
+	margin-left: 1.6em;
+}
+#p-cactions .pBody {
+	font-size: 1em;
+	background-color: transparent;
+	color: inherit;
+	border-collapse: inherit;
+	border: 0;
+	padding: 0;
+}
+#p-cactions .hiddenStructure {
+	display: none;
+}
+#p-cactions li a {
+	text-transform: lowercase;
+}
+
+#p-lang {
+	position: relative;
+	z-index: 3;
+}
+
+/* Override text-transform on languages where capitalization is significant */
+.capitalize-all-nouns .portlet h5,
+.capitalize-all-nouns .portlet h6,
+.capitalize-all-nouns #p-personal ul,
+.capitalize-all-nouns #p-cactions ul li a {
+	text-transform: none;
+}
+
+/* TODO: #t-iscite is only used by the Cite extension, come up with some
+ * system which allows extensions to add to this file on the fly
+ */
+#t-ispermalink, #t-iscite {
+	color: #999;
+}
+/*
+** footer
+*/
+#footer {
+	background-color: white;
+	border-top: 1px solid #fabd23;
+	border-bottom: 1px solid #fabd23;
+	margin: .6em 0 1em 0;
+	padding: .4em 0 1.2em 0;
+	text-align: center;
+	font-size: 90%;
+}
+#footer li {
+	display: inline;
+	margin: 0 1.3em;
+}
+#f-poweredbyico, #f-copyrightico {
+	margin: 0 8px;
+	position: relative;
+	top: -2px; /* Bump it up just a tad */
+}
+#f-poweredbyico {
+	float: right;
+	height: 1%;
+}
+#f-copyrightico {
+	float: left;
+	height: 1%;
+}
+
+.mw-htmlform-submit {
+	font-weight: bold;
+	padding-left: .3em;
+	padding-right: .3em;
+	margin-right: 2em;
+}
+
+/* js pref toc */
+#preftoc {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+}
+#preftoc li {
+	background-color: #f0f0f0;
+	color: #000;
+}
+#preftoc li {
+	margin: 1px -2px 1px 2px;
+	float: left;
+	padding: 2px 0 3px 0;
+	border: 1px solid #fff;
+	border-right-color: #716f64;
+	border-bottom: 0;
+	position: relative;
+	white-space: nowrap;
+	list-style-type: none;
+	list-style-image: none;
+	z-index: 3;
+}
+#preftoc li.selected {
+	font-weight: bold;
+	background-color: #f9f9f9;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	cursor: default;
+	top: 1px;
+	padding-top: 2px;
+	margin-right: -3px;
+}
+#preftoc > li.selected {
+	top: 2px;
+}
+#preftoc a,
+#preftoc a:active {
+	display: block;
+	color: #000;
+	padding: 0 .7em;
+	position: relative;
+	text-decoration: none;
+}
+#preftoc li.selected a {
+	cursor: default;
+	text-decoration: none;
+}
+#preferences {
+	margin: 0;
+	border: 1px solid #aaa;
+	clear: both;
+	padding: 1.5em;
+	background-color: #F9F9F9;
+}
+.prefsection {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.prefsection legend {
+	font-weight: bold;   
+}
+.prefsection table, .prefsection legend {
+	background-color: #F9F9F9;
+}
+.mainLegend {
+	display: none;
+}
+td.htmlform-tip {
+	font-size: x-small;
+	padding: .2em 2em;
+	color: #666;
+}
+
+.preferences-login {
+	clear: both;
+	margin-bottom: 1.5em;
+}
+
+.prefcache {
+	font-size: 90%;
+	margin-top: 2em;
+}
+
+div#userloginForm form,
+div#userlogin form#userlogin2 {
+	margin: 0 3em 1em 0;
+	border: 1px solid #aaa;
+	clear: both;
+	padding: 1.5em 2em;
+	background-color: #f9f9f9;
+	float: left;
+}
+.rtl div#userloginForm form,
+.rtl div#userlogin form#userlogin2 {
+	float: right;
+}
+
+div#userloginForm table,
+div#userlogin form#userlogin2 table {
+	background-color: #f9f9f9;
+}
+
+div#userloginForm h2,
+div#userlogin form#userlogin2 h2 {
+	padding-top: 0;
+}
+
+div#userlogin .captcha,
+div#userloginForm .captcha {
+	border: 1px solid #bbb;
+	padding: 1.5em 2em;
+	background-color: white;
+}
+
+#loginend, #signupend {
+	clear: both;
+}
+
+#userloginprompt, #languagelinks {
+	font-size: 85%;
+}
+
+#login-sectiontip {
+	font-size: 85%;
+	line-height: 1.2;
+	padding-top: 2em;
+}
+
+#userlogin .loginText, #userlogin .loginPassword {
+	width: 12em;
+}
+
+#userloginlink a, #wpLoginattempt, #wpCreateaccount {
+	font-weight: bold;
+}
+
+/*
+** IE/Mac fixes, hope to find a validating way to move this
+** to a separate stylesheet. This would work but doesn't validate:
+** @import("IEMacFixes.css");
+*/
+/* tabs: border on the a, not the div */
+* > html #p-cactions li { border: none; }
+* > html #p-cactions li a {
+	border: 1px solid #aaa;
+	border-bottom: none;
+}
+* > html #p-cactions li.selected a { border-color: #fabd23; }
+/* footer icons need a fixed width */
+* > html #f-poweredbyico,
+* > html #f-copyrightico { width: 88px; }
+* > html #bodyContent,
+* > html #bodyContent pre {
+	overflow-x: auto;
+	width: 100%;
+	padding-bottom: 25px;
+}
+
+/* more IE fixes */
+/* float/negative margin brokenness */
+* html #footer {margin-top: 0;}
+* html #column-content {
+	display: inline;
+	margin-bottom: 0;
+}
+* html div.editsection { font-size: smaller; }
+#pagehistory li.selected { position: relative; }
+
+/* Mac IE 5.0 fix; floated content turns invisible */
+* > html #column-content {
+	float: none;
+}
+* > html #column-one {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+* > html #footer {
+	margin-left: 13.2em;
+}
+.redirectText {
+	font-size: 150%;
+	margin: 5px;
+}
+
+.printfooter {
+	display: none;
+}
+
+
+div.patrollink {
+	clear: both;
+}
+
+.sharedUploadNotice {
+	font-style: italic;
+}
+
+span.updatedmarker {
+	color: black;
+	background-color: #0f0;
+}
+
+.previewnote {
+	color: #c00;
+	margin-bottom: 1em;
+}
+
+.previewnote p {
+	text-indent: 3em;
+	margin: 0.8em 0;
+}
+
+.editExternally {
+	border: 1px solid gray;
+	background-color: #ffffff;
+	padding: 3px;
+	margin-top: 0.5em;
+	float: left;
+	font-size: small;
+	text-align: center;
+}
+.editExternallyHelp {
+	font-style: italic;
+	color: gray;
+}
+
+.toggle {
+	margin-left: 2em;
+	text-indent: -2em;
+}
+
+input#wpSummary {
+	width: 80%;
+}
+
+/* @bug 1714 */
+input#wpSave, input#wpDiff {
+	margin-right: 0.33em;
+}
+
+#wpSave {
+	font-weight: bold;
+}
+
+/* Classes for article validation */
+
+table.revisionform_default {
+	border: 1px solid #000000;
+}
+
+table.revisionform_focus {
+	border: 1px solid #000000;
+	background-color:#00BBFF;
+}
+
+tr.revision_tr_default {
+	background-color:#EEEEEE;
+}
+
+tr.revision_tr_first {
+	background-color:#DDDDDD;
+}
+
+p.revision_saved {
+	color: green;
+	font-weight:bold;
+}
+
+/* noarticletext */
+div.noarticletext {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: .2em 1em;
+	color: #000;
+}
+
+div#searchTargetContainer {
+	left:       10px;
+	top:        10px;
+	width:      90%;
+	background: white;
+}
+
+div#searchTarget {
+	padding:    3px;
+	margin:     5px;
+	background: #F0F0F0;
+	border:     solid 1px blue;
+}
+
+div#searchTarget ul li {
+	list-style: none;
+}
+
+div#searchTarget ul li:before {
+	color: orange;
+	content: "\00BB \0020";
+}
+
+div#searchTargetHide {
+	float:right;
+	border:solid 1px black;
+	background:#DCDCDC;
+	padding:2px;
+}
+
+#powersearch p {
+	margin-top:0px;
+}
+
+div.multipageimagenavbox {
+   border: solid 1px silver;
+   padding: 4px;
+   margin: 1em;
+   background: #f0f0f0;
+}
+
+div.multipageimagenavbox div.thumb {
+   border: none;
+   margin-left: 2em;
+   margin-right: 2em;
+}
+
+div.multipageimagenavbox hr {
+   margin: 6px;
+}
+
+table.multipageimage td {
+   text-align: center;
+}
+
+.templatesUsed { margin-top: 1.5em; }
+
+.mw-summary-preview {
+	margin: 0.1em 0;
+}
+
+/* Friendlier slave lag warnings */
+div.mw-lag-warn-normal,
+div.mw-lag-warn-high {
+	padding: 3px;
+	text-align: center;
+	margin: 3px auto;
+}
+div.mw-lag-warn-normal {
+	border: 1px solid #FFCC66;
+	background-color: #FFFFCC;
+}
+div.mw-lag-warn-high {
+	font-weight: bold;
+	border: 2px solid #FF0033;
+	background-color: #FFCCCC;
+}
+
+.MediaTransformError {
+	background-color: #ccc;
+	padding: 0.1em;
+}
+.MediaTransformError td {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 90%;
+}
+
+/* God-damned hack for the crappy layout */
+.os-suggest {
+	font-size: 127%;
+}
+
+/* Sometimes people don't want personal tools to be lowercase! */
+.no-text-transform {
+	text-transform: none;
+}
+Xtext/css_7http://metagovernment.org/w/skins/monobook/main.css?270Oñbplist00ÔbcX$versionX$objectsY$archiverT$top † ¯"()012HIJKLMNOPQRSTUVWX[\]U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_7http://metagovernment.org/w/skins/monobook/main.css?270Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]†Ç¹ÈÓ345>GWNS.keysZNS.objects¨6789:;<=€	€
+€€€€€€¨?@ABCDEF€€€€€€€€€VServer\Content-Type]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApacheXtext/css_Thu, 25 Nov 2010 16:35:41 GMT_Sun, 18 May 2014 21:26:38 GMTUbytesU23103_timeout=5, max=383ZKeep-AliveÒ*+YZ\NSDictionary¢Y/Z?Xtext/cssÒ*+^__NSHTTPURLResponse£`a/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑde_WebResourceResponse€    # - 2 7 W ] x {  ‚ … ˆ Œ  – ™ œ Ÿ ¢ ¥ § © « ­ ¯ ± ³ µ · ¹ » ½ Ä Ì Ø Ú Ü Ş(17:@IRT[cnwy{}ƒ…‡’”–˜šœ ¢©¶ÄÉ×æñü,LRXmx}Š™²¶ÊØêí             f              Õ_WebResourceTextEncodingNameOÏ/** Common styles for all users, all skins.
+  */
+
+
+/** - reference ------------------------
+  */
+sup.reference
+{
+    font-size: 0.8em;
+    vertical-align: top; /* rather than sup, avoid messing up line spacing */
+}
+
+
+
+/** - wikiTable ------------------------
+  */
+table.wikitable
+{
+    border-collapse: collapse;
+    margin-top: 1em; margin-bottom: 1em;
+}
+
+
+table.wikitable td, table.wikitable th
+{
+    border: 3px solid #DDD;
+    padding: 0 0.05em 0.05em 0.3em; /* TRBL */
+    vertical-align: baseline;
+}
+
+
+table.wikitable td
+{
+    background-color: #F9F9F9;
+}
+
+
+table.wikitable td.clear
+{
+    background-color: inherit;
+    border: none;
+}
+
+
+table.wikitable th
+{
+    background-color: #F2F2F2;
+    text-align: left;
+}Xtext/cssUutf-8_ˆhttp://metagovernment.org/w/index.php5?title=MediaWiki:Common.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000O”bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\_`aU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_ˆhttp://metagovernment.org/w/index.php5?title=MediaWiki:Common.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]¸šİÈÓ345?IWNS.keysZNS.objects©6789:;<=>€	€
+€€€€€€€©@ABCDEFGH€€€€€€€€€€ZConnection\Content-TypeVServerTVaryTDate_Content-EncodingZKeep-Alive]Cache-Control_Transfer-EncodingZKeep-Alive_text/css; charset=UTF-8VApache_Accept-Encoding_Sun, 18 May 2014 21:26:38 GMTTgzip_timeout=5, max=384_%public, s-maxage=18000, max-age=18000XIdentityÒ*+]^\NSDictionary¢]/ÿÿÿÿÿÿÿÿXtext/cssÒ*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 Y _ z }  „ ‡ Š  ‘ ˜ ›  ¡ ¤ § © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Ş àkp{„Š“œ¥§®¶ÁËÍÏÑÓÕ×ÙÛİçéëíïñóõ÷ùû$7BPdo‰¢ÂÇÜ"+49MQes…ˆ             j               Õ !"#O2/* CSS placed here will affect the print output */Xtext/cssUutf-8_‡http://metagovernment.org/w/index.php5?title=MediaWiki:Print.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000O“bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\_`aU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_‡http://metagovernment.org/w/index.php5?title=MediaWiki:Print.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]¸¾ÈÓ345?IWNS.keysZNS.objects©6789:;<=>€	€
+€€€€€€€©@ABCDEFGH€€€€€€€€€€ZConnection\Content-TypeVServerTVaryTDate_Content-EncodingZKeep-Alive]Cache-Control_Transfer-EncodingZKeep-Alive_text/css; charset=UTF-8VApache_Accept-Encoding_Sun, 18 May 2014 21:26:38 GMTTgzip_timeout=5, max=384_%public, s-maxage=18000, max-age=18000XIdentityÒ*+]^\NSDictionary¢]/ÿÿÿÿÿÿÿÿXtext/cssÒ*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 Y _ z }  „ ‡ Š  ‘ ˜ ›  ¡ ¤ § © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Ş àjozƒ‰Œ’›¤¦­µÀÊÌÎĞÒÔÖØÚÜæèêìîğòôöøú#6AOcnˆ¡ÁÆÛ!*38LPdr„‡             j              ŸÕ%&'()O</* CSS placed here will affect users of the Monobook skin */Xtext/cssUutf-8_Šhttp://metagovernment.org/w/index.php5?title=MediaWiki:Monobook.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000O–bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\_`aU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_Šhttp://metagovernment.org/w/index.php5?title=MediaWiki:Monobook.css&usemsgcache=yes&ctype=text%2Fcss&smaxage=18000&action=raw&maxage=18000Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]¹nÈÓ345?IWNS.keysZNS.objects©6789:;<=>€	€
+€€€€€€€©@ABCDEFGH€€€€€€€€€€ZConnection\Content-TypeVServerTVaryTDate_Content-EncodingZKeep-Alive]Cache-Control_Transfer-EncodingZKeep-Alive_text/css; charset=UTF-8VApache_Accept-Encoding_Sun, 18 May 2014 21:26:38 GMTTgzip_timeout=5, max=384_%public, s-maxage=18000, max-age=18000XIdentityÒ*+]^\NSDictionary¢]/ÿÿÿÿÿÿÿÿXtext/cssÒ*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 Y _ z }  „ ‡ Š  ‘ ˜ ›  ¡ ¤ § © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Ş àmr}†Œ•§©°¸ÃÍÏÑÓÕ×ÙÛİßéëíïñóõ÷ùûı!&9DRfq‹’¤ÄÉŞ!$-6;OSgu‡Š              j              ¢Õ+,-./OK/* generated user stylesheet */
+a.new, #quickbar a.new { color: #CC2200; }
+Xtext/cssUutf-8_Nhttp://metagovernment.org/w/index.php5?title=-&action=raw&maxage=18000&gen=cssOZbplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\_`aU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_Nhttp://metagovernment.org/w/index.php5?title=-&action=raw&maxage=18000&gen=cssÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]ÒóÈÓ345?IWNS.keysZNS.objects©6789:;<=>€	€
+€€€€€€€©@ABCDEFGH€€€€€€€€€€ZConnection\Content-TypeVServerTVaryTDate_Content-EncodingZKeep-Alive]Cache-Control_Transfer-EncodingZKeep-Alive_text/css; charset=UTF-8VApache_Accept-Encoding_Sun, 18 May 2014 21:26:38 GMTTgzip_timeout=5, max=382_%public, s-maxage=18000, max-age=18000XIdentityÒ*+]^\NSDictionary¢]/ÿÿÿÿÿÿÿÿXtext/cssÒ*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 Y _ z }  „ ‡ Š  ‘ ˜ ›  ¡ ¤ § © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Ş à16AJPSYbkmt|‡‘“•—™›Ÿ¡£­¯±³µ·¹»½¿ÁÌÙàåêı*5OVhˆ¢ÊÓØåèñúÿ+9KNd             j              fÔ1234Ox™// MediaWiki JavaScript support functions
+
+var clientPC = navigator.userAgent.toLowerCase(); // Get client info
+var is_gecko = /gecko/.test( clientPC ) &&
+	!/khtml|spoofer|netscape\/7\.0/.test(clientPC);
+var webkit_match = clientPC.match(/applewebkit\/(\d+)/);
+if (webkit_match) {
+	var is_safari = clientPC.indexOf('applewebkit') != -1 &&
+		clientPC.indexOf('spoofer') == -1;
+	var is_safari_win = is_safari && clientPC.indexOf('windows') != -1;
+	var webkit_version = parseInt(webkit_match[1]);
+}
+// For accesskeys; note that FF3+ is included here!
+var is_ff2 = /firefox\/[2-9]|minefield\/3/.test( clientPC );
+var ff2_bugs = /firefox\/2/.test( clientPC );
+// These aren't used here, but some custom scripts rely on them
+var is_ff2_win = is_ff2 && clientPC.indexOf('windows') != -1;
+var is_ff2_x11 = is_ff2 && clientPC.indexOf('x11') != -1;
+if (clientPC.indexOf('opera') != -1) {
+	var is_opera = true;
+	var is_opera_preseven = window.opera && !document.childNodes;
+	var is_opera_seven = window.opera && document.childNodes;
+	var is_opera_95 = /opera\/(9\.[5-9]|[1-9][0-9])/.test( clientPC );
+	var opera6_bugs = is_opera_preseven;
+	var opera7_bugs = is_opera_seven && !is_opera_95;
+	var opera95_bugs = /opera\/(9\.5)/.test( clientPC );
+}
+// As recommended by <http://msdn.microsoft.com/en-us/library/ms537509.aspx>,
+// avoiding false positives from moronic extensions that append to the IE UA
+// string (bug 23171)
+var ie6_bugs = false;
+if ( /MSIE ([0-9]{1,}[\.0-9]{0,})/.exec( clientPC ) != null
+&& parseFloat( RegExp.$1 ) <= 6.0 ) {
+	ie6_bugs = true;
+}
+
+// Global external objects used by this script.
+/*extern ta, stylepath, skin */
+
+// add any onload functions in this hook (please don't hard-code any events in the xhtml source)
+var doneOnloadHook;
+
+if (!window.onloadFuncts) {
+	var onloadFuncts = [];
+}
+
+function addOnloadHook( hookFunct ) {
+	// Allows add-on scripts to add onload functions
+	if( !doneOnloadHook ) {
+		onloadFuncts[onloadFuncts.length] = hookFunct;
+	} else {
+		hookFunct();  // bug in MSIE script loading
+	}
+}
+
+function hookEvent( hookName, hookFunct ) {
+	addHandler( window, hookName, hookFunct );
+}
+
+function importScript( page ) {
+	// TODO: might want to introduce a utility function to match wfUrlencode() in PHP
+	var uri = wgScript + '?title=' +
+		encodeURIComponent(page.replace(/ /g,'_')).replace(/%2F/ig,'/').replace(/%3A/ig,':') +
+		'&action=raw&ctype=text/javascript';
+	return importScriptURI( uri );
+}
+
+var loadedScripts = {}; // included-scripts tracker
+function importScriptURI( url ) {
+	if ( loadedScripts[url] ) {
+		return null;
+	}
+	loadedScripts[url] = true;
+	var s = document.createElement( 'script' );
+	s.setAttribute( 'src', url );
+	s.setAttribute( 'type', 'text/javascript' );
+	document.getElementsByTagName('head')[0].appendChild( s );
+	return s;
+}
+
+function importStylesheet( page ) {
+	return importStylesheetURI( wgScript + '?action=raw&ctype=text/css&title=' + encodeURIComponent( page.replace(/ /g,'_') ) );
+}
+
+function importStylesheetURI( url, media ) {
+	var l = document.createElement( 'link' );
+	l.type = 'text/css';
+	l.rel = 'stylesheet';
+	l.href = url;
+	if( media ) {
+		l.media = media;
+	}
+	document.getElementsByTagName('head')[0].appendChild( l );
+	return l;
+}
+
+function appendCSS( text ) {
+	var s = document.createElement( 'style' );
+	s.type = 'text/css';
+	s.rel = 'stylesheet';
+	if ( s.styleSheet ) {
+		s.styleSheet.cssText = text; // IE
+	} else {
+		s.appendChild( document.createTextNode( text + '' ) ); // Safari sometimes borks on null
+	}
+	document.getElementsByTagName('head')[0].appendChild( s );
+	return s;
+}
+
+// Special stylesheet links for Monobook only (see bug 14717)
+if ( typeof stylepath != 'undefined' && skin == 'monobook' ) {
+	if ( opera6_bugs ) {
+		importStylesheetURI( stylepath + '/' + skin + '/Opera6Fixes.css' );
+	} else if ( opera7_bugs ) {
+		importStylesheetURI( stylepath + '/' + skin + '/Opera7Fixes.css' );
+	} else if ( opera95_bugs ) {
+		importStylesheetURI( stylepath + '/' + skin + '/Opera9Fixes.css' );
+	} else if ( ff2_bugs ) {
+		importStylesheetURI( stylepath + '/' + skin + '/FF2Fixes.css' );
+	}
+}
+
+
+if ( wgBreakFrames ) {
+	// Un-trap us from framesets
+	if ( window.top != window ) {
+		window.top.location = window.location;
+	}
+}
+
+function showTocToggle() {
+	if ( document.createTextNode ) {
+		// Uses DOM calls to avoid document.write + XHTML issues
+
+		var linkHolder = document.getElementById( 'toctitle' );
+		var existingLink = document.getElementById( 'togglelink' );
+		if ( !linkHolder || existingLink ) {
+			// Don't add the toggle link twice
+			return;
+		}
+
+		var outerSpan = document.createElement( 'span' );
+		outerSpan.className = 'toctoggle';
+
+		var toggleLink = document.createElement( 'a' );
+		toggleLink.id = 'togglelink';
+		toggleLink.className = 'internal';
+		toggleLink.href = 'javascript:toggleToc()';
+		toggleLink.appendChild( document.createTextNode( tocHideText ) );
+
+		outerSpan.appendChild( document.createTextNode( '[' ) );
+		outerSpan.appendChild( toggleLink );
+		outerSpan.appendChild( document.createTextNode( ']' ) );
+
+		linkHolder.appendChild( document.createTextNode( ' ' ) );
+		linkHolder.appendChild( outerSpan );
+
+		var cookiePos = document.cookie.indexOf( "hidetoc=" );
+		if ( cookiePos > -1 && document.cookie.charAt( cookiePos + 8 ) == 1 ) {
+			toggleToc();
+		}
+	}
+}
+
+function changeText( el, newText ) {
+	// Safari work around
+	if ( el.innerText ) {
+		el.innerText = newText;
+	} else if ( el.firstChild && el.firstChild.nodeValue ) {
+		el.firstChild.nodeValue = newText;
+	}
+}
+
+function toggleToc() {
+	var tocmain = document.getElementById( 'toc' );
+	var toc = document.getElementById('toc').getElementsByTagName('ul')[0];
+	var toggleLink = document.getElementById( 'togglelink' );
+
+	if ( toc && toggleLink && toc.style.display == 'none' ) {
+		changeText( toggleLink, tocHideText );
+		toc.style.display = 'block';
+		document.cookie = "hidetoc=0";
+		tocmain.className = 'toc';
+	} else {
+		changeText( toggleLink, tocShowText );
+		toc.style.display = 'none';
+		document.cookie = "hidetoc=1";
+		tocmain.className = 'toc tochidden';
+	}
+}
+
+var mwEditButtons = [];
+var mwCustomEditButtons = []; // eg to add in MediaWiki:Common.js
+
+function escapeQuotes( text ) {
+	var re = new RegExp( "'", "g" );
+	text = text.replace( re, "\\'" );
+	re = new RegExp( "\\n", "g" );
+	text = text.replace( re, "\\n" );
+	return escapeQuotesHTML( text );
+}
+
+function escapeQuotesHTML( text ) {
+	var re = new RegExp( '&', "g" );
+	text = text.replace( re, "&amp;" );
+	re = new RegExp( '"', "g" );
+	text = text.replace( re, "&quot;" );
+	re = new RegExp( '<', "g" );
+	text = text.replace( re, "&lt;" );
+	re = new RegExp( '>', "g" );
+	text = text.replace( re, "&gt;" );
+	return text;
+}
+
+/**
+ * Set the accesskey prefix based on browser detection.
+ */
+var tooltipAccessKeyPrefix = 'alt-';
+if ( is_opera ) {
+	tooltipAccessKeyPrefix = 'shift-esc-';
+} else if ( !is_safari_win && is_safari && webkit_version > 526 ) {
+	tooltipAccessKeyPrefix = 'ctrl-alt-';
+} else if ( !is_safari_win && ( is_safari
+		|| clientPC.indexOf('mac') != -1
+		|| clientPC.indexOf('konqueror') != -1 ) ) {
+	tooltipAccessKeyPrefix = 'ctrl-';
+} else if ( is_ff2 ) {
+	tooltipAccessKeyPrefix = 'alt-shift-';
+}
+var tooltipAccessKeyRegexp = /\[(ctrl-)?(alt-)?(shift-)?(esc-)?(.)\]$/;
+
+/**
+ * Add the appropriate prefix to the accesskey shown in the tooltip.
+ * If the nodeList parameter is given, only those nodes are updated;
+ * otherwise, all the nodes that will probably have accesskeys by
+ * default are updated.
+ *
+ * @param Array nodeList -- list of elements to update
+ */
+function updateTooltipAccessKeys( nodeList ) {
+	if ( !nodeList ) {
+		// Rather than scan all links on the whole page, we can just scan these
+		// containers which contain the relevant links. This is really just an
+		// optimization technique.
+		var linkContainers = [
+			'column-one', // Monobook and Modern
+			'mw-head', 'mw-panel', 'p-logo' // Vector
+		];
+		for ( var i in linkContainers ) {
+			var linkContainer = document.getElementById( linkContainers[i] );
+			if ( linkContainer ) {
+				updateTooltipAccessKeys( linkContainer.getElementsByTagName( 'a' ) );
+			}
+		}
+		// these are rare enough that no such optimization is needed
+		updateTooltipAccessKeys( document.getElementsByTagName( 'input' ) );
+		updateTooltipAccessKeys( document.getElementsByTagName( 'label' ) );
+		return;
+	}
+
+	for ( var i = 0; i < nodeList.length; i++ ) {
+		var element = nodeList[i];
+		var tip = element.getAttribute( 'title' );
+		if ( tip && tooltipAccessKeyRegexp.exec( tip ) ) {
+			tip = tip.replace(tooltipAccessKeyRegexp,
+					  '[' + tooltipAccessKeyPrefix + "$5]");
+			element.setAttribute( 'title', tip );
+		}
+	}
+}
+
+/**
+ * Add a link to one of the portlet menus on the page, including:
+ *
+ * p-cactions: Content actions (shown as tabs above the main content in Monobook)
+ * p-personal: Personal tools (shown at the top right of the page in Monobook)
+ * p-navigation: Navigation
+ * p-tb: Toolbox
+ *
+ * This function exists for the convenience of custom JS authors.  All
+ * but the first three parameters are optional, though providing at
+ * least an id and a tooltip is recommended.
+ *
+ * By default the new link will be added to the end of the list.  To
+ * add the link before a given existing item, pass the DOM node of
+ * that item (easily obtained with document.getElementById()) as the
+ * nextnode parameter; to add the link _after_ an existing item, pass
+ * the node's nextSibling instead.
+ *
+ * @param String portlet -- id of the target portlet ("p-cactions", "p-personal", "p-navigation" or "p-tb")
+ * @param String href -- link URL
+ * @param String text -- link text (will be automatically lowercased by CSS for p-cactions in Monobook)
+ * @param String id -- id of the new item, should be unique and preferably have the appropriate prefix ("ca-", "pt-", "n-" or "t-")
+ * @param String tooltip -- text to show when hovering over the link, without accesskey suffix
+ * @param String accesskey -- accesskey to activate this link (one character, try to avoid conflicts)
+ * @param Node nextnode -- the DOM node before which the new item should be added, should be another item in the same list
+ *
+ * @return Node -- the DOM node of the new item (an LI element) or null
+ */
+function addPortletLink( portlet, href, text, id, tooltip, accesskey, nextnode ) {
+	var root = document.getElementById( portlet );
+	if ( !root ) {
+		return null;
+	}
+	var node = root.getElementsByTagName( 'ul' )[0];
+	if ( !node ) {
+		return null;
+	}
+
+	// unhide portlet if it was hidden before
+	root.className = root.className.replace( /(^| )emptyPortlet( |$)/, "$2" );
+
+	var span = document.createElement( 'span' );
+	span.appendChild( document.createTextNode( text ) );
+
+	var link = document.createElement( 'a' );
+	link.appendChild( span );
+	link.href = href;
+
+	var item = document.createElement( 'li' );
+	item.appendChild( link );
+	if ( id ) {
+		item.id = id;
+	}
+
+	if ( accesskey ) {
+		link.setAttribute( 'accesskey', accesskey );
+		tooltip += ' [' + accesskey + ']';
+	}
+	if ( tooltip ) {
+		link.setAttribute( 'title', tooltip );
+	}
+	if ( accesskey && tooltip ) {
+		updateTooltipAccessKeys( new Array( link ) );
+	}
+
+	if ( nextnode && nextnode.parentNode == node ) {
+		node.insertBefore( item, nextnode );
+	} else {
+		node.appendChild( item );  // IE compatibility (?)
+	}
+
+	return item;
+}
+
+function getInnerText( el ) {
+	if ( typeof el == 'string' ) {
+		return el;
+	}
+	if ( typeof el == 'undefined' ) {
+		return el;
+	}
+	if ( el.textContent ) {
+		return el.textContent; // not needed but it is faster
+	}
+	if ( el.innerText ) {
+		return el.innerText; // IE doesn't have textContent
+	}
+	var str = '';
+
+	var cs = el.childNodes;
+	var l = cs.length;
+	for ( var i = 0; i < l; i++ ) {
+		switch ( cs[i].nodeType ) {
+			case 1: // ELEMENT_NODE
+				str += ts_getInnerText( cs[i] );
+				break;
+			case 3:	// TEXT_NODE
+				str += cs[i].nodeValue;
+				break;
+		}
+	}
+	return str;
+}
+
+/* Dummy for deprecated function */
+window.ta = [];
+function akeytt( doId ) {
+}
+
+var checkboxes;
+var lastCheckbox;
+
+function setupCheckboxShiftClick() {
+	checkboxes = [];
+	lastCheckbox = null;
+	var inputs = document.getElementsByTagName( 'input' );
+	addCheckboxClickHandlers( inputs );
+}
+
+function addCheckboxClickHandlers( inputs, start ) {
+	if ( !start ) {
+		start = 0;
+	}
+
+	var finish = start + 250;
+	if ( finish > inputs.length ) {
+		finish = inputs.length;
+	}
+
+	for ( var i = start; i < finish; i++ ) {
+		var cb = inputs[i];
+		if ( !cb.type || cb.type.toLowerCase() != 'checkbox' ) {
+			continue;
+		}
+		var end = checkboxes.length;
+		checkboxes[end] = cb;
+		cb.index = end;
+		cb.onclick = checkboxClickHandler;
+	}
+
+	if ( finish < inputs.length ) {
+		setTimeout( function() {
+			addCheckboxClickHandlers( inputs, finish );
+		}, 200 );
+	}
+}
+
+function checkboxClickHandler( e ) {
+	if ( typeof e == 'undefined' ) {
+		e = window.event;
+	}
+	if ( !e.shiftKey || lastCheckbox === null ) {
+		lastCheckbox = this.index;
+		return true;
+	}
+	var endState = this.checked;
+	var start, finish;
+	if ( this.index < lastCheckbox ) {
+		start = this.index + 1;
+		finish = lastCheckbox;
+	} else {
+		start = lastCheckbox;
+		finish = this.index - 1;
+	}
+	for ( var i = start; i <= finish; ++i ) {
+		checkboxes[i].checked = endState;
+		if( i > start && typeof checkboxes[i].onchange == 'function' ) {
+			checkboxes[i].onchange(); // fire triggers
+		}
+	}
+	lastCheckbox = this.index;
+	return true;
+}
+
+
+/*
+	Written by Jonathan Snook, http://www.snook.ca/jonathan
+	Add-ons by Robert Nyman, http://www.robertnyman.com
+	Author says "The credit comment is all it takes, no license. Go crazy with it!:-)"
+	From http://www.robertnyman.com/2005/11/07/the-ultimate-getelementsbyclassname/
+*/
+function getElementsByClassName( oElm, strTagName, oClassNames ) {
+	var arrReturnElements = new Array();
+	if ( typeof( oElm.getElementsByClassName ) == 'function' ) {
+		/* Use a native implementation where possible FF3, Saf3.2, Opera 9.5 */
+		var arrNativeReturn = oElm.getElementsByClassName( oClassNames );
+		if ( strTagName == '*' ) {
+			return arrNativeReturn;
+		}
+		for ( var h = 0; h < arrNativeReturn.length; h++ ) {
+			if( arrNativeReturn[h].tagName.toLowerCase() == strTagName.toLowerCase() ) {
+				arrReturnElements[arrReturnElements.length] = arrNativeReturn[h];
+			}
+		}
+		return arrReturnElements;
+	}
+	var arrElements = ( strTagName == '*' && oElm.all ) ? oElm.all : oElm.getElementsByTagName( strTagName );
+	var arrRegExpClassNames = new Array();
+	if( typeof oClassNames == 'object' ) {
+		for( var i = 0; i < oClassNames.length; i++ ) {
+			arrRegExpClassNames[arrRegExpClassNames.length] =
+				new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)");
+		}
+	} else {
+		arrRegExpClassNames[arrRegExpClassNames.length] =
+			new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)");
+	}
+	var oElement;
+	var bMatchesAll;
+	for( var j = 0; j < arrElements.length; j++ ) {
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for( var k = 0; k < arrRegExpClassNames.length; k++ ) {
+			if( !arrRegExpClassNames[k].test( oElement.className ) ) {
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if( bMatchesAll ) {
+			arrReturnElements[arrReturnElements.length] = oElement;
+		}
+	}
+	return ( arrReturnElements );
+}
+
+function redirectToFragment( fragment ) {
+	var match = navigator.userAgent.match(/AppleWebKit\/(\d+)/);
+	if ( match ) {
+		var webKitVersion = parseInt( match[1] );
+		if ( webKitVersion < 420 ) {
+			// Released Safari w/ WebKit 418.9.1 messes up horribly
+			// Nightlies of 420+ are ok
+			return;
+		}
+	}
+	if ( is_gecko ) {
+		// Mozilla needs to wait until after load, otherwise the window doesn't scroll
+		addOnloadHook(function() {
+			if ( window.location.hash == '' ) {
+				window.location.hash = fragment;
+			}
+		});
+	} else {
+		if ( window.location.hash == '' ) {
+			window.location.hash = fragment;
+		}
+	}
+}
+
+/*
+ * Table sorting script based on one (c) 1997-2006 Stuart Langridge and Joost
+ * de Valk:
+ * http://www.joostdevalk.nl/code/sortable-table/
+ * http://www.kryogenix.org/code/browser/sorttable/
+ *
+ * @todo don't break on colspans/rowspans (bug 8028)
+ * @todo language-specific digit grouping/decimals (bug 8063)
+ * @todo support all accepted date formats (bug 8226)
+ */
+
+var ts_image_path = stylepath + '/common/images/';
+var ts_image_up = 'sort_up.gif';
+var ts_image_down = 'sort_down.gif';
+var ts_image_none = 'sort_none.gif';
+var ts_europeandate = wgContentLanguage != 'en'; // The non-American-inclined can change to "true"
+var ts_alternate_row_colors = false;
+var ts_number_transform_table = null;
+var ts_number_regex = null;
+
+function sortables_init() {
+	var idnum = 0;
+	// Find all tables with class sortable and make them sortable
+	var tables = getElementsByClassName( document, 'table', 'sortable' );
+	for ( var ti = 0; ti < tables.length ; ti++ ) {
+		if ( !tables[ti].id ) {
+			tables[ti].setAttribute( 'id', 'sortable_table_id_' + idnum );
+			++idnum;
+		}
+		ts_makeSortable( tables[ti] );
+	}
+}
+
+function ts_makeSortable( table ) {
+	var firstRow;
+	if ( table.rows && table.rows.length > 0 ) {
+		if ( table.tHead && table.tHead.rows.length > 0 ) {
+			firstRow = table.tHead.rows[table.tHead.rows.length-1];
+		} else {
+			firstRow = table.rows[0];
+		}
+	}
+	if ( !firstRow ) {
+		return;
+	}
+
+	// We have a first row: assume it's the header, and make its contents clickable links
+	for ( var i = 0; i < firstRow.cells.length; i++ ) {
+		var cell = firstRow.cells[i];
+		if ( (' ' + cell.className + ' ').indexOf(' unsortable ') == -1 ) {
+			cell.innerHTML += '<a href="#" class="sortheader" '
+				+ 'onclick="ts_resortTable(this);return false;">'
+				+ '<span class="sortarrow">'
+				+ '<img src="'
+				+ ts_image_path
+				+ ts_image_none
+				+ '" alt="&darr;"/></span></a>';
+		}
+	}
+	if ( ts_alternate_row_colors ) {
+		ts_alternate( table );
+	}
+}
+
+function ts_getInnerText( el ) {
+	return getInnerText( el );
+}
+
+function ts_resortTable( lnk ) {
+	// get the span
+	var span = lnk.getElementsByTagName('span')[0];
+
+	var td = lnk.parentNode;
+	var tr = td.parentNode;
+	var column = td.cellIndex;
+
+	var table = tr.parentNode;
+	while ( table && !( table.tagName && table.tagName.toLowerCase() == 'table' ) ) {
+		table = table.parentNode;
+	}
+	if ( !table ) {
+		return;
+	}
+
+	if ( table.rows.length <= 1 ) {
+		return;
+	}
+
+	// Generate the number transform table if it's not done already
+	if ( ts_number_transform_table === null ) {
+		ts_initTransformTable();
+	}
+
+	// Work out a type for the column
+	// Skip the first row if that's where the headings are
+	var rowStart = ( table.tHead && table.tHead.rows.length > 0 ? 0 : 1 );
+
+	var itm = '';
+	for ( var i = rowStart; i < table.rows.length; i++ ) {
+		if ( table.rows[i].cells.length > column ) {
+			itm = ts_getInnerText(table.rows[i].cells[column]);
+			itm = itm.replace(/^[\s\xa0]+/, '').replace(/[\s\xa0]+$/, '');
+			if ( itm != '' ) {
+				break;
+			}
+		}
+	}
+
+	// TODO: bug 8226, localised date formats
+	var sortfn = ts_sort_generic;
+	var preprocessor = ts_toLowerCase;
+	if ( /^\d\d[\/. -][a-zA-Z]{3}[\/. -]\d\d\d\d$/.test( itm ) ) {
+		preprocessor = ts_dateToSortKey;
+	} else if ( /^\d\d[\/.-]\d\d[\/.-]\d\d\d\d$/.test( itm ) ) {
+		preprocessor = ts_dateToSortKey;
+	} else if ( /^\d\d[\/.-]\d\d[\/.-]\d\d$/.test( itm ) ) {
+		preprocessor = ts_dateToSortKey;
+		// (minus sign)([pound dollar euro yen currency]|cents)
+	} else if ( /(^([-\u2212] *)?[\u00a3$\u20ac\u00a4\u00a5]|\u00a2$)/.test( itm ) ) {
+		preprocessor = ts_currencyToSortKey;
+	} else if ( ts_number_regex.test( itm ) ) {
+		preprocessor = ts_parseFloat;
+	}
+
+	var reverse = ( span.getAttribute( 'sortdir' ) == 'down' );
+
+	var newRows = new Array();
+	var staticRows = new Array();
+	for ( var j = rowStart; j < table.rows.length; j++ ) {
+		var row = table.rows[j];
+		if( (' ' + row.className + ' ').indexOf(' unsortable ') < 0 ) {
+			var keyText = ts_getInnerText( row.cells[column] );
+			if( keyText === undefined ) {
+				keyText = ''; 
+			}
+			var oldIndex = ( reverse ? -j : j );
+			var preprocessed = preprocessor( keyText.replace(/^[\s\xa0]+/, '').replace(/[\s\xa0]+$/, '') );
+
+			newRows[newRows.length] = new Array( row, preprocessed, oldIndex );
+		} else {
+			staticRows[staticRows.length] = new Array( row, false, j-rowStart );
+		}
+	}
+
+	newRows.sort( sortfn );
+
+	var arrowHTML;
+	if ( reverse ) {
+		arrowHTML = '<img src="' + ts_image_path + ts_image_down + '" alt="&darr;"/>';
+		newRows.reverse();
+		span.setAttribute( 'sortdir', 'up' );
+	} else {
+		arrowHTML = '<img src="' + ts_image_path + ts_image_up + '" alt="&uarr;"/>';
+		span.setAttribute( 'sortdir', 'down' );
+	}
+
+	for ( var i = 0; i < staticRows.length; i++ ) {
+		var row = staticRows[i];
+		newRows.splice( row[2], 0, row );
+	}
+
+	// We appendChild rows that already exist to the tbody, so it moves them rather than creating new ones
+	// don't do sortbottom rows
+	for ( var i = 0; i < newRows.length; i++ ) {
+		if ( ( ' ' + newRows[i][0].className + ' ').indexOf(' sortbottom ') == -1 ) {
+			table.tBodies[0].appendChild( newRows[i][0] );
+		}
+	}
+	// do sortbottom rows only
+	for ( var i = 0; i < newRows.length; i++ ) {
+		if ( ( ' ' + newRows[i][0].className + ' ').indexOf(' sortbottom ') != -1 ) {
+			table.tBodies[0].appendChild( newRows[i][0] );
+		}
+	}
+
+	// Delete any other arrows there may be showing
+	var spans = getElementsByClassName( tr, 'span', 'sortarrow' );
+	for ( var i = 0; i < spans.length; i++ ) {
+		spans[i].innerHTML = '<img src="' + ts_image_path + ts_image_none + '" alt="&darr;"/>';
+	}
+	span.innerHTML = arrowHTML;
+
+	if ( ts_alternate_row_colors ) {
+		ts_alternate( table );
+	}
+}
+
+function ts_initTransformTable() {
+	if ( typeof wgSeparatorTransformTable == 'undefined'
+			|| ( wgSeparatorTransformTable[0] == '' && wgDigitTransformTable[2] == '' ) )
+	{
+		digitClass = "[0-9,.]";
+		ts_number_transform_table = false;
+	} else {
+		ts_number_transform_table = {};
+		// Unpack the transform table
+		// Separators
+		ascii = wgSeparatorTransformTable[0].split("\t");
+		localised = wgSeparatorTransformTable[1].split("\t");
+		for ( var i = 0; i < ascii.length; i++ ) {
+			ts_number_transform_table[localised[i]] = ascii[i];
+		}
+		// Digits
+		ascii = wgDigitTransformTable[0].split("\t");
+		localised = wgDigitTransformTable[1].split("\t");
+		for ( var i = 0; i < ascii.length; i++ ) {
+			ts_number_transform_table[localised[i]] = ascii[i];
+		}
+
+		// Construct regex for number identification
+		digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ',', '\\.'];
+		maxDigitLength = 1;
+		for ( var digit in ts_number_transform_table ) {
+			// Escape regex metacharacters
+			digits.push(
+				digit.replace( /[\\\\$\*\+\?\.\(\)\|\{\}\[\]\-]/,
+					function( s ) { return '\\' + s; } )
+			);
+			if ( digit.length > maxDigitLength ) {
+				maxDigitLength = digit.length;
+			}
+		}
+		if ( maxDigitLength > 1 ) {
+			digitClass = '[' + digits.join( '', digits ) + ']';
+		} else {
+			digitClass = '(' + digits.join( '|', digits ) + ')';
+		}
+	}
+
+	// We allow a trailing percent sign, which we just strip.  This works fine
+	// if percents and regular numbers aren't being mixed.
+	ts_number_regex = new RegExp(
+		"^(" +
+			"[-+\u2212]?[0-9][0-9,]*(\\.[0-9,]*)?(E[-+\u2212]?[0-9][0-9,]*)?" + // Fortran-style scientific
+			"|" +
+			"[-+\u2212]?" + digitClass + "+%?" + // Generic localised
+		")$", "i"
+	);
+}
+
+function ts_toLowerCase( s ) {
+	return s.toLowerCase();
+}
+
+function ts_dateToSortKey( date ) {
+	// y2k notes: two digit years less than 50 are treated as 20XX, greater than 50 are treated as 19XX
+	if ( date.length == 11 ) {
+		switch ( date.substr( 3, 3 ).toLowerCase() ) {
+			case 'jan':
+				var month = '01';
+				break;
+			case 'feb':
+				var month = '02';
+				break;
+			case 'mar':
+				var month = '03';
+				break;
+			case 'apr':
+				var month = '04';
+				break;
+			case 'may':
+				var month = '05';
+				break;
+			case 'jun':
+				var month = '06';
+				break;
+			case 'jul':
+				var month = '07';
+				break;
+			case 'aug':
+				var month = '08';
+				break;
+			case 'sep':
+				var month = '09';
+				break;
+			case 'oct':
+				var month = '10';
+				break;
+			case 'nov':
+				var month = '11';
+				break;
+			case 'dec':
+				var month = '12';
+				break;
+			// default: var month = '00';
+		}
+		return date.substr( 7, 4 ) + month + date.substr( 0, 2 );
+	} else if ( date.length == 10 ) {
+		if ( ts_europeandate == false ) {
+			return date.substr( 6, 4 ) + date.substr( 0, 2 ) + date.substr( 3, 2 );
+		} else {
+			return date.substr( 6, 4 ) + date.substr( 3, 2 ) + date.substr( 0, 2 );
+		}
+	} else if ( date.length == 8 ) {
+		yr = date.substr( 6, 2 );
+		if ( parseInt( yr ) < 50 ) {
+			yr = '20' + yr;
+		} else {
+			yr = '19' + yr;
+		}
+		if ( ts_europeandate == true ) {
+			return yr + date.substr( 3, 2 ) + date.substr( 0, 2 );
+		} else {
+			return yr + date.substr( 0, 2 ) + date.substr( 3, 2 );
+		}
+	}
+	return '00000000';
+}
+
+function ts_parseFloat( s ) {
+	if ( !s ) {
+		return 0;
+	}
+	if ( ts_number_transform_table != false ) {
+		var newNum = '', c;
+
+		for ( var p = 0; p < s.length; p++ ) {
+			c = s.charAt( p );
+			if ( c in ts_number_transform_table ) {
+				newNum += ts_number_transform_table[c];
+			} else {
+				newNum += c;
+			}
+		}
+		s = newNum;
+	}
+	num = parseFloat( s.replace(/[, ]/g, '').replace("\u2212", '-') );
+	return ( isNaN( num ) ? -Infinity : num );
+}
+
+function ts_currencyToSortKey( s ) {
+	return ts_parseFloat(s.replace(/[^-\u22120-9.,]/g,''));
+}
+
+function ts_sort_generic( a, b ) {
+	return a[1] < b[1] ? -1 : a[1] > b[1] ? 1 : a[2] - b[2];
+}
+
+function ts_alternate( table ) {
+	// Take object table and get all it's tbodies.
+	var tableBodies = table.getElementsByTagName( 'tbody' );
+	// Loop through these tbodies
+	for ( var i = 0; i < tableBodies.length; i++ ) {
+		// Take the tbody, and get all it's rows
+		var tableRows = tableBodies[i].getElementsByTagName( 'tr' );
+		// Loop through these rows
+		// Start at 1 because we want to leave the heading row untouched
+		for ( var j = 0; j < tableRows.length; j++ ) {
+			// Check if j is even, and apply classes for both possible results
+			var oldClasses = tableRows[j].className.split(' ');
+			var newClassName = '';
+			for ( var k = 0; k < oldClasses.length; k++ ) {
+				if ( oldClasses[k] != '' && oldClasses[k] != 'even' && oldClasses[k] != 'odd' ) {
+					newClassName += oldClasses[k] + ' ';
+				}
+			}
+			tableRows[j].className = newClassName + ( j % 2 == 0 ? 'even' : 'odd' );
+		}
+	}
+}
+
+/*
+ * End of table sorting code
+ */
+
+
+/**
+ * Add a cute little box at the top of the screen to inform the user of
+ * something, replacing any preexisting message.
+ *
+ * @param String -or- Dom Object message HTML to be put inside the right div
+ * @param String className   Used in adding a class; should be different for each
+ *   call to allow CSS/JS to hide different boxes.  null = no class used.
+ * @return Boolean       True on success, false on failure
+ */
+function jsMsg( message, className ) {
+	if ( !document.getElementById ) {
+		return false;
+	}
+	// We special-case skin structures provided by the software.  Skins that
+	// choose to abandon or significantly modify our formatting can just define
+	// an mw-js-message div to start with.
+	var messageDiv = document.getElementById( 'mw-js-message' );
+	if ( !messageDiv ) {
+		messageDiv = document.createElement( 'div' );
+		if ( document.getElementById( 'column-content' )
+		&& document.getElementById( 'content' ) ) {
+			// MonoBook, presumably
+			document.getElementById( 'content' ).insertBefore(
+				messageDiv,
+				document.getElementById( 'content' ).firstChild
+			);
+		} else if ( document.getElementById( 'content' )
+		&& document.getElementById( 'article' ) ) {
+			// Non-Monobook but still recognizable (old-style)
+			document.getElementById( 'article').insertBefore(
+				messageDiv,
+				document.getElementById( 'article' ).firstChild
+			);
+		} else {
+			return false;
+		}
+	}
+
+	messageDiv.setAttribute( 'id', 'mw-js-message' );
+	messageDiv.style.display = 'block';
+	if( className ) {
+		messageDiv.setAttribute( 'class', 'mw-js-message-' + className );
+	}
+
+	if ( typeof message === 'object' ) {
+		while ( messageDiv.hasChildNodes() ) { // Remove old content
+			messageDiv.removeChild( messageDiv.firstChild );
+		}
+		messageDiv.appendChild( message ); // Append new content
+	} else {
+		messageDiv.innerHTML = message;
+	}
+	return true;
+}
+
+/**
+ * Inject a cute little progress spinner after the specified element
+ *
+ * @param element Element to inject after
+ * @param id Identifier string (for use with removeSpinner(), below)
+ */
+function injectSpinner( element, id ) {
+	var spinner = document.createElement( 'img' );
+	spinner.id = 'mw-spinner-' + id;
+	spinner.src = stylepath + '/common/images/spinner.gif';
+	spinner.alt = spinner.title = '...';
+	if( element.nextSibling ) {
+		element.parentNode.insertBefore( spinner, element.nextSibling );
+	} else {
+		element.parentNode.appendChild( spinner );
+	}
+}
+
+/**
+ * Remove a progress spinner added with injectSpinner()
+ *
+ * @param id Identifier string
+ */
+function removeSpinner( id ) {
+	var spinner = document.getElementById( 'mw-spinner-' + id );
+	if( spinner ) {
+		spinner.parentNode.removeChild( spinner );
+	}
+}
+
+function runOnloadHook() {
+	// don't run anything below this for non-dom browsers
+	if ( doneOnloadHook || !( document.getElementById && document.getElementsByTagName ) ) {
+		return;
+	}
+
+	// set this before running any hooks, since any errors below
+	// might cause the function to terminate prematurely
+	doneOnloadHook = true;
+
+	updateTooltipAccessKeys( null );
+	setupCheckboxShiftClick();
+	sortables_init();
+
+	// Run any added-on functions
+	for ( var i = 0; i < onloadFuncts.length; i++ ) {
+		onloadFuncts[i]();
+	}
+}
+
+/**
+ * Add an event handler to an element
+ *
+ * @param Element element Element to add handler to
+ * @param String attach Event to attach to
+ * @param callable handler Event handler callback
+ */
+function addHandler( element, attach, handler ) {
+	if( window.addEventListener ) {
+		element.addEventListener( attach, handler, false );
+	} else if( window.attachEvent ) {
+		element.attachEvent( 'on' + attach, handler );
+	}
+}
+
+/**
+ * Add a click event handler to an element
+ *
+ * @param Element element Element to add handler to
+ * @param callable handler Event handler callback
+ */
+function addClickHandler( element, handler ) {
+	addHandler( element, 'click', handler );
+}
+
+/**
+ * Removes an event handler from an element
+ *
+ * @param Element element Element to remove handler from
+ * @param String remove Event to remove
+ * @param callable handler Event handler callback to remove
+ */
+function removeHandler( element, remove, handler ) {
+	if( window.removeEventListener ) {
+		element.removeEventListener( remove, handler, false );
+	} else if( window.detachEvent ) {
+		element.detachEvent( 'on' + remove, handler );
+	}
+}
+// note: all skins should call runOnloadHook() at the end of html output,
+//      so the below should be redundant. It's there just in case.
+hookEvent( 'load', runOnloadHook );
+
+if ( ie6_bugs ) {
+	importScriptURI( stylepath + '/common/IEFixes.js' );
+}
+
+// For future use.
+mw = {};
+
+
+_application/javascript_8http://metagovernment.org/w/skins/common/wikibits.js?270O<bplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\_`aU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_8http://metagovernment.org/w/skins/common/wikibits.js?270Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]§MIÈÓ345?IWNS.keysZNS.objects©6789:;<=>€	€
+€€€€€€€©@ABCDEFGH€€€€€€€€€€VServerUX-Pad\Content-Type]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApache_avoid browser bug_application/javascript_Thu, 25 Nov 2010 16:35:32 GMT_Sun, 18 May 2014 21:26:38 GMTUbytesU30873_timeout=5, max=383ZKeep-AliveÒ*+]^\NSDictionary¢]/x™_application/javascriptÒ*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 Y _ z }  „ ‡ Š  ‘ ˜ ›  ¡ ¤ § © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Ş à +4:=CLUW^fq{}ƒ…‡‰‹—™›Ÿ¡£¥§©«²¸ÅÓØæõ &?_…‹ «°½ÀÃÜáõù-0F             j              HÔ6789O©// remote scripting library
+// (c) copyright 2005 modernmethod, inc
+var sajax_debug_mode = false;
+var sajax_request_type = "GET";
+
+/**
+* if sajax_debug_mode is true, this function outputs given the message into 
+* the element with id = sajax_debug; if no such element exists in the document, 
+* it is injected.
+*/
+function sajax_debug(text) {
+	if (!sajax_debug_mode) return false;
+
+	var e= document.getElementById('sajax_debug');
+
+	if (!e) {
+		e= document.createElement("p");
+		e.className= 'sajax_debug';
+		e.id= 'sajax_debug';
+
+		var b= document.getElementsByTagName("body")[0];
+
+		if (b.firstChild) b.insertBefore(e, b.firstChild);
+		else b.appendChild(e);
+	}
+
+	var m= document.createElement("div");
+	m.appendChild( document.createTextNode( text ) );
+
+	e.appendChild( m );
+
+	return true;
+}
+
+/**
+* compatibility wrapper for creating a new XMLHttpRequest object.
+*/
+function sajax_init_object() {
+	sajax_debug("sajax_init_object() called..")
+	var A;
+	try {
+		// Try the new style before ActiveX so we don't
+		// unnecessarily trigger warnings in IE 7 when
+		// set to prompt about ActiveX usage
+		A = new XMLHttpRequest();
+	} catch (e) {
+		try {
+			A=new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try {
+				A=new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (oc) {
+				A=null;
+			}
+		}
+	}
+	if (!A)
+		sajax_debug("Could not create connection object.");
+
+	return A;
+}
+
+/**
+* Perform an ajax call to mediawiki. Calls are handeled by AjaxDispatcher.php
+*   func_name - the name of the function to call. Must be registered in $wgAjaxExportList
+*   args - an array of arguments to that function
+*   target - the target that will handle the result of the call. If this is a function,
+*            if will be called with the XMLHttpRequest as a parameter; if it's an input
+*            element, its value will be set to the resultText; if it's another type of
+*            element, its innerHTML will be set to the resultText.
+*
+* Example:
+*    sajax_do_call('doFoo', [1, 2, 3], document.getElementById("showFoo"));
+*
+* This will call the doFoo function via MediaWiki's AjaxDispatcher, with
+* (1, 2, 3) as the parameter list, and will show the result in the element
+* with id = showFoo
+*/
+function sajax_do_call(func_name, args, target) {
+	var i, x, n;
+	var uri;
+	var post_data;
+	uri = wgServer +
+		((wgScript == null) ? (wgScriptPath + "/index.php") : wgScript) +
+		"?action=ajax";
+	if (sajax_request_type == "GET") {
+		if (uri.indexOf("?") == -1)
+			uri = uri + "?rs=" + encodeURIComponent(func_name);
+		else
+			uri = uri + "&rs=" + encodeURIComponent(func_name);
+		for (i = 0; i < args.length; i++)
+			uri = uri + "&rsargs[]=" + encodeURIComponent(args[i]);
+		//uri = uri + "&rsrnd=" + new Date().getTime();
+		post_data = null;
+	} else {
+		post_data = "rs=" + encodeURIComponent(func_name);
+		for (i = 0; i < args.length; i++)
+			post_data = post_data + "&rsargs[]=" + encodeURIComponent(args[i]);
+	}
+	x = sajax_init_object();
+	if (!x) {
+		alert("AJAX not supported");
+		return false;
+	}
+
+	try {
+		x.open(sajax_request_type, uri, true);
+	} catch (e) {
+		if (window.location.hostname == "localhost") {
+			alert("Your browser blocks XMLHttpRequest to 'localhost', try using a real hostname for development/testing.");
+		}
+		throw e;
+	}
+	if (sajax_request_type == "POST") {
+		x.setRequestHeader("Method", "POST " + uri + " HTTP/1.1");
+		x.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	}
+	x.setRequestHeader("Pragma", "cache=yes");
+	x.setRequestHeader("Cache-Control", "no-transform");
+	x.onreadystatechange = function() {
+		if (x.readyState != 4)
+			return;
+
+		sajax_debug("received (" + x.status + " " + x.statusText + ") " + x.responseText);
+
+		//if (x.status != 200)
+		//	alert("Error: " + x.status + " " + x.statusText + ": " + x.responseText);
+		//else
+
+		if ( typeof( target ) == 'function' ) {
+			target( x );
+		}
+		else if ( typeof( target ) == 'object' ) {
+			if ( target.tagName == 'INPUT' ) {
+				if (x.status == 200) target.value= x.responseText;
+				//else alert("Error: " + x.status + " " + x.statusText + " (" + x.responseText + ")");
+			}
+			else {
+				if (x.status == 200) target.innerHTML = x.responseText;
+				else target.innerHTML= "<div class='error'>Error: " + x.status + " " + x.statusText + " (" + x.responseText + ")</div>";
+			}
+		}
+		else {
+			alert("bad target for sajax_do_call: not a function or object: " + target);
+		}
+
+		return;
+	}
+
+	sajax_debug(func_name + " uri = " + uri + " / post = " + post_data);
+	x.send(post_data);
+	sajax_debug(func_name + " waiting..");
+	delete x;
+
+	return true;
+}
+
+/**
+ * @return boolean whether the browser supports XMLHttpRequest
+ */
+function wfSupportsAjax() {
+	var request = sajax_init_object();
+	var supportsAjax = request ? true : false;
+	delete request;
+	return supportsAjax;
+}
+
+_application/javascript_4http://metagovernment.org/w/skins/common/ajax.js?270Obplist00ÔbcX$versionX$objectsY$archiverT$top † ¯"()012HIJKLMNOPQRSTUVWX[\]U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_4http://metagovernment.org/w/skins/common/ajax.js?270Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]µíòÈÓ345>GWNS.keysZNS.objects¨6789:;<=€	€
+€€€€€€¨?@ABCDEF€€€€€€€€€VServer\Content-Type]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApache_application/javascript_Thu, 25 Nov 2010 16:34:58 GMT_Sun, 18 May 2014 21:26:38 GMTUbytesT4777_timeout=5, max=383ZKeep-AliveÒ*+YZ\NSDictionary¢Y/©_application/javascriptÒ*+^__NSHTTPURLResponse£`a/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑde_WebResourceResponse€    # - 2 7 W ] x {  ‚ … ˆ Œ  – ™ œ Ÿ ¢ ¥ § © « ­ ¯ ± ³ µ · ¹ » ½ Ä Ì Ø Ú Ü Ş%.47=FOQX`ktvxz|~€‚„‘“•—™›Ÿ¦³ÁÆÔãîù 9Y_dy„‰–™œµºÎÒæô	             f              !Õ;<=>?O/* generated javascript */
+var skin = 'monobook';
+var stylepath = '/w/skins';
+
+/* MediaWiki:Common.js */
+// Common scripting for all users, all skins.  See also:
+//
+//   * http://www.mediawiki.org/wiki/JavaScript - JavaScript in MediaWiki.
+//   * mediawiki/skins/common/*.js - some of which are core scripts loaded by MediaWiki.
+//
+// Do not depend on MediaWiki's mw.loader or importScriptURI to load scripts
+// synchronously.  It adds the script elements using the DOM, which causes the scripts
+// themselves to load asynchronously.
+//
+
+// Crossforum Theatre stage of Votorola, for remote drafting.
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// module.css and gwt.js must load before boot script nocache.js
+// http://zelea.com/project/votorola/_/javadoc/votorola/s/gwt/mediawiki/MediaWikiIn.html
+
+  /*@cc_on @if( false ) @*/ // all but IE [1]
+  voInject = function()  // implicitly declared so deletable below
+  {
+      var head = null; // till found
+      for( n = document.documentElement.firstChild; n != null; n = n.nextSibling )
+      {
+          if( n.nodeType != /*Node.ELEMENT_NODE*/1 ) continue;
+
+          if( n.nodeName.toUpperCase() != 'HEAD' ) continue;
+
+          head = n;
+          break;
+      }
+      var toInject = false;
+      for( var c = wgCategories.length - 1; c >=0; --c )
+      {
+          var category = wgCategories[c];
+          if( category == 'Remote draft' )
+          {
+              toInject = true; // inject regardless for a remote draft page
+              break;
+          }
+      }
+      if( toInject )
+      {
+          if( !window.voGWTConfig ) voGWTConfig = {};
+          else if( window.voGWTConfig.s_gwt_mediawiki_isInjected ) return;
+            // guard against double injection by both admin and user scripts
+
+          window.voGWTConfig.s_gwt_mediawiki_isInjected = true;
+          window.voGWTConfig.s_gwt_mediawiki_toTop = true;
+          var context = 'http://zelea.com/y/vw';
+          document.write( "<link href='" + context // [2]
+            + "/mediawiki/module.css' rel='stylesheet' type='text/css'/>" );
+          document.write( "<script src='" + context // [3]
+            + "/w/publicConfig/gwt.js' type='text/javascript'></script>" );
+          document.write( "<script src='" + context // [3]
+            + "/votorola.s.gwt.mediawiki.MediaWikiIn/votorola.s.gwt.mediawiki.MediaWikiIn.nocache.js'"
+            + " type='text/javascript'></script>" );
+      }
+  }
+  voInject();
+  delete voInject; // clean up
+  /*@end @*/
+
+//
+// NOTES
+//
+//   [1] IE excluded by conditional compilation in MediaWiki 16 and earlier, thus:
+//
+//          /*@cc_on @if( false ) @*/
+//          /*@end @*/
+//
+//       And by JQuery in MediaWiki 17 and later, thus:
+//
+//          if( $.client.profile().name != 'msie' )
+//
+//   [2] For MediaWiki 16 and earlier, would ordinarily use: importStylesheetURI( URL )
+//       For MediaWiki 17 and later: mw.loader.load( URL, 'text/css' )
+//       http://www.mediawiki.org/wiki/ResourceLoader/Migration_guide_%28users%29
+//
+//       But instead write to ensure CSS link element precedes script element, else layout
+//       may be unstable: http://mail.zelea.com/list/votorola/2012-November/001540.html
+//
+//   [3] Scripts might instead be inject asynchronously using MediaWiki's mw.loader or
+//       importScriptURI.  We are no longer using the old cross-site linker ('xs') that
+//       writes to the document.  But asynchronous injection has not been tested yet.
+//
+
+/* MediaWiki:Monobook.js */
+/* Any JavaScript here will be loaded for users using the MonoBook skin */_text/javascriptUutf-8_Uhttp://metagovernment.org/w/index.php5?title=-&action=raw&gen=js&useskin=monobook&270Oqbplist00ÔfgX$versionX$objectsY$archiverT$top † ¯"()012JKLMNOPQRSTUVWXYZ[\_`aU$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_Uhttp://metagovernment.org/w/index.php5?title=-&action=raw&gen=js&useskin=monobook&270Ò*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]òè°ÈÓ345?IWNS.keysZNS.objects©6789:;<=>€	€
+€€€€€€€©@ABCDEFGH€€€€€€€€€€ZConnection\Content-TypeVServerTVaryTDate_Content-EncodingZKeep-Alive]Cache-Control_Transfer-EncodingZKeep-Alive_text/javascript; charset=UTF-8VApache_Accept-Encoding_Sun, 18 May 2014 21:26:38 GMTTgzip_timeout=5, max=382_%public, s-maxage=18000, max-age=18000XIdentityÒ*+]^\NSDictionary¢]/ÿÿÿÿÿÿÿÿ_text/javascriptÒ*+bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑhi_WebResourceResponse€    # - 2 7 Y _ z }  „ ‡ Š  ‘ ˜ ›  ¡ ¤ § © « ­ ¯ ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Ş à8=HQWZ`irt{ƒ˜šœ ¢¤¦¨ª´¶¸º¼¾ÀÂÄÆÈÓàçìñ1<]dv–›°Øáæóöÿ*.BPbe{             j              }ÔABCDO‡‰PNG
+
+   IHDR   X      TúÒ   sBITÛáOà  ”PLTE)kªªÖæÅÑ¿µÅÏvs”©„«¾ªªªAyÇÄzíìæ[gRÖÄM%_xqyE³«iØÜŞV„£Ğu
+ P„áÊ$°­6=F”öööÆÂ¤£¶ÄÇÍĞÀi
+ f™Oz˜ L€£«éÔ2jèçÛÎÔ×ĞÇcáÙx‘7ŠòÍ	ÖÖÉ†•®ìÛ#^˜µß–:„­0;xv¤»æØ?õ²çá©W‹˜±Á,vDv˜N„¦®²•¬®¾mêÙªmÖÉ/!h–¹Ä›……¸+K‚){¥«ºÅ×ÒµÖÖÖ8r—ÁÎ×ßÙšåªğÊÈ¸L…£·R‘±l¨Ò†ØÊıÖ•­¾Ä¾sòİ5İÑg!e’‡§¼f‹¢çÖRİÅEŒ›¶²¿ÇÓÍ–ŞŞÉ»ÃÏÀpğğğÍ·4[†&&š2m”ÎÍÅŞŞÖ³ÀôË áäæ@\‹èä¼à×Šä×4ÏÎ¾4§ëÕId‘BSZÛºåÎ!–zj·tœµ¥¾ËõŞT†‘’¥ÅĞ×ğ¼DŠ­0N‚_ŒàæĞÔ‰÷èGÜàâL£èÇ ¤•ØÎUÿÉt¡’»øÆêáÎÖÜèÑ2”n[Š¨y÷×îŞã×jÇ¹Dœ•-b¬ÖÎŒæÜ…ì¿ÙÙæÁjš™¶Ì}8t›å§µrµÆôä=êèÍ‹¤µóß)ÄÅÎb‘¯ÕœÌÌÌŞŞŞ¦»È|³"c¬¿ËŸ«ÀZŒÆtàÏLÖ½«¾à±	Mz™ÃÀÂè½Rƒ£Fa\‹Ü×®8CgîØGMU]õ¼÷Ï{§½æææ)j”Ô} S‰› ¦«¨­”´Äº°@ÑÊl•™Š¹µ¡TYšíÑÇvËÑÔÁ¾yÎËâÚ’ëØQ)>    	pHYs  
+ğ  
+ğB¬4˜  ŠIDATxÚíĞÿWSeÀñÛ\Ìy#½4+˜óL$OCCK$LòÙù24Äu%@Ÿ¡n$°1ç³;"ÍÑÚ´¥©èdŒºãN„ù%°`=“\_EñŸéHĞÎéÏQ~èœŞ?<Ïç|s_?\bşEÌÿnNúÿ£ºÔºººñ'/®>tÿÌ¡êê§ƒY%ÿš¼¸ú­êm_geeÍlCz½5ş%ıä»Ş—°N„KJÚ›J*rª·TÌÈi2Ğ¢1…Tê>iHêSHµ!Àùd“ï
+,kµ‰p Ü|p$ÀppU¶§ã& Ú@ à‚²«Ua‚¼,vBaUè[
+E"|áQ×ãe¬X”ë×H7½ôö¢Å:ì™û‚çÊ‘?6I×4êÁ¢qkÈ@±µØZØrB¯oiñË“0æÅŠO€D˜8&¿¤‚÷æµö=ºß}êÔéÓ«?àp&>b…¯âß!£ó~2á	Ãñ/eñw}¡ä'ÀEQ l¯'çƒë·®·µµFû¯îRÔAáä¦ø)ŒŸ&J(§hEÓ¾ğoñ»IH‰dBjVæ8BÇÕÿ<²73ó³Ñã×®]»øíhDĞS¶á$Çéîq›¸ÙMÃ·Ï¼x°Õ°ãÒ%ùùK.®‹ØË<·|~üá!nÏ‚O§§ıø½üææüŠ"«|\õ„0Ë:–}æ‡ä÷¹{—›Ÿm¾|çR¤³ıè$Ëêg®ÙÇ² ½FÊşÿymº‹›Ã¼–Uodåµj¥ßŸß¥˜YÃ:ï.,oÍÌ\{>ÿü+Š"+ÊW,‡PG@ÜØ˜Â´şş „4q‹ß¦]ãÚÂœXC¶}}»µ'‡ş¥b!b5œ™g·ow»×Ş;şÃ¶[‡í=+¾‰@¸×%<¼’a9åâù>û†£|Ô’ä‡}¶¨Ã§Pša¹Š·¨ßé£%ç¿ĞÜˆº­^ùcûŸ­‘ukßoûÜ=8Xşàµ5NÁy¥Ü•{ûC•’Ü`¿1-WöæšiQ‰°²+Äó¹)^J£R‰Uæ0K¦á­ZtaÃıòÅÙÙÛİ£çZ7Û?ùıË“H»u
+V÷9*]ø{›¦×es9™¢´ÒBÃ!‹F©§‘&–H*ú~®ªºJ}óJÙÎÍMMî‡W2o>˜sê—#uµª
+áÆÔN~Y©/ª-ˆšb®4¯†B*Eitu!3‡Øì£%¼bØÆw±Ó0I’—‘1qz×Dab`p°){ıÙ’„Œ7æ"ß8}6g®ÍØ[kqjj]ıNe¯%*öÚÌBÒØOSÃ’Õ„U9/&½’Ä0ó(’\?Aî²wWÌK>ûğ!ö˜énø™Ò¤0…br—Õ„†ækT**ÉO
+kjJ“hF¸Â¤RîÜ¦föñtîR†™q$ÙÑA6t¬·{UódÍ†qhK=ÃÜŞ“ZÏO“0üòœôŸ„ç¨¿ ±évíæÜÕt    IEND®B`‚Yimage/png_Mhttp://metagovernment.org/w/skins/common/images/poweredby_mediawiki_88x31.pngOûbplist00ÔabX$versionX$objectsY$archiverT$top † ¯"()012HIJKLMNOPQRSTUVWX[\U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_Mhttp://metagovernment.org/w/skins/common/images/poweredby_mediawiki_88x31.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]Ş©ÈÓ345>GWNS.keysZNS.objects¨6789:;<=€	€
+€€€€€€¨?ABCDEF€€€€€€€€€VServer\Content-Type]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApacheYimage/png_Thu, 25 Nov 2010 16:35:25 GMT_Sun, 18 May 2014 21:26:39 GMTUbytesT1927_timeout=5, max=383ZKeep-AliveÒ*+YZ\NSDictionary¢Y/‡Ò*+]^_NSHTTPURLResponse£_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑcd_WebResourceResponse€    # - 2 7 V \ w z ~  „ ‡ ‹  • ˜ ›  ¡ ¤ ¦ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ Ã Ë × Ù Û İ-2=FLOU^gipxƒŒ’”–˜šœ¥§©«­¯±³µ·¾ËÙŞìû"Bbhm‚’Ÿ¢¥ª¾ÂÖäöù             e              ÔFBGHOÛ‰PNG
+
+   IHDR   X      cÈ
+à   	pHYs     šœ  
+OiCCPPhotoshop ICC profile  xÚSgTSé=÷ŞôBKˆ€”KoR RB‹€‘&*!	Jˆ!¡ÙQÁEEÈ ˆ€ŒQ,Š
+Øä!¢ƒ£ˆŠÊûá{£kÖ¼÷æÍşµ×>ç¬ó³ÏÀ–H3Q5€©BàƒÇÄÆáä.@
+$p ³d!sı# ø~<<+"À¾ xÓ ÀM›À0‡ÿêB™\€„Àt‘8K€ @zB¦ @F€˜&S   `Ëcbã P- `'æÓ €ø™{ [”! ‘  eˆD h; ¬ÏVŠE X0 fKÄ9 Ø- 0IWfH °· ÀÎ²  0Qˆ…) { `È##x „™ FòW<ñ+®ç*  x™²<¹$9E[-qWW.(ÎI+6aaš@.Ây™24àóÌ   ‘àƒóıxÎ®ÎÎ6¶_-ê¿ÿ"bbãşåÏ«p@  át~Ñş,/³€;€mş¢%îh^ u÷‹f²@µ  éÚWópø~<<E¡¹ÙÙåääØJÄB[aÊW}şgÂ_ÀWılù~<ü÷õà¾â$2]GøàÂÌôL¥Ï’	„bÜæGü·ÿüÓ"ÄIb¹X*ãQqDšŒó2¥"‰B’)Å%Òÿdâß,û>ß5 °j>{‘-¨]cöK'XtÀâ÷  ò»oÁÔ(€hƒáÏwÿï?ıG % €fI’q  ^D$.TÊ³?Ç  D *°AôÁ,ÀÁÜÁü`6„B$ÄÂBB
+d€r`)¬‚B(†Í°*`/Ô@4ÀQh†“p.ÂU¸=púaÁ(¼	AÈa!ÚˆbŠX#™…ø!ÁH‹$ ÉˆQ"K‘5H1RŠT UHò=r9‡\Fº‘;È 2‚ü†¼G1”²Q=ÔµC¹¨7„F¢Ğdt1š ›Ğr´=Œ6¡çĞ«hÚ>CÇ0Àè3Äl0.ÆÃB±8,	“cË±"¬«Æ°V¬»‰õcÏ±wEÀ	6wB aAHXLXNØH¨ $4Ú	7	„QÂ'"“¨K´&ºùÄb21‡XH,#Ö/{ˆCÄ7$‰C2'¹I±¤TÒÒFÒnR#é,©›4H#“ÉÚdk²9”, +È…ääÃä3ää!ò[
+b@q¤øSâ(RÊjJåå4åe˜2AU£šRİ¨¡T5ZB­¡¶R¯Q‡¨4uš9ÍƒIK¥­¢•Óhh÷i¯ètºİ•N—ĞWÒËéGè—èôw†ƒÇˆg(›gw¯˜L¦Ó‹ÇT071ë˜ç™™oUX*¶*|‘Ê
+•J•&•*/T©ª¦ªŞªUóUËT©^S}®FU3Sã©	Ô–«UªPëSSg©;¨‡ªg¨oT?¤~Yı‰YÃLÃOC¤Q ±_ã¼Æ c³x,!k«†u5Ä&±ÍÙ|v*»˜ı»‹=ª©¡9C3J3W³Ró”f?ã˜qøœtN	ç(§—ó~ŠŞï)â)¦4L¹1e\kª–—–X«H«Q«Gë½6®í§¦½E»YûAÇJ'\'GgÎçSÙSİ§
+§M=:õ®.ªk¥¡»Dw¿n§î˜¾^€Lo§Şy½çú}/ıTımú§õGX³$ÛÎ<Å5qo</ÇÛñQC]Ã@C¥a•a—á„‘¹Ñ<£ÕFFŒiÆ\ã$ãmÆmÆ£&&!&KMêMîšRM¹¦)¦;L;LÇÍÌÍ¢ÍÖ™5›=1×2ç›ç›×›ß·`ZxZ,¶¨¶¸eI²äZ¦Yî¶¼n…Z9Y¥XUZ]³F­­%Ö»­»§§¹N“N«ÖgÃ°ñ¶É¶©·°åØÛ®¶m¶}agbg·Å®Ãî“½“}º}ı=‡Ù«Z~s´r:V:ŞšÎœî?}Åô–é/gXÏÏØ3ã¶Ë)ÄiS›ÓGgg¹sƒóˆ‹‰K‚Ë.—>.›ÆİÈ½äJtõq]ázÒõ›³›Âí¨Û¯î6îiî‡ÜŸÌ4Ÿ)Y3sĞÃÈCàQåÑ?Ÿ•0kß¬~OCOgµç#/c/‘W­×°·¥wª÷aï>ö>rŸã>ã<7Ş2ŞY_Ì7À·È·ËOÃo_…ßC#ÿdÿzÿÑ §€%g‰A[ûøz|!¿?:Ûeö²ÙíAŒ ¹AA‚­‚åÁ­!hÈì­!÷ç˜Î‘Îi…P~èÖĞaæa‹Ã~'…‡…W†?pˆXÑ1—5wÑÜCsßDúD–DŞ›g1O9¯-J5*>ª.j<Ú7º4º?Æ.fYÌÕXXIlK9.*®6nl¾ßüíó‡ââã{˜/È]py¡ÎÂô…§©.,:–@LˆN8”ğA*¨Œ%òw%
+yÂÂg"/Ñ6ÑˆØC\*NòH*Mz’ì‘¼5y$Å3¥,å¹„'©¼LLİ›:šv m2=:½1ƒ’‘qBª!M“¶gêgæfvË¬e…²şÅn‹·/•Ék³¬Y-
+¶B¦èTZ(×*²geWf¿Í‰Ê9–«+ÍíÌ³ÊÛ7œïŸÿíÂá’¶¥†KW-Xæ½¬j9²<qyÛ
+ã+†V¬<¸Š¶*mÕO«íW—®~½&zMk^ÁÊ‚ÁµkëU
+å…}ëÜ×í]OX/Yßµaú†>‰Š®Û—Ø(Üxå‡oÊ¿™Ü”´©«Ä¹dÏfÒféæŞ-[–ª—æ—nÙÚ´ßV´íõöEÛ/—Í(Û»ƒ¶C¹£¿<¸¼e§ÉÎÍ;?T¤TôTúT6îÒİµa×ønÑî{¼ö4ìÕÛ[¼÷ı>É¾ÛUUMÕfÕeûIû³÷?®‰ªéø–ûm]­NmqíÇÒı#¶×¹ÔÕÒ=TRÖ+ëGÇ¾şïw-6UœÆâ#pDyäé÷	ß÷:ÚvŒ{¬áÓvg/jBšòšF›Sšû[b[ºOÌ>ÑÖêŞzüGÛœ4<YyJóTÉiÚé‚Ó“gòÏŒ•}~.ùÜ`Û¢¶{çcÎßjoïºtáÒEÿ‹ç;¼;Î\ò¸tò²ÛåW¸Wš¯:_mêtê<ş“ÓOÇ»œ»š®¹\k¹îz½µ{f÷é7Îİô½yñÿÖÕ9=İ½ózo÷Å÷õßİ~r'ıÎË»Ùw'î­¼O¼_ô@íAÙCİ‡Õ?[şÜØïÜjÀw óÑÜG÷…ƒÏş‘õC™Ë††ë8>99â?rıéü§CÏdÏ&ş¢şË®/~øÕë×ÎÑ˜Ñ¡—ò—“¿m|¥ıêÀë¯ÛÆÂÆ¾Éx31^ôVûíÁwÜwï£ßOä| (ÿhù±õSĞ§û“““ÿ˜óüc3-Û   gAMA  ±|ûQ“    cHRM  z%  €ƒ  ùÿ  €é  u0  ê`  :˜  o’_ÅF  öIDATxÚìZKlÇşö!£2"v}JªˆtuñúyJ,²iS¸íe-»vÜÔ¤£ •ÚrÚH¢([©£Ú¡ØÂ1Ú&ãôhı§0Wj€Z”mRp êFPç$…J[Üİéaw‡»õ Aãø†;;w¿ùæŸşCq1óÈš!„a  ¸qó:X–Ë²à8,ËcY°œyeY0–aÀ0À0–@':tİHš¦W]ƒ¦éĞuÖéD§í	!ÖËĞüã ÷ 0 ˆ.ÇqFb¹RãŒ:–3AfÀ0¬_Xİ SÓÌdÏkNu]§ÀÚ~œ@æ8Áåxğ«‘®]¹d2‰T*…ÙÂ¬CQ«;wî„ï‡>ìİ÷24ËªÆ€h,0æXÚ¦NŒ™ s1‹ƒ{o,ùcÙlÖQîñx °uÇ–U±^ú ä“[ÿ ÏóTçÄñVFĞw®SSSËRèv»Ñş»v´´ì‚ªiĞ4ªj&M…ªj”á•˜\Îâÿùã1‘  x½^ˆ¢ Èd2P ĞäiÂ‰Ğ	<óìÓU°úî?d üÏáOÁs|	X¾5<Hg7ä!™v’$¡¡¡--- €ááaäóyÈ²Œ™™ÚVòK8Ùş[Ôn¬…ªª(ª*TµUU&ÃX7m¹è¯_#t"ŒB¡ I’‹ÅĞĞĞàøˆ|>¶¶6È²—Ë…Ş¾Şeƒ°Şú)À·şu5°5<jø¸‚  #
+A„&	´µµQ ›<Mxàoø^m-Tµˆb±H™\ä2{Üùf&²,M;Ó´Ø™H$ÑäiÂ™s=Ë ’şÉÉILMN³±¾õõõ+Öpÿ!° À™6˜ç8ğœ“¹¢("N#‰,
+. är9:Å&²8ßwÁaËYê‘0¥dşÙ¼7–ÆDv’$¡ıÔ©%?&@’$Ld'po,½,›[®ÿï—/Ãûü8zø>ïó/àÓ›7W¤ß XË-ã8+#p“Éä¼i³˜‚€d2IA–‡d€ãøÊ ³–ÛÈòÇÆ;Äb1xš›ËıËŠb,sô]LÊõŞ¾î®êŸy^¯Z[ ¿şÕkøSÕú 6XÜw®588¸$kÙêÛ÷‡>Ó—6ÁeLŸš5=%ÍéŸÍfáõzçn0¤Ìƒº††x½Şy@%±ë/
+È¦ï öK?Ãû‰¼sşx««Ó0ƒUëw2ØüøkW®So!S®DA #>55…kW¯Ó‹òÂ&Â’JÏO$ó‹õYHìm{ß5ˆõ×? e?~é% @¡PÀ—T­Ÿl±)™LRpB¡m¤(
+ü~?|>|>¢Ñè‚uıæt²ì–Åâä­¤½%ÓÀ0•MÄ7).—ñx]u¸téRÅ6>Z‘nc£Á0`©TÊp±$‰£(
+|>Ÿ£“¢(P¡P~¿^İøø8]•%IB"‘@*•2v€6`¸%¯¼¤+“ÉT\Ì,æyõ•ú,$ö¶5<ö“'±±¶––Ş¾MóÏ5<Wµ~ƒµvh›7o¦ÚÚÚ¨ıÉårtÑ;vìe²(ŠÈårrøÈ h~¶0[2ôjá:ßDx<(Š‚|>ï(·»kö¼å³*ŠÇ³ä‡—ëŸœœDwW¯üü0z{Î ·çº::  §NŸ®Z¿`ûâRng¬ÔÈçr9Zgm>$I¢uö…§ä~ÑŸ%_L: 9x9bµµúV£?xü8‚Ç70€Á<zø{ö¾Œ#G_©Z¿ÃDü?ÊÖ[Ğäi‚,ËƒóØZ	\Y–ÑäiZVÜ ’ş·º:ñ“İ»ñÅ«›››©‹X­~'ƒ‰sWd·3›‰fffÉdĞØØˆh4ZòuÍm²½Î>mKş+ıYÖËş};\.‰ü~?Õe÷ƒóù<ü~?úûûár¹p"tbÙ_IÿöÛq µZ[áin^•~Ê`ë…ë\u˜-Ìb||œ6ˆD"ôá›6mr gÕe2™yu–Xºê\u Ä¶5¦æİ¼—{ÊõâûñÎÛ}e²,CEˆ¢A (
+%ÃJ‚1ë­Ÿ®Û£wG±aÃD»¢‡d‚€ééi‡gÇiŒÁëõ"‰PöÆãqÚÖ^ ÈçóxñG/âBì<ÍÍ¡XœCQ-¢XT¡Yq	]ƒ®é4_¾Sû6†+i°çö£¦f>ù¡ß„è¶0¯ê¥­ 	 œ}û,~ºg7æŠs˜+¡‹(ªe Wø|Ûî, z¤ãõµÀív ¢Ñè<©™™™¡«®Ûí6ñVhR‡nÚbË\<®Â€Nthšqv¦·‡ä÷û1ŞjÀõù|´oû›íf€]+lQÒE–<^GFtq@:"dì^Šdî§É«¿|ÕZê‰(Š$N“åJ.—#¢(Òş’_"™ûi2v/Ezz{hùw(•nÂo„ÈôÉ|!’_¢å‚ îîn2==½ °ÓÓÓ¤»»›‚@ûíØ¹ƒŒ!w2c¤#Òñ]—0åNig¤ûıxÇ…¾øèòG+>2Šé†ªªMáõ×^_ù³™ûi†}÷Y~¿VÏ°ß¯ÊDØSg¤Ã`òı4H|@Ün÷²GÌív“øŸã$s?MîdÆÈ{yoÕ, „,š·—­VÿRÏ\5ƒ-	¿ÂÑ_¥§JrW¯\]ôØ~Ÿ´^o=k»rå*ÎFÏ®~‘¨À®µbnù3*÷­†ÅÌbûÖ­Û¶ 3Ò…ú¸m§öp#~«õ'S““x÷|#Ã#k³
+Û@\kÓ°Ğ³{æšlÉ®–]Ø³w¶mß†ï»\Î®éZ}U(àî»¸qíÆšûM1x)¿î ?‘•CÙÈ0ÌŸ@±B˜ÿ ğE»¬|•ÁÑ    IEND®B`‚_9http://metagovernment.org/w/Attribution-ShareAlike3.0.pngOçbplist00ÔabX$versionX$objectsY$archiverT$top † ¯"()012HIJKLMNOPQRSTUVWX[\U$nullİ	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€€€ €€€€€Ó#$%&'WNS.base[NS.relative€ €€_9http://metagovernment.org/w/Attribution-ShareAlike3.0.pngÒ*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#A¹)]&‡äÈÓ345>GWNS.keysZNS.objects¨6789:;<=€	€
+€€€€€€¨?ABCDEF€€€€€€€€€VServer\Content-Type]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApacheYimage/png_Fri, 04 Mar 2011 01:01:59 GMT_Sun, 18 May 2014 21:26:39 GMTUbytesT5083_timeout=5, max=381ZKeep-AliveÒ*+YZ\NSDictionary¢Y/ÛÒ*+]^_NSHTTPURLResponse£_`/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑcd_WebResourceResponse€    # - 2 7 V \ w z ~  „ ‡ ‹  • ˜ ›  ¡ ¤ ¦ ¨ ª ¬ ® ° ² ´ ¶ ¸ º ¼ Ã Ë × Ù Û İ)28;AJSU\doxz|~€‚„†ˆ‘“•—™›Ÿ¡£ª·ÅÊØçòı.NTYny~‹‘–ª®ÂĞâåû             e              ıÕJKLMNO_WebResourceFrameNameO?@<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html lang="en" dir="ltr"><head>
+<title>Main Page - Metagovernment - Government of, by, and for all the people</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="MediaWiki 1.16.0">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php5" title="Metagovernment - Government of, by, and for all the people (en)">
+<link rel="alternate" type="application/atom+xml" title="Metagovernment - Government of, by, and for all the people Atom feed" href="/w/index.php5?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="/w/skins/common/shared.css?270" media="screen">
+<link rel="stylesheet" href="/w/skins/common/commonPrint.css?270" media="print">
+<link rel="stylesheet" href="/w/skins/monobook/main.css?270" media="screen">
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE50Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE55Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/w/skins/monobook/IE60Fixes.css?270" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/w/skins/monobook/IE70Fixes.css?270" media="screen" /><![endif]-->
+<link rel="stylesheet" href="/w/index.php5?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000">
+<link rel="stylesheet" href="/w/index.php5?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" media="print">
+<link rel="stylesheet" href="/w/index.php5?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000">
+<link rel="stylesheet" href="/w/index.php5?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css">
+<script>
+var skin="monobook",
+stylepath="/w/skins",
+wgUrlProtocols="http\\:\\/\\/|https\\:\\/\\/|ftp\\:\\/\\/|irc\\:\\/\\/|gopher\\:\\/\\/|telnet\\:\\/\\/|nntp\\:\\/\\/|worldwind\\:\\/\\/|mailto\\:|news\\:|svn\\:\\/\\/",
+wgArticlePath="/wiki/$1",
+wgScriptPath="/w",
+wgScriptExtension=".php5",
+wgScript="/w/index.php5",
+wgVariantArticlePath=false,
+wgActionPaths={},
+wgServer="http://metagovernment.org",
+wgCanonicalNamespace="",
+wgCanonicalSpecialPageName=false,
+wgNamespaceNumber=0,
+wgPageName="Main_Page",
+wgTitle="Main Page",
+wgAction="view",
+wgArticleId=1,
+wgIsArticle=true,
+wgUserName=null,
+wgUserGroups=null,
+wgUserLanguage="en",
+wgContentLanguage="en",
+wgBreakFrames=false,
+wgCurRevisionId=4031,
+wgVersion="1.16.0",
+wgEnableAPI=true,
+wgEnableWriteAPI=true,
+wgSeparatorTransformTable=["", ""],
+wgDigitTransformTable=["", ""],
+wgMainPageTitle="Main Page",
+wgFormattedNamespaces={"-2": "Media", "-1": "Special", "0": "", "1": "Talk", "2": "User", "3": "User talk", "4": "Metagovernment", "5": "Metagovernment talk", "6": "File", "7": "File talk", "8": "MediaWiki", "9": "MediaWiki talk", "10": "Template", "11": "Template talk", "12": "Help", "13": "Help talk", "14": "Category", "15": "Category talk"},
+wgNamespaceIds={"media": -2, "special": -1, "": 0, "talk": 1, "user": 2, "user_talk": 3, "metagovernment": 4, "metagovernment_talk": 5, "file": 6, "file_talk": 7, "mediawiki": 8, "mediawiki_talk": 9, "template": 10, "template_talk": 11, "help": 12, "help_talk": 13, "category": 14, "category_talk": 15, "image": 6, "image_talk": 7},
+wgSiteName="Metagovernment - Government of, by, and for all the people",
+wgCategories=[],
+wgRestrictionEdit=[],
+wgRestrictionMove=[];
+</script><script src="/w/skins/common/wikibits.js?270"></script>
+<script src="/w/skins/common/ajax.js?270"></script>
+<script src="/w/index.php5?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook&amp;270"></script>
+
+</head>
+<body class="mediawiki ltr ns-0 ns-subject page-Main_Page skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">Metagovernment</h1>
+	<div id="bodyContent">
+		<h3 id="siteSub">From Metagovernment - Government of, by, and for all the people</h3>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+		<!-- start content -->
+<dl><dd><i>Translations: <a href="/wiki/Cz/Hlavn%C3%AD_str%C3%A1nka" title="Cz/HlavnÃ­ strÃ¡nka">ÄŒesky</a>, <a href="/wiki/De/Hauptseite" title="De/Hauptseite">Deutsch</a>, <a href="/wiki/Es/P%C3%A1gina_Principal" title="Es/PÃ¡gina Principal">EspaÃ±ol</a>, <a href="/wiki/Fr/Accueil" title="Fr/Accueil">FranÃ§ais</a>, <a href="/wiki/Ja/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8" title="Ja/ãƒ¡ã‚¤ãƒ³ãƒšãƒ¼ã‚¸">æ—¥æœ¬èª</a></i>
+</dd></dl>
+<h2> <span class="mw-headline" id="The_project">The project</span></h2>
+<p>The Metagovernment project <a href="/wiki/Mission_and_vision" title="Mission and vision">supports</a> internet <a href="/wiki/Active_projects" title="Active projects">tools</a> to enable <a href="/wiki/Collaborative_governance" title="Collaborative governance">collaborative governance</a>.
+</p>
+<table border="1" cellpadding="4" align="right" style="background:lwhite; width:250px;">
+
+<tbody><tr>
+<td>  <i>I am not an advocate for frequent changes in laws and constitutions, but laws and institutions must go hand in hand with the progress of the human mind. As that becomes more developed, more enlightened, as new discoveries are made, new truths discovered and manners and opinions change, with the change of circumstances, institutions must advance also to keep pace with the times. We might as well require a man to wear still the coat which fitted him when a boy as civilized society to remain ever under the regimen of their barbarous ancestors.</i>
+<p>â€” <a href="http://en.wikipedia.org/wiki/Thomas_Jefferson" class="external text" rel="nofollow">Thomas Jefferson</a>, 1816.
+</p>
+</td></tr></tbody></table>
+<p>We are a global community of people working on <b><a href="/wiki/Active_projects" title="Active projects">numerous projects</a></b> which further this goal.
+</p>
+<h2> <span class="mw-headline" id="Collaborative_governance">Collaborative governance</span></h2>
+<p>Collaborative governance is centered around <a href="/wiki/Basic_principles" title="Basic principles">openness, inclusion, and freedom</a>. It means that everybody on the planet regardless of any condition is:
+</p>
+<ul><li> free to propose solutions and receive votes for them.
+</li><li> free to vote on every issue of his/her concern, regardless of geography or scale.
+</li><li> free to vote any time, any day and to change positions and votes at any time.
+</li><li> free to delegate one's own and one's received votes to whoever one chooses; and to withdraw delegation at any time.
+</li><li> free to <a href="/wiki/Standardization#Free-range_voting" title="Standardization">choose between different voting-tools</a>, have one's votes mirrored to all the others, and to filter and verify results.
+</li><li> free to run one's own technical voting-infrastructure, independent of governments and other institutions; but connected to the rest of the voting network.
+</li></ul>
+<p>In all <a href="/wiki/Representative_democracy" title="Representative democracy">representative democracies</a> (from national governments to condominium boards), political power is consolidated in the hands of a few elected officials. Most of us have little or no say in how those officials act.
+</p><p>Metagovernment's solutions are <a href="/wiki/Collaborative_governance" title="Collaborative governance">collaborative</a>, <a href="/wiki/Consensus" title="Consensus">consensus</a>-based, and <a href="/wiki/Synthesis" title="Synthesis">synthesis</a>-oriented. In this way, we avoid the traditional limitations of <a href="/wiki/Direct_democracy" title="Direct democracy">direct democracy</a> and allow everyone to be involved without degrading into mob rule, tyranny of the majority, or demagoguery.
+</p>
+<h2> <span class="mw-headline" id="Transition">Transition</span></h2>
+<p>Collaborative governance is a new and rapidly evolving concept: it is not yet ready to take on the administration of huge national governments. Rather, we expect that small <a href="/wiki/Community" title="Community">communities</a> will be the early adopters. As these smaller groups use and adapt the software, we intend to evolve it to be able to handle larger and larger systems.
+</p><p>Adoption of collaborative governance requires no official mandate. An interested community may set up an instance of open source governance software and invite its members to begin using it. If the software is successful, they will eventually invite the entire community to switch its formal governance mechanism over to the software using the accepted mechanisms of the existing mechanism. 
+</p><p>This transition scheme allows any community, from a small club to a large government to make the transition to collaborative governance.
+</p><p>You can take the first step in this transition by beginning to document your own goals and objectives in open format such as <a href="/w/index.php5?title=StratML&amp;action=edit&amp;redlink=1" class="new" title="StratML (page does not exist)">StratML</a>.  Then you can encourage others to do likewise, and the network effect can begin.
+</p>
+<h2> <span class="mw-headline" id="You_can_make_it_happen">You can make it happen</span></h2>
+<p>Join us in building real democracy for everyone.  You can help by <b><a href="/wiki/Participate" title="Participate">participating</a></b> in this project or by investigating and joining one of the many <a href="/wiki/Active_projects" title="Active projects">active projects</a> which are involved in creating collaborative governance mechanisms.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 17/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key metagov_wiki:pcache:idhash:1-0!1!0!!en!2!edit=0 and timestamp 20140518014751 -->
+<div class="printfooter">
+Retrieved from "<a href="http://metagovernment.org/wiki/Main_Page">http://metagovernment.org/wiki/Main_Page</a>"</div>
+		<div id="catlinks" class="catlinks catlinks-allhidden"></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+				 <li id="ca-nstab-main" class="selected"><a href="/wiki/Main_Page" title="View the content page [ctrl-alt-c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk"><a href="/wiki/Talk:Main_Page" title="Discussion about the content page [ctrl-alt-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/w/index.php5?title=Main_Page&amp;action=edit" title="This page is protected.
+You can view its source [ctrl-alt-e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/w/index.php5?title=Main_Page&amp;action=history" title="Past revisions of this page [ctrl-alt-h]" accesskey="h">History</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/w/index.php5?title=Special:UserLogin&amp;returnto=Main_Page" title="You are encouraged to log in; however, it is not mandatory [ctrl-alt-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/w/images/globe-wiki.png);" href="/wiki/Main_Page" title="Visit the main page"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-Navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Map"><a href="/wiki/Map">Map</a></li>
+				<li id="n-Main-page"><a href="/wiki/Main_Page">Main page</a></li>
+				<li id="n-Conferences"><a href="/wiki/Conferences">Conferences</a></li>
+				<li id="n-Help"><a href="/wiki/Help:Contents" title="The place to find out">Help</a></li>
+				<li id="n-FAQ"><a href="/wiki/FAQ">FAQ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-About_the_Community">
+		<h5>About the Community</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Participate"><a href="/wiki/Participate">Participate</a></li>
+				<li id="n-Community-portal"><a href="/wiki/Metagovernment:Community_portal">Community portal</a></li>
+				<li id="n-Recent-changes"><a href="/wiki/Special:RecentChanges">Recent changes</a></li>
+				<li id="n-Archive"><a href="/wiki/Archive">Archive</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Projects">
+		<h5>Projects</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Standardization"><a href="/wiki/Standardization">Standardization</a></li>
+				<li id="n-Active-projects"><a href="/wiki/Active_projects">Active projects</a></li>
+				<li id="n-Related-projects"><a href="/wiki/Related_projects">Related projects</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/w/index.php5" id="searchform">
+				<input type="hidden" name="title" value="Special:Search">
+				<input id="searchInput" title="Search Metagovernment - Government of, by, and for all the people" accesskey="f" type="search" name="search">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text">
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Main_Page" title="List of all wiki pages that link here [ctrl-alt-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Main_Page" title="Recent changes in pages linked from this page [ctrl-alt-k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [ctrl-alt-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/w/index.php5?title=Main_Page&amp;printable=yes" rel="alternate" title="Printable version of this page [ctrl-alt-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/w/index.php5?title=Main_Page&amp;oldid=4031" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/w/skins/common/images/poweredby_mediawiki_88x31.png" height="31" width="88" alt="Powered by MediaWiki"></a></div>
+	<div id="f-copyrightico"><a href="http://www.metagovernment.org/wiki/Metagovernment:Copyrights"><img src="/w/Attribution-ShareAlike3.0.png" alt="Attribution-ShareAlike3.0 Copyright"></a></div>
+	<ul id="f-list">
+		<li id="lastmod"> This page was last modified on 12 May 2014, at 01:00.</li>
+		<li id="viewcount">This page has been accessed 308,253 times.</li>
+		<li id="copyright">Content is available under Creative Commons Attribution-Share Alike 3.0 Unported license.</li>
+		<li id="privacy"><a href="/wiki/Metagovernment:Privacy_policy" title="Metagovernment:Privacy policy">Privacy policy</a></li>
+		<li id="about"><a href="/wiki/Metagovernment:About" title="Metagovernment:About">About Metagovernment</a></li>
+		<li id="disclaimer"><a href="/wiki/Metagovernment:General_disclaimer" title="Metagovernment:General disclaimer">Disclaimers</a></li>
+	</ul>
+</div>
+</div>
+
+<script>if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.109 secs. -->
+</body></html>Ytext/htmlUUTF-8P_(http://metagovernment.org/wiki/Main_Page            1   >   G   Y   o   ~   ”  =â  =ë  >%  B  B#  S©  S²  Sñ  Wê  Wó  ²6  ²?  ²y  ¶n  ¶y  ¶—  ¹j  ¹s  ¹y  º  ¾œ  ¾§  ¾Ü  ¾å  ¾ë  ¿u  Ä  Ä  ÄV  Ä_  Äe  Äò  ÉŒ  É—  Éå  Éî  Éô  ÊE  Î£  Î¬ GI Gb G Kİ Kæ ^“ ^¬ ^ã bô bÿ q q( q. q† uû v } }™ }é è ñ •Ğ – ™÷ š š Ù] Ùg Ùm Ùn             P             Ù™
