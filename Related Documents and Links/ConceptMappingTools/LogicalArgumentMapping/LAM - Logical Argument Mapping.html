@@ -1,0 +1,1178 @@
+
+<!-- saved from url=(0039)http://www.prism.gatech.edu/~mh327/LAM/ -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="File-List" href="http://www.prism.gatech.edu/~mh327/LAM/index_files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+b\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>LAM - Logical Argument Mapping</title>
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	text-align:left;
+	font-family:"Times New Roman";
+	font-size:10.0pt;
+	color:black;}
+p.MsoOrganizationName, li.MsoOrganizationName, div.MsoOrganizationName
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	line-height:112%;
+	text-align:left;
+	font-family:"Trebuchet MS";
+	font-size:9.0pt;
+	color:#6633FF;
+	font-weight:bold;}
+p.MsoTagline, li.MsoTagline, div.MsoTagline
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	line-height:112%;
+	text-align:left;
+	font-family:"Trebuchet MS";
+	font-size:8.0pt;
+	color:black;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:9.0pt;
+	line-height:112%;
+	text-align:left;
+	font-family:"Trebuchet MS";
+	font-size:9.0pt;
+	color:black;}
+p.MsoTitle3, li.MsoTitle3, div.MsoTitle3
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	line-height:112%;
+	text-align:left;
+	font-family:"Trebuchet MS";
+	font-size:18.0pt;
+	color:#6633FF;
+	font-weight:bold;}
+h4
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:8.0pt;
+	line-height:112%;
+	text-align:left;
+	font-family:"Trebuchet MS";
+	font-size:9.0pt;
+	color:black;
+	font-weight:bold;}
+p.MsoAddress, li.MsoAddress, div.MsoAddress
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	line-height:112%;
+	text-align:left;
+	font-family:"Trebuchet MS";
+	font-size:8.0pt;
+	color:black;}
+ol
+	{margin-top:0in;
+	margin-bottom:0in;
+	margin-left:-2197in;}
+ul
+	{margin-top:0in;
+	margin-bottom:0in;
+	margin-left:-2197in;}
+@page
+	{size:8.0302in 11.0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="8194" fill="f" fillcolor="white [7]"
+  strokecolor="black [0]">
+  <v:fill color="white [7]" color2="white [7]" on="f"/>
+  <v:stroke color="black [0]" color2="white [7]">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+  <o:colormru v:ext="edit" colors="#39f,#06f"/>
+ </o:shapedefaults><o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<style type="text/css" id="inlinestyle">a.tt:hover span.top {background: url(chrome-extension://ejpogldabjhjhglnfojmnekmcjonllia/images/bubble.gif) no-repeat top;padding: 30px 8px 0;display: block;}
+a.tt:hover span.middle {background: url(chrome-extension://ejpogldabjhjhglnfojmnekmcjonllia/images/bubble_filler.gif) repeat bottom;padding: 0 8px;display: block;}
+a.tt:hover span.bottom {background: url(chrome-extension://ejpogldabjhjhglnfojmnekmcjonllia/images/bubble.gif) no-repeat bottom;color: #548912;padding: 3px 8px 10px;display: block;}
+</style></head>
+
+<body link="purple" vlink="navy" style="margin:0">
+
+<div style="position:absolute;width:7.-71in;height:29.1292in">
+<!--[if gte vml 1]><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+ path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1060" type="#_x0000_t202" style='position:absolute;
+ left:462pt;top:42pt;width:102pt;height:15pt;z-index:3' filled="f" fillcolor="white [7]"
+ stroked="f" strokecolor="black [0]" insetpen="t" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:3;
+left:616px;top:56px;width:136px;height:20px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="136" height="20" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1060" style="padding:2.88pt 2.88pt 2.88pt 2.88pt" class="shape">
+  <p class="MsoTagline"><a href="http://www.prism.gatech.edu/~mh327/"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;
+  language:de">Michael H.G. Hoffmann</span></a></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1061" type="#_x0000_t202"
+ style='position:absolute;left:12pt;top:249pt;width:129pt;height:279pt;
+ z-index:4;visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' filled="f" fillcolor="black [0]" stroked="f"
+ strokecolor="#cf6" strokeweight="0" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:4;
+left:16px;top:332px;width:172px;height:372px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="172" height="372" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1061" style="padding:2.85pt 2.85pt 2.85pt 2.85pt" class="shape">
+  <p class="MsoBodyText3"><span lang="en-US" style="language:en-US">It is a mark of an educated person to look for precision in each kind of inquiry just to the extent that the nature of the subject allows it.</span></p>
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><span lang="en-US" style="language:en-US">Aristotle</span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="language:en-US">The difficult part in an argument is not to defend one's opinion but rather to know it.</span></p>
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><span lang="en-US" style="language:en-US">Andre Maurois</span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="language:en-US">All human errors stem from impatience,<br>
+  a premature breaking off of a methodological approach,<br>
+  an ostensible pinning down of an ostensible matter.</span></p>
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><span lang="en-US" style="language:en-US">Franz Kafka</span></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:oval id="_x0000_s1062" style='position:absolute;
+ left:119.1pt;top:19.11pt;width:8.39pt;height:8.39pt;z-index:5;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="#cf6" rotate="t" focus="100%" type="gradientRadial">
+  <o:fill v:ext="view" type="gradientCenter"/>
+ </v:fill>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:oval><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:5;
+left:158px;top:25px;width:12px;height:12px"><img width="12" height="12" src="./LAM - Logical Argument Mapping_files/image302.gif" v:shapes="_x0000_s1062"></span><!--[endif]--><!--[if gte vml 1]><v:oval
+ id="_x0000_s1089" style='position:absolute;left:119.1pt;top:19.11pt;width:8.39pt;
+ height:8.39pt;z-index:22;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+ stroked="f" strokecolor="black [0]" insetpen="t" o:cliptowrap="t">
+ <v:fill color2="#cf6" rotate="t" focus="100%" type="gradientRadial">
+  <o:fill v:ext="view" type="gradientCenter"/>
+ </v:fill>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:oval><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:22;
+left:158px;top:25px;width:12px;height:12px"><img width="12" height="12" src="./LAM - Logical Argument Mapping_files/image302.gif" v:shapes="_x0000_s1089"></span><!--[endif]--><!--[if gte vml 1]><v:shape
+ id="_x0000_s1090" type="#_x0000_t202" style='position:absolute;left:153pt;
+ top:129pt;width:201pt;height:54pt;z-index:23' filled="f" fillcolor="white [7]"
+ stroked="f" strokecolor="black [0]" insetpen="t" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:23;
+left:204px;top:172px;width:268px;height:72px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="268" height="72" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1090" style="padding:2.88pt 2.88pt 2.88pt 2.88pt" class="shape">
+  <h4><span lang="de" style="language:de">This project is has been transformed into AGORA-net: Participate - Deliberate. Please visit </span><a href="http://agora.gatech.edu/"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  text-decoration:underline;language:de">http://agora.gatech.edu/</span></a><span lang="de" style="language:de"> to see its continuation. </span></h4>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1091" type="#_x0000_t202"
+ style='position:absolute;left:441pt;top:129pt;width:127.5pt;height:39pt;
+ z-index:24' filled="f" fillcolor="white [7]" stroked="f" strokecolor="black [0]"
+ insetpen="t" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:24;
+left:588px;top:172px;width:170px;height:52px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="170" height="52" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1091" style="padding:2.88pt 2.88pt 2.88pt 2.88pt" class="shape">
+  <h4 style="text-align:right"><span lang="en-US" style="language:en-US">Last modified: </span><span lang="en-US" style="language:en-US">Mar 20</span><span lang="en-US" style="language:en-US">, 20</span><span lang="en-US" style="language:en-US">12</span></h4>
+  <h4 style="text-align:right"><span lang="en-US" style="language:en-US">First published: Feb 2008</span></h4>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:rect id="_x0000_s1092" style='position:absolute;
+ left:182pt;top:-182pt;width:54.39pt;height:418.39pt;rotation:-90;flip:y;
+ z-index:25;visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' fillcolor="#f90" stroked="f" strokecolor="black [0]"
+ strokeweight=".25pt" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:rect><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:25;
+left:0px;top:0px;width:558px;height:73px"><img width="558" height="73" src="./LAM - Logical Argument Mapping_files/image306.gif" v:shapes="_x0000_s1092"></span><!--[endif]--><!--[if gte vml 1]><v:shape
+ id="_x0000_s1093" alt="" style='position:absolute;left:47.11875mm;top:-163.44369mm;
+ width:573.75pt;height:1500.36pt;rotation:17691452fd;z-index:26;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:9.36pt;mso-wrap-distance-right:9.36pt'
+ coordorigin="-32000,-32000" coordsize="64000,64000" o:spt="100" adj="25858,-17922,136"
+ path="wr-32000,-32000,32000,32000@10@11@13@14,-32000,-32000,32000,32000@18@14@19@20l@0@20@0@24wa-32000,-32000,32000,32000@23@24@22@11xe"
+ fillcolor="white [7]" stroked="f" o:cliptowrap="t">
+ <v:stroke joinstyle="miter">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="val #1"/>
+  <v:f eqn="val #2"/>
+  <v:f eqn="ellipse @0 32000 32000"/>
+  <v:f eqn="ellipse @1 32000 32000"/>
+  <v:f eqn="ellipse @2 32000 32000"/>
+  <v:f eqn="sum 0 0 @3"/>
+  <v:f eqn="sum 0 0 @4"/>
+  <v:f eqn="sum 0 0 @5"/>
+  <v:f eqn="sum 0 @4 @0"/>
+  <v:f eqn="if @9 @4 @0"/>
+  <v:f eqn="if @9 @1 @6"/>
+  <v:f eqn="sum 0 @5 @0"/>
+  <v:f eqn="if @12 @5 @0"/>
+  <v:f eqn="if @12 @2 @3"/>
+  <v:f eqn="sum @11 0 1"/>
+  <v:f eqn="sum @14 1 0"/>
+  <v:f eqn="sum 0 @14 @3"/>
+  <v:f eqn="if @17 @8 @13"/>
+  <v:f eqn="if @17 @0 @13"/>
+  <v:f eqn="if @17 @3 @16"/>
+  <v:f eqn="sum 0 @6 @11"/>
+  <v:f eqn="if @21 @7 @10"/>
+  <v:f eqn="if @21 @0 @10"/>
+  <v:f eqn="if @21 @6 @15"/>
+  <v:f eqn="min @10 @13"/>
+  <v:f eqn="max @8 @7"/>
+  <v:f eqn="max @26 @0"/>
+ </v:formulas>
+ <v:path gradientshapeok="t" insetpenok="f" o:connecttype="segments"
+  textboxrect="@27,@11,@25,@14"/>
+ <v:handles>
+  <v:h position="#0,#1" xrange="-32000,32000" yrange="-32000,32000"/>
+  <v:h position="#0,#2" xrange="-32000,32000" yrange="-32000,32000"/>
+ </v:handles>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:26;
+left:0px;top:-1px;width:565px;height:75px"><img width="565" height="75" src="./LAM - Logical Argument Mapping_files/image307.gif" v:shapes="_x0000_s1093"></span><!--[endif]--><!--[if gte vml 1]><v:shape
+ id="_x0000_s1125" type="#_x0000_t202" style='position:absolute;left:151.12pt;
+ top:38.62pt;width:298.88pt;height:21.38pt;z-index:27;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="black [0]" strokeweight="0"
+ o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" weight="0" joinstyle="miter"/>
+  <o:top v:ext="view" color="black [0]" weight="0" joinstyle="miter"/>
+  <o:right v:ext="view" color="black [0]" weight="0" joinstyle="miter"/>
+  <o:bottom v:ext="view" color="black [0]" weight="0" joinstyle="miter"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:27;
+left:201px;top:51px;width:399px;height:29px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="399" height="29" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1125" style="padding:2.85pt 2.85pt 2.85pt 2.85pt" class="shape">
+  <p class="MsoTagline"><a href="http://www.spp.gatech.edu/"><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;language:en-US">School of Public Policy</span></a></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:oval id="_x0000_s1126" style='position:absolute;
+ left:122.17pt;top:29.85pt;width:21.83pt;height:2.85pt;z-index:28;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="black [0]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="white [7]" rotate="t" focusposition=".5,.5" focussize=""
+  focus="100%" type="gradientRadial"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:oval><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:28;
+left:162px;top:39px;width:30px;height:5px"><img width="30" height="5" src="./LAM - Logical Argument Mapping_files/image350.gif" v:shapes="_x0000_s1126"></span><!--[endif]--><!--[if gte vml 1]><v:shape
+ id="_x0000_s1127" type="#_x0000_t202" alt="" style='position:absolute;left:151.12pt;
+ top:22.37pt;width:298.88pt;height:16.25pt;z-index:29;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="black [0]" strokeweight="0"
+ o:cliptowrap="t">
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:29;
+left:201px;top:30px;width:399px;height:22px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="399" height="22" valign="bottom" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1127" style="padding:2.85pt 2.85pt 2.85pt 2.85pt" class="shape">
+  <p class="MsoOrganizationName"><a href="http://www.gatech.edu/"><span lang="en-US" style="font-size:8.6pt;line-height:112%;font-family:&quot;Trebuchet MS&quot;;
+  text-decoration:underline;language:en-US">Georgia Institute of Technology</span></a></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:group id="_x0000_s1128" style='position:absolute;
+ left:471pt;top:6pt;width:80.64pt;height:40.32pt;z-index:30' coordorigin="1124997,884062"
+ coordsize="10241,5120">
+ <v:rect id="_x0000_s1129" style='position:absolute;left:1124997;top:884062;
+  width:10242;height:5121;visibility:hidden;mso-wrap-edited:f' stroked="f"
+  o:cliptowrap="t">
+  <v:fill recolor="t" rotate="t"/>
+  <v:stroke joinstyle="round">
+   <o:left v:ext="view" weight="0" on="t"/>
+   <o:top v:ext="view" weight="0" on="t"/>
+   <o:right v:ext="view" weight="0" on="t"/>
+   <o:bottom v:ext="view" weight="0" on="t"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:imagedata cropbottom="16777215f" cropright="16777215f"/>
+  <v:path gradientshapeok="f" insetpenok="f" o:connecttype="segments"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:rect id="_x0000_s1130" style='position:absolute;left:1124997;
+  top:884420;width:10242;height:4405;visibility:visible;mso-wrap-edited:f;
+  mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="black [0]" stroked="f" strokecolor="black [0]" strokeweight="0"
+  o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:imagedata src="index_files/image353.gif" o:title="logo-gatech"/>
+  <v:shadow color="#ccc [4]"/>
+  <v:path insetpenok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+ </v:rect></v:group><![endif]--><!--[if !vml]--><span style="position:absolute;
+z-index:30;left:627px;top:7px;width:110px;height:56px"><img width="110" height="56" src="./LAM - Logical Argument Mapping_files/image355.gif" v:shapes="_x0000_s1128 _x0000_s1130"></span><!--[endif]--><!--[if gte vml 1]><v:shape
+ id="_x0000_s1131" type="#_x0000_t202" alt="" style='position:absolute;left:151.47pt;
+ top:60.75pt;width:417.03pt;height:65.25pt;z-index:31;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="#cf6" strokeweight="0"
+ o:cliptowrap="t">
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:31;
+left:202px;top:81px;width:557px;height:87px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="557" height="87" valign="bottom" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1131" style="padding:36.15pt 2.85pt 2.85pt 2.85pt" class="shape">
+  <p class="MsoTitle3"><span lang="en-US" style="language:en-US">Logical Argument Mapping (LAM): A Manual</span></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1132" type="#_x0000_t202"
+ style='position:absolute;left:153pt;top:186pt;width:4in;height:27in;z-index:32;
+ visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' filled="f" fillcolor="black [0]" stroked="f"
+ strokecolor="#cf6" strokeweight="0" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:32;
+left:204px;top:248px;width:384px;height:2592px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="384" height="2592" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1132" style="padding:2.85pt 2.85pt 2.85pt 2.85pt" class="shape">
+  <p class="MsoBodyText3"><span lang="de" style="language:de">In order to understand someone's position or thesis, it is good to know this person's justification for this thesis or position. This is especially important for ethical problems. Since ethical decisions can be based on a variety of ethical principles and moral considerations, there are often good arguments for conflicting positions.</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">Justifications can be represented in the form of arguments. For example, if I want to argue for the thesis "Paul is responsible for what he did," I might provide as a justification for this thesis the reason "Paul is a rational being."</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  font-weight:bold;language:de">What is an argument? </span><span lang="de" style="language:de">An argument is defined as a set of statements--a claim and one or more reasons--where the reasons jointly provide support (not necessarily conclusive) for the claim, or are at least intended to support the claim. In my example, the statement "Paul is responsible for what he did" would be the claim, and the justification "Paul is a rational being" is the reason.</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  font-weight:bold;language:de">Logical Argument Mapping (LAM)</span><span lang="de" style="language:de"> and the corresponding web-based software system "</span><a href="http://agora.gatech.edu/"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  text-decoration:underline;language:de">AGORA: Participate - Deliberate</span></a><span lang="de" style="language:de">" are built on the idea that the visualization of arguments in graphical form facilitates the structuring of complex justifications and debates, and stimulates self-reflection. The reason for the former is that argument mapping helps us to represent entire </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;language:de">argumentations, that is chains of arguments, including objections, counter-, and counter-counter-arguments. Based on the graphical structure of argument maps, the central claim, the structure of justifications, controversial points, open ends, and the status of complex debates are immediately visible. On an argument map, everything is clearly located at a certain position. Everything is part of a structure. </span></p>
+  <p class="MsoBodyText3"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  language:de">The reason for the second assumption that argument mapping stimulates </span><span lang="de" style="language:de">self-reflection is the fact that we have to create this structure. We </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;language:de">have to reflect on the adequacy of a certain structure, and we have to revise it if necessary. This </span><span lang="de" style="language:de">helps us to reflect on our own thinking about an issue, and on that of others when we are using LAM to represent or reconstruct given arguments.</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">What distinguishes LAM and the AGORA approach from </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-weight:bold;language:de">other argument visualization tools</span><span lang="de" style="language:de"> is the fact that it guides the user to represent arguments in the form of deductively valid arguments.</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  font-weight:bold;language:de">What is a deductively valid argument? </span><span lang="de" style="language:de">An argument is "deductively valid" if and only if it follows an argument scheme that is deductively valid. An argument scheme is deductively valid if and only if it is impossible for any argument following this scheme to have true premises and a false conclusion. See, for example, the deductively valid argument scheme that is called </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">modus ponens</span><span lang="de" style="language:de">:</span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  language:en-US">-- </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  font-style:italic;language:en-US">p</span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  language:en-US">-- If </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  font-style:italic;language:en-US">p</span><span lang="en-US" style="font-family:
+  &quot;Trebuchet MS&quot;;language:en-US">, then </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:en-US">q</span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  language:en-US">-- Therefore, </span><span lang="en-US" style="font-family:
+  &quot;Trebuchet MS&quot;;font-style:italic;language:en-US">q</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">Every argument that is formulated according to this scheme will be deductively valid (as long as </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">p </span><span lang="de" style="language:de">and </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  font-style:italic;language:de">q </span><span lang="de" style="language:de">are variables that represent propositions, and "if </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:en-US">p</span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">, then </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:en-US">q" </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">is understood as material implication, that is as something like a law of nature that connects an event described by </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:en-US">q </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">as a necessary consequence of an event described by </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:en-US">p)</span><span lang="de" style="language:de">. For example:</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- Paul is a rational being</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- if Paul is a rational being, then Paul is responsible for what he did</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- therefore, Paul is responsible for what he did</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">This example shows that it is possible to transform any argument into a deductively valid argument simply by introducing a fitting additional premise like the "if-then" statement in this example. I call this additional premise an "enabler." The "enabler" in an argument is the premise that guarantees that the reason provided is sufficient to justify the claim. The enabler "enables" the reason to produce the claim with logical necessity. Thus, the simple argument "Paul is a rational being, therefore he is responsible for what he did" can be transformed into a deductively valid argument by constructing the enabler "if </span><span lang="de" style="language:de">Paul is a rational being, then Paul is responsible for what he did."</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">In contrast to classical deduction, in LAM deductively valid arguments are interpreted as </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">defeasible</span><span lang="de" style="language:de"> deductions. Even though -- as in classical deductive validity -- a conclusion will be necessarily true in case the premises are true, in LAM both the enabler and the reason of an argument are only </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">believed </span><span lang="de" style="language:de">to be true by the person proposing the argument, and only as long as there is no information to the contrary. If information comes up that would either defeat or question one of the premises, this information will be connected to this premise as an "objection," and the status of every proposition that depends on this defeated or questioned premise will change from "undefeated" to "defeated" or "questioned" (see </span><a href="http://www.prism.gatech.edu/~mh327/LAM/defeasible-reasoning-in-a-dialogue-on-Tweety.pdf"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;
+  language:de">here</span></a><span lang="de" style="language:de"> for an example). This way, an entire deductive argument can be defeated by defeating one of its premises.</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">LAM and the AGORA system use seven deductively valid argument schemes: </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">modus ponens</span><span lang="de" style="language:de">; </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  font-style:italic;language:de">modus tollens</span><span lang="de" style="language:de">; disjunctive syllogism; not-both syllogism; conditional syllogism; equivalence; and constructive dilemma (see </span><a href="http://cmapspublic2.ihmc.us/servlet/SBReadResourceServlet?rid=1220800432078_1494615849_19534&partName=htmltext"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;
+  language:de">here</span></a><span lang="de" style="language:de"> for details). This list is the result of a compromise between completeness and practicality. There are more deductively valid argument schemes, but these turned out to be the ones whose validity is easily comprehensible, and that are sufficient to represent most of the arguments that we are using every day (after a fitting enabler has been introduced).</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  font-weight:bold;language:de">Why should it make sense to transform arguments into </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-weight:bold;language:de">defeasible </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-weight:bold;language:de">deducti</span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-weight:bold;language:de">ons</span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-weight:bold;language:de">? </span><span lang="de" style="language:de">The</span><span lang="de" style="language:de">re are three</span><span lang="de" style="language:de"> reason</span><span lang="de" style="language:de">s</span><span lang="de" style="language:de"> for this fundamental design decision</span><span lang="de" style="language:de">:</span></p>
+  <p class="MsoBodyText3" style="margin-left:36.0pt;text-indent:-36.0pt"><span style="direction:ltr;unicode-bidi:embed;font-family:&quot;Trebuchet MS&quot;;
+  font-size:9.0pt;language:de;color:black">1.</span><span style="width:30.0pt">&nbsp;</span><span lang="de" style="language:de">A thesis about human cognition: Critical reflection and learning can be better achieved with those systems of representation that provide a clear </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;color:black;language:de">normative standard of argument construction </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;color:black;language:de">that constrains the freedom of expression</span><span lang="de" style="language:de">; a standard that challenges the user to be more specific than he would be otherwise, to slow down and think more thoroughly.</span></p>
+  <p class="MsoBodyText3" style="margin-left:36.0pt;text-indent:-36.0pt"><span style="direction:ltr;unicode-bidi:embed;font-family:&quot;Trebuchet MS&quot;;
+  font-size:9.0pt;language:de;color:black">2.</span><span style="width:30.0pt">&nbsp;</span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;color:black;language:de">A consideration from argumentation theory: I</span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;color:black;language:de">n order to </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;color:black;language:de">locate any possible objection against an argument precisely, anything that can be criticized in an argument must be represented. The easiest way to achieve this form of completeness is to present an argument in deductively valid form. </span><span lang="de" style="language:de">Looking at a deductively complete argument reminds us that we do not only have to reflect on the question whether the reasons we provide are acceptable and justified, but also the inferential relation between reason and claim. </span></p>
+  <p class="MsoBodyText3" style="margin-left:36.0pt;text-indent:-36.0pt"><span style="direction:ltr;unicode-bidi:embed;font-family:&quot;Trebuchet MS&quot;;
+  font-size:9.0pt;language:de;color:black">3.</span><span style="width:30.0pt">&nbsp;</span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;color:black;language:de">An educational and computational argument: Learning needs scaffolding, and software tools that are designed to support autonomous learning--either individually or in groups--should guide the user in a step-by-step process. This can be much easier achieved by software tools whose means of expression are limited to deductive argument schemes. </span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">L</span><span lang="de" style="language:de">ogical </span><span lang="de" style="language:de">A</span><span lang="de" style="language:de">rgument </span><span lang="de" style="language:
+  de">M</span><span lang="de" style="language:de">apping </span><span lang="de" style="language:de">is not deductive reasoning. Logical Argument Mapping is the process of </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">constructing </span><span lang="de" style="language:de">arguments in deductive form, </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">assessing </span><span lang="de" style="language:de">the acceptability of the premises as they need to be formulated to achieve this deductive form, and </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;font-style:italic;language:de">revising </span><span lang="de" style="language:de">these premises and/or the structure of the argument </span><span lang="de" style="language:de">as long as it takes to </span><span lang="de" style="language:de">construct the best</span><span lang="de" style="language:
+  de"> possible</span><span lang="de" style="language:de"> argument</span><span lang="de" style="language:de">.</span><span lang="de" style="language:de"> </span><span lang="de" style="language:de">A reconstruction of an argument in logical form can show us how its premises would need to look like if the goal were to guarantee the truth of the conclusion. The point is to get the content of the premises right and to formulate them in their strongest possible form. </span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">For an example of how such a process of revising and improving an argument might work, see the </span><span lang="de" style="language:de">"</span><span lang="de" style="language:de">Tweety can fly</span><span lang="de" style="language:de">"</span><span lang="de" style="language:de"> example </span><a href="http://www.prism.gatech.edu/~mh327/LAM/defeasible-reasoning-in-a-dialogue-on-Tweety.pdf"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;
+  language:de">here</span></a><span lang="de" style="language:de">. </span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  language:en-US">&nbsp;</span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  language:en-US">Logical Argument Mapping (LAM) can be used--in individual, collaborative, and competitive settings--for the following </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;font-weight:bold;language:en-US">purposes</span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">:</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">Justifying claims in order to represent knowledge</span></p>
+  <p class="MsoBodyText3"><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  language:en-US">-- Justifying </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  color:black;language:de">norms, proposals, and decisions in ethics and policy making</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">Visualizing webs of mutually supporting beliefs and values</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">Reflecting on one's own thinking and sensemaking </span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">Revealing unknowns, opportunities, and conflict possibilities in planning and decision making</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">Deciding controversies, or understanding someone else's position</span></p>
+  <p class="MsoBodyText3"><span lang="de" style="language:de">-- </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;language:en-US">Deliberating on a problem or decision</span></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:line id="_x0000_s1134" style='position:absolute;
+ z-index:33;visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' from="151.56pt,126.87pt" to="569.95pt,126.87pt"
+ strokecolor="#f90" strokeweight="2.25pt" o:cliptowrap="t">
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+</v:line><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:33;
+left:200px;top:167px;width:562px;height:4px"><img width="562" height="4" src="./LAM - Logical Argument Mapping_files/image360.gif" v:shapes="_x0000_s1134"></span><!--[endif]--><!--[if gte vml 1]><v:shape
+ id="_x0000_s1142" type="#_x0000_t202" alt="" style='position:absolute;left:441pt;
+ top:193.17pt;width:127.5pt;height:40.83pt;z-index:41;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="#cf6" strokeweight="0"
+ o:cliptowrap="t">
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:41;
+left:588px;top:258px;width:170px;height:55px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="170" height="55" valign="bottom" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1142" style="padding:14.4pt 2.85pt 2.85pt 2.85pt" class="shape">
+  <p class="MsoAddress" style="text-align:right;text-align:right"><span lang="en-US" style="language:en-US">xyz.m.hoffmann@gatech.edu.xyz</span></p>
+  <p class="MsoAddress" style="text-align:right;text-align:right"><span lang="en-US" style="language:en-US">(remove spam protection "xyz")</span></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1144" type="#_x0000_t202"
+ style='position:absolute;left:441pt;top:171pt;width:127.5pt;height:22.17pt;
+ z-index:43;visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' filled="f" fillcolor="black [0]" stroked="f"
+ strokecolor="#cf6" strokeweight="0" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:43;
+left:588px;top:228px;width:170px;height:30px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="170" height="30" valign="bottom" style="vertical-align:top"><!--[endif]-->
+  <div v:shape="_x0000_s1144" style="padding:4.65pt 2.85pt 2.85pt 2.85pt" class="shape">
+  <h4 style="text-align:right"><span lang="en-US" style="language:en-US">Contact:</span></h4>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:oval id="_x0000_s1181" style='position:absolute;
+ left:119.1pt;top:19.11pt;width:8.39pt;height:8.39pt;z-index:80;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="#cf6" rotate="t" focus="100%" type="gradientRadial">
+  <o:fill v:ext="view" type="gradientCenter"/>
+ </v:fill>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:oval><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:80;
+left:158px;top:25px;width:12px;height:12px"><img width="12" height="12" src="./LAM - Logical Argument Mapping_files/image302.gif" v:shapes="_x0000_s1181"></span><!--[endif]--><!--[if gte vml 1]><v:line
+ id="_x0000_s1182" style='position:absolute;z-index:81;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="441pt,129pt"
+ to="441pt,282pt" strokecolor="#f90" strokeweight="2.25pt" o:cliptowrap="t">
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+</v:line><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:81;
+left:586px;top:170px;width:4px;height:208px"><img width="4" height="208" src="./LAM - Logical Argument Mapping_files/image364.gif" v:shapes="_x0000_s1182"></span><!--[endif]--><!--[if gte vml 1]><v:group
+ id="_x0000_s1235" style='position:absolute;left:15.72pt;top:60.75pt;width:126pt;
+ height:151.2pt;z-index:100' coordorigin="1101852,1101852" coordsize="16002,19202">
+ <v:rect id="_x0000_s1236" alt="" style='position:absolute;left:1101852;top:1101852;
+  width:16002;height:3200;visibility:hidden;mso-wrap-edited:f;
+  mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+  <v:stroke dashstyle="1 1" endcap="round">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1257" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1103697;top:1101966;width:13615;height:2972;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,2.88pt,2.88pt,2.88pt">
+   <div dir=ltr style='padding-top:1.9949pt'>
+   <p class=MsoNormal style='line-height:113%'><span lang=en-US
+   style='font-size:9.0pt;line-height:113%;font-family:Verdana;language:en-US'>LAM Home</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:shapetype id="_x0000_t87" coordsize="21600,21600" o:spt="87"
+  adj="1800,10800" path="m21600,qx10800@0l10800@2qy0@11,10800@3l10800@1qy21600,21600e"
+  filled="f">
+  <v:formulas>
+   <v:f eqn="val #0"/>
+   <v:f eqn="sum 21600 0 #0"/>
+   <v:f eqn="sum #1 0 #0"/>
+   <v:f eqn="sum #1 #0 0"/>
+   <v:f eqn="prod #0 9598 32768"/>
+   <v:f eqn="sum 21600 0 @4"/>
+   <v:f eqn="sum 21600 0 #1"/>
+   <v:f eqn="min #1 @6"/>
+   <v:f eqn="prod @7 1 2"/>
+   <v:f eqn="prod #0 2 1"/>
+   <v:f eqn="sum 21600 0 @9"/>
+   <v:f eqn="val #1"/>
+  </v:formulas>
+  <v:path arrowok="t" o:connecttype="custom" o:connectlocs="21600,0;0,10800;21600,21600"
+   textboxrect="13963,@4,21600,@5"/>
+  <v:handles>
+   <v:h position="center,#0" yrange="0,@8"/>
+   <v:h position="topLeft,#1" yrange="@9,@10"/>
+  </v:handles>
+ </v:shapetype><v:shape id="_x0000_s1258" type="#_x0000_t87" style='position:absolute;
+  left:1102393;top:1102214;width:727;height:2475;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+  strokecolor="#ccc [1]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:shape><v:shape id="_x0000_s1240" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1103697;top:1105166;width:13615;height:2972;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,2.88pt,2.88pt,2.88pt">
+   <div dir=ltr style='padding-top:1.9949pt'>
+   <p class=MsoNormal style='line-height:113%'><span lang=en-US
+   style='font-size:9.0pt;line-height:113%;font-family:Verdana;language:en-US'>1. Rules; definitions</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1241" type="#_x0000_t87" style='position:absolute;
+  left:1102393;top:1105415;width:727;height:2474;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+  strokecolor="#a3a3a3 [2 darken(204)]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:shape><v:rect id="_x0000_s1242" alt="" href="index_files/Page366.htm"
+  style='position:absolute;left:1101852;top:1105052;width:16002;height:3200;
+  visibility:visible;mso-wrap-edited:f' filled="f" fillcolor="white [7]"
+  stroked="f" o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1243" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1103697;top:1108367;width:13615;height:2971;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,2.88pt,2.88pt,2.88pt">
+   <div dir=ltr style='padding-top:1.9949pt'>
+   <p class=MsoNormal style='line-height:113%'><span lang=en-US
+   style='font-size:9.0pt;line-height:113%;font-family:Verdana;language:en-US'>2. Procedure</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1244" type="#_x0000_t87" style='position:absolute;
+  left:1102393;top:1108615;width:727;height:2475;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+  strokecolor="#a3a3a3 [2 darken(204)]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:shape><v:rect id="_x0000_s1245" alt="" href="index_files/Page427.htm"
+  style='position:absolute;left:1101852;top:1108252;width:16002;height:3201;
+  visibility:visible;mso-wrap-edited:f' filled="f" fillcolor="white [7]"
+  stroked="f" o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1246" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1103697;top:1111567;width:13615;height:2972;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,2.88pt,2.88pt,2.88pt">
+   <div dir=ltr style='padding-top:1.9949pt'>
+   <p class=MsoNormal style='line-height:113%'><span lang=en-US
+   style='font-size:9.0pt;line-height:113%;font-family:Verdana;language:en-US'>3. An example</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1247" type="#_x0000_t87" style='position:absolute;
+  left:1102393;top:1111816;width:727;height:2474;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+  strokecolor="#a3a3a3 [2 darken(204)]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:shape><v:rect id="_x0000_s1248" alt="" href="index_files/Page761.htm"
+  style='position:absolute;left:1101852;top:1111453;width:16002;height:3200;
+  visibility:visible;mso-wrap-edited:f' filled="f" fillcolor="white [7]"
+  stroked="f" o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1249" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1103697;top:1114767;width:13615;height:2972;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,2.88pt,2.88pt,2.88pt">
+   <div dir=ltr style='padding-top:1.9949pt'>
+   <p class=MsoNormal style='line-height:113%'><span lang=en-US
+   style='font-size:9.0pt;line-height:113%;font-family:Verdana;language:en-US'>4. Maps</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1250" type="#_x0000_t87" style='position:absolute;
+  left:1102393;top:1115016;width:727;height:2475;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+  strokecolor="#a3a3a3 [2 darken(204)]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:shape><v:rect id="_x0000_s1251" alt="" href="index_files/Page826.htm"
+  style='position:absolute;left:1101852;top:1114653;width:16002;height:3201;
+  visibility:visible;mso-wrap-edited:f' filled="f" fillcolor="white [7]"
+  stroked="f" o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1252" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1103697;top:1117968;width:13615;height:2972;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,2.88pt,2.88pt,2.88pt">
+   <div dir=ltr style='padding-top:1.9949pt'>
+   <p class=MsoNormal style='line-height:113%'><span lang=en-US
+   style='font-size:9.0pt;line-height:113%;font-family:Verdana;language:en-US'>5. Publications</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:shape id="_x0000_s1253" type="#_x0000_t87" style='position:absolute;
+  left:1102393;top:1118216;width:727;height:2475;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="white [7]"
+  strokecolor="#a3a3a3 [2 darken(204)]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:shape><v:rect id="_x0000_s1254" alt="" href="index_files/Page890.htm"
+  style='position:absolute;left:1101852;top:1117854;width:16002;height:3200;
+  visibility:visible;mso-wrap-edited:f' filled="f" fillcolor="white [7]"
+  stroked="f" o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect></v:group><![endif]--><!--[if !vml]--><span style="position:absolute;
+z-index:100;left:21px;top:81px;width:168px;height:202px"><map name="MicrosoftOfficeMap0"><area shape="Rect" coords="0, 168, 168, 202" href="http://www.prism.gatech.edu/~mh327/LAM/index_files/Page890.htm"><area shape="Rect" coords="0, 134, 168, 168" href="http://www.prism.gatech.edu/~mh327/LAM/index_files/Page826.htm"><area shape="Rect" coords="0, 101, 168, 134" href="http://www.prism.gatech.edu/~mh327/LAM/index_files/Page761.htm"><area shape="Rect" coords="0, 67, 168, 101" href="http://www.prism.gatech.edu/~mh327/LAM/index_files/Page427.htm"><area shape="Rect" coords="0, 34, 168, 67" href="http://www.prism.gatech.edu/~mh327/LAM/index_files/Page366.htm"></map><img border="0" width="168" height="202" src="./LAM - Logical Argument Mapping_files/image418.gif" usemap="#MicrosoftOfficeMap0" v:shapes="_x0000_s1235 _x0000_s1257 _x0000_s1258 _x0000_s1240 _x0000_s1241 _x0000_s1242 _x0000_s1243 _x0000_s1244 _x0000_s1245 _x0000_s1246 _x0000_s1247 _x0000_s1248 _x0000_s1249 _x0000_s1250 _x0000_s1251 _x0000_s1252 _x0000_s1253 _x0000_s1254"></span><!--[endif]--><!--[if gte vml 1]><v:shape
+ id="_x0000_s1441" type="#_x0000_t202" style='position:absolute;left:483.36pt;
+ top:282pt;width:80.64pt;height:98.4pt;z-index:106;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' filled="f" fillcolor="white [7]"
+ strokecolor="#06f" strokeweight=".35269mm" insetpen="t" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="#39f" color2="white [7]" weight=".35269mm"
+   joinstyle="miter" insetpen="t"/>
+  <o:top v:ext="view" color="#39f" color2="white [7]" weight=".35269mm"
+   joinstyle="miter" insetpen="t"/>
+  <o:right v:ext="view" color="#39f" color2="white [7]" weight=".35269mm"
+   joinstyle="miter" insetpen="t"/>
+  <o:bottom v:ext="view" color="#39f" color2="white [7]" weight=".35269mm"
+   joinstyle="miter" insetpen="t"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:106;
+left:643px;top:375px;width:110px;height:133px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="109" height="133" style="border:.9997pt solid #0066FF;vertical-align:
+  top"><!--[endif]-->
+  <div v:shape="_x0000_s1441" style="padding:3.8797pt 3.8797pt 3.8797pt 3.8797pt" class="shape">
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><a href="http://www.spp.gatech.edu/faculty/workingpapers/wp50.pdf"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;
+  language:de">Download a pdf </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  text-decoration:none;language:de">version, published </span><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;language:de">as </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;
+  language:en-US">Georgia Tech</span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  text-decoration:underline;language:en-US">'</span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;language:en-US">s </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:none;language:
+  en-US">School of Public </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;
+  text-decoration:underline;language:en-US">Policy Working </span><span lang="en-US" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:none;language:
+  en-US">Paper Series, 50</span></a><span lang="en-US" style="language:en-US"> </span></p>
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><span lang="en-US" style="language:en-US">(6.4 MB!)</span></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1444" type="#_x0000_t202"
+ style='position:absolute;left:459pt;top:393pt;width:102pt;height:132pt;
+ z-index:107;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" strokecolor="#39f" insetpen="t" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:107;
+left:611px;top:523px;width:138px;height:178px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="138" height="178" style="border:.75pt solid #3399FF;vertical-align:
+  top"><!--[endif]-->
+  <div v:shape="_x0000_s1444" style="padding:3.63pt 3.63pt 3.63pt 3.63pt" class="shape">
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><span lang="de" style="language:de">The AGORA project develops an interactive and web-based software version of Logical Argument Mapping. </span></p>
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><a href="http://agora.gatech.edu/"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;
+  text-decoration:underline;language:de">To enter the AGORA world, and to read more, click here</span></a><span lang="de" style="language:de">.</span></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]--><!--[if gte vml 1]><v:shape id="_x0000_s1445" type="#_x0000_t202"
+ style='position:absolute;left:462pt;top:543pt;width:99pt;height:108pt;
+ z-index:108;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" strokecolor="#39f" insetpen="t" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]" joinstyle="miter"
+   insetpen="t"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox style='mso-column-margin:2mm' inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:shape><![endif]--><!--[if !vml]--><span style="position:absolute;z-index:108;
+left:615px;top:723px;width:134px;height:146px">
+
+<table cellpadding="0" cellspacing="0">
+ <tbody><tr>
+  <td width="134" height="146" style="border:.75pt solid #3399FF;vertical-align:
+  top"><!--[endif]-->
+  <div v:shape="_x0000_s1445" style="padding:3.63pt 3.63pt 3.63pt 3.63pt" class="shape">
+  <p class="MsoBodyText3" style="text-align:right;text-align:right"><a href="http://www.prism.gatech.edu/~mh327/FIPSE_2010-Michael-Hoffmann.wmv"><span lang="de" style="font-family:&quot;Trebuchet MS&quot;;text-decoration:underline;
+  language:de">Watch a video about how Logical Argument Mapping (LAM) and the AGORA system can be used to support intercultural understanding</span></a><span lang="de" style="language:de"> (350MB !!)</span></p>
+  </div>
+  <!--[if !vml]--></td>
+ </tr>
+</tbody></table>
+
+</span><!--[endif]-->
+</div>
+
+
+
+
+</body></html>

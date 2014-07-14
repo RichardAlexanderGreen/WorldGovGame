@@ -1,0 +1,107 @@
+/*
+-----------------------------------------------
+Selected Works Color Styles
+File:		color.css
+Author:		Samira Vijghen
+Version:	18 August 2006
+
+This is the only file that should be edited in order 
+to customize a Selected Works site.
+----------------------------------------------- */
+
+#page {
+        background: #fff url("gradient.jpg") top left repeat-x; }
+		
+#header {
+		background: url("right.gif") top right no-repeat;	}
+
+a:link, 
+a:visited { 
+	color: #002CAC;}
+
+a:hover,
+a:active { 
+	color:#7BA300;	}
+	
+#header h1 { color:#6986bf; }
+		
+#header h1 a,
+#right,
+#right a:link,
+#right a:visited,
+ul#nav a,
+ul#nav a:hover,
+#right form p a:link, 
+#right form p a:visited,
+#right label { color:#fff; }
+
+#header h1 a:hover { color: #6B90D6;	} 
+
+#right h3,
+#right a:hover { 
+	color:#B4C2D2;	}
+		
+#content h1, 
+#content h2,
+#content h3, 
+#content h4, 
+.article-list th {
+	color: #002CAC;	}
+	
+ul#nav,
+ul#nav-edit { 
+	background-color:#3a486f;	}
+	
+ul#nav a,
+ul#nav-edit li  {
+        background:#647fb3; }
+		
+	ul#nav a:hover { 
+		background: #475b80; }
+	
+	ul#nav-edit li {
+		color: #506399; } /* Edit My Site navigation tab background */
+
+		body#index ul#nav li#home a,
+		body#browse-subject ul#nav li#subject a,
+		body#browse-doctype ul#nav li#doctype a   { 
+			background: #fff;
+			color: #698bb3;
+			font-weight:normal;	}
+	
+#right {
+	background:#3a486f; }
+		
+	#right img {
+		border:1px solid #647fb3; }
+
+#subscribe-box,
+#sidebar-search  {
+        background: transparent url("form-bg.gif") bottom left repeat-x; }
+
+	
+/* SW =Articles List Table
+------------------------------------------------*/
+
+.article-list td a:hover { 
+	border-bottom:1px solid #8DB008;	}
+
+table.article-list td.more { 
+	border-bottom:1px solid #fff;	}
+
+/* SW =ARTICLE PAGER
+------------------------------------------------*/
+
+h5.pager	{ 
+	border-bottom: 1px solid #647fb3;}
+	
+	h5.pager span,
+	.ex-nav { 
+		color:#999;	}
+	
+	h5.pager a,
+	.ex-nav a  { 
+		color: #647fb3; }
+
+
+
