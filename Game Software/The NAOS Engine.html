@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0036)http://www.naos-engine.com/#business -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
+<title>The NAOS Engine - By Guild Software, Inc</title>
+<script type="text/javascript" language="javascript"></script>
+<link rel="stylesheet" type="text/css" href="./The NAOS Engine_files/naos.css">
+        
+<link rel="apple-touch-icon" href="http://www.guildsoftware.com/apple-touch-icon.png">
+<link rel="Shortcut Icon" type="image/x-icon" href="http://www.naos-engine.com/favicon.ico">
+
+<!-- Begin MailChimp Signup Form -->
+<style type="text/css">
+	#mc_embed_signup{clear:left; font:14px
+	#Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site
+	#stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the
+HEAD of your HTML file. */
+</style>
+<!-- End MailChimp Stuff -->
+
+<style type="text/css" id="inlinestyle">a.tt:hover span.top {background: url(chrome-extension://ejpogldabjhjhglnfojmnekmcjonllia/images/bubble.gif) no-repeat top;padding: 30px 8px 0;display: block;}
+a.tt:hover span.middle {background: url(chrome-extension://ejpogldabjhjhglnfojmnekmcjonllia/images/bubble_filler.gif) repeat bottom;padding: 0 8px;display: block;}
+a.tt:hover span.bottom {background: url(chrome-extension://ejpogldabjhjhglnfojmnekmcjonllia/images/bubble.gif) no-repeat bottom;color: #548912;padding: 3px 8px 10px;display: block;}
+</style></head>
+<body>
+<br><br>
+<div class="container">
+	<div class="indexbackground">
+                <ul class="menu">
+                <li><a class="menu" href="http://www.naos-engine.com/#inbrief">In Brief</a></li>
+                <li><a class="menu" href="http://www.naos-engine.com/#client">Client</a></li>
+                <li><a class="menu" href="http://www.naos-engine.com/#server">Server</a></li>
+                <li><a class="menu" href="./The NAOS Engine_files/The NAOS Engine.html">Cost</a></li>
+                <li><a class="menu" href="http://www.naos-engine.com/#signup">Sign Up</a></li>
+		</ul>
+		<div class="indexforeground">
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="container">
+	<div class="textbackground">
+		<a id="inbrief"></a>
+		<center><font size="+3"><i><b>What Is The NAOS Engine?</b></i></font></center>
+		<br>
+		<div class="textforeground">
+		<div class="content">
+		<div class="contentbackground">
+<a href="http://www.youtube.com/watch?v=ohL70R0ohNQ">
+<img src="./The NAOS Engine_files/vo.box.png" width="180" height="265" border="0" style="float:right;"></a>
+                
+             <b>Description in Brief</b>
+                <p>The NAOS Engine™ (pronounced like "chaos") is a highly scalable, client/server game
+                engine, designed to support a very large MMORPG. 
+                Continuously developed and refined for our own game, 
+                <a href="http://www.youtube.com/watch?v=ohL70R0ohNQ">
+                <i>Vendetta Online</i></a>, the engine has been
+                proven through years of usage and expansion (public Alpha 
+                in May of 2002, retail game launch in 2004, and up
+                to present-day). The game has over a million installs on
+                Android alone, has been the subject of
+                <a href="http://www.youtube.com/watch?v=1USoUGpPBk8">
+                major television commercials</a>, and was the first MMO
+                to officially launch support for the
+                <a href="http://www.polygon.com/2013/7/24/4552076/vendetta-online-takes-its-digital-galaxies-to-oculus-rift">
+                Oculus Rift</a>.</p>
+                
+                <p>Our engine client supports Windows, WinRT/Win8, Mac,
+                Linux, iOS and Android™, with rendering drivers for DirectX (11 and
+                9), OpenGL and
+                OpenGL ES 2.0. The server is intended for distributed use
+                across a cluster running FreeBSD or Linux, and has been
+                elastically implemented on Amazon EC2. We are currently in 
+                the process of making this engine available as a licensed 
+                middleware product.</p>
+		<br><center>
+		<div class="video">
+			<iframe class="youtube-player" type="text/html" src="./The NAOS Engine_files/ohL70R0ohNQ.html" allowfullscreen="" frameborder="0" width="650" height="366"></iframe>
+		</div></center>
+             <h2>Points in Brief</h2>
+                <ul class="bullet">
+<!--                <li class="bullet"><b>Source-based license</b>, five figure
+		(US Dollar) total outlay for complete license of all components.
+		Alternatively, each component (server, client, updater) may 
+		also be licensed separately at reduced total cost. -->
+		<li class="bullet"><b>Update Server</b> in C++, TCP network
+		protocol, optimized <i>minimal-delta</i> patching (smallest
+		possible download per user), <i>very proven</i> in wide
+                usage. Supports maintainance of patch releases across many
+                concurrent ports. Update client supports automated failover
+                to multiple Update-clusters in the event of failure. Update 
+                Client is also a crash reporter, will detect and submit 
+                client tracebacks across all client platforms. Posts via HTTP 
+                to custom bug tracking/sorting server. Self-updating of
+		the main application is even possible on mobile platforms
+		(with some limitations).</li>
+                <li class="bullet"><b>Game Server</b> in C++, Lua, Erlang.
+		Runs distributed across cluster based on FreeBSD or Linux.
+		Scalable: <i>Sector Daemons</i>, controlling areas of
+                game-world geography,
+		are only run when needed (by player activity), distributed
+		across N-machine cluster based on monitored per-machine CPU/memory load.
+		Erlang-based <i>Kourier</i> subsystem maintains persistent
+		lightweight threads for <i>hundreds of thousands</i> of 
+		NPCs as they transition across running/non-running game 
+		spatial bounaries.
+		<a href="http://en.wikipedia.org/wiki/Erlang_%28programming_language%29">
+		Erlang</a>
+		distributes elegantly, allows thread hibernation to further
+		reduce overhead.</li>
+		<li class="bullet"><b>Game Client</b> written in C++ and Lua. Build
+		targets for Windows (XP to 8), MacOS X (Universal), Linux/32,
+		Linux/64. Big and little endian, 64bit clean. Designed for
+		portability, all hardware and platform-specific APIs are
+		abstracted into separate <i>drivers</i>. Available drivers
+		include DirectX, OpenGL, OpenGL ES 2.0, Windows Wav-out, Windows
+		DirectSound, Windows Vista/7 WASAPI, Mac Core Audio, Android
+                Java audio, Android touch input, Android native joystick
+		input, etc. Many other drivers possible to develop and drop in. OBB and
+		primitive collision detection, polygon soup physics. Shader
+		support, progressive/discrete LOD, advanced particle system.
+		Very efficient, compressed UDP game protocol, with MTU path
+                discovery. Compressed data file format for client-side game
+                assets (can be encrypted). Spatial partitioning with Octree 
+                or Sweep &amp; Prune. Fully featured UI system (all Lua), 
+                scroll regions, tree/list controls, drag-and-drop, etc. 
+                Optional hooks for the TeamSpeak 3 SDK, allowing for 
+                integrated voice chat across all current platforms.
+              	Includes native support for the <b><i>Oculus Rift</i></b>,
+                Leap Motion and other cutting-edge devices.</li>
+		<li class="bullet"><b>Administration, Billing, Etc.</b>
+		Completely custom Lua/FastCGI website application, highly
+		scalable by maximizing static content, distributing dynamic.
+		Has received many sudden traffic influxes with little impact
+                on load. Built-in messageboard and customer support
+		applications. Custom automatic bug tracking of Lua errors,
+                client crashes, etc. Billing system with secure, heavily tested 
+		implementations of APIs for PayPal, PayByCash, and credit 
+		cards (First Data). XMPP (jabber) functionality also
+		available for administrative or expanded-player-usage
+		(phone/mobile) applications. Custom mailing-list
+                implementation for newsletters and the like, tags for
+                username and unsubscribe links, automatic bounce removal,
+                etc. <b>In-app-purchase</b> support for iOS, Android Play
+		Store, Amazon, Windows Store and other mobile systems.</li>
+		</ul>
+             <b>Planned Features</b>
+             	<p><b>The NAOS Cloud™</b> will also
+             	include a cloud-hosted server solution, allowing the game
+             	developer to focus their efforts on gameplay rather than
+             	systems, network and facilities engineering. A 
+             	<a href="./The NAOS Engine_files/The NAOS Engine.html">sliding scale</a>
+             	of cost that increases with the usage/revenue of the title, after
+             	launch, is intended to make the Platform more accessible to
+             	startup game companies.</p>
+		
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="container">
+	<div class="textbackground">
+		<a id="client"></a>
+		<center><font size="+3"><i><b>Client Engine Overview</b></i></font></center>
+		<br>
+		<div class="textforeground">
+		<div class="content">
+		<div class="contentbackground">
+		
+	<p><b>We're MMO developers, so we call the "3D/game engine" the
+	"client"</b>, to differentiate from the "server". Just to clarify for
+	the mobile-reader, this "Client Engine" area basically equates to
+	what most other companies call their entire "engine". <b>Our engine
+	can be used for anything, not just MMOs, it's very flexible</b>.
+	Here are a few features:</p>
+
+	<ul class="bullet">
+        <li class="bullet"> Build targets for Windows, WinRT/Win8, MacOS X, Linux, iOS and Android™. 
+        Big and little endian, 64bit clean.</li>
+        <li class="bullet"> C++ based low-level functionality, with Lua on top. Much "game"
+        and UI work can be done entirely in Lua.</li>
+        <li class="bullet"> Fully native DirectX (11 and 9), OpenGL and OpenGL ES 2.0 renderers available; complete separation of
+        engine function calls from low-level APIs, to allow simplicity of
+        future renderer development.</li>
+        <li class="bullet"> Proven UDP game protocol, with custom guaranteed packet delivery,
+        retransmission and sequencing figures. MTU discovery automatically
+        optimizes for connection, proven through a vast number of consumer
+        routers and the greater 'net (easily user-disabled as well). Custom 
+        packet compression can be optimized to the specific stream profile 
+        with genetic algorithms. Strong but fast encryption also available.</li>
+        <li class="bullet"> Compressed data file format, allowing all art assets and other
+        information to be rolled into a single compressed file, with
+        optional encryption also available.</li>
+        <li class="bullet"> Portable rendering engine supports progressive/continuous and
+        discrete LOD, gamma correct rendering, material-based and
+        object-hierarchy based scene graphs, multitude of shaders,
+        compressed color and normal maps, animating textures, PNG with
+        alpha, JPEG loading, etc.</li>
+        <li class="bullet"> Optimized OBB and primitive based collision detection
+	system.</li>
+        <li class="bullet"> Physics engine supports polygon soup collision meshes, first point
+        of contact, center of mass calculations, conservation of momentum,
+        etc.</li>
+        <li class="bullet"> Advanced particle/FX system, with hierarchical effect definitions,
+        envelopes, particle emitters may other particle emitters, etc.</li>
+        <li class="bullet"> UI with fully featured interface controls, scroll regions, tree
+        controls, list controls, drag-and-drop, etc.</li>
+        <li class="bullet"> Spatial partitioning implementations via both Octree and
+        Sweep-and-Prune (performance tradeoffs for either depending on usage).</li>
+        <li class="bullet"> Portable sound system with stereo floating-point mixer, arbitrary
+        number of simultaneous sounds, doppler effect, 3D positional sound
+        (outputs to stereo). Integrated OGG/Vorbis support.</li>
+        <li class="bullet"> Platform-specific sound drivers for Linux, Mac, Windows (Wave-out,
+        DirectX, Vista/7) allows hardware features to be kept separate from
+        portable code, simplifies adding new sound support.</li>
+	<li class="bullet">Scales very well across a variety of hardware
+	(depending on art content used and implementation methods). Vendetta Online
+	can run on a low-end smartphone, and still look cool on a heavyweight
+	gaming desktop. Client engine also applicable to single-player or non-MMO development.
+        </li><li class="bullet"> Optional hooks for the TeamSpeak 3 SDK
+	(implementations both server and client side) allows for integrated
+	voice chat across all client platforms.
+	</li></ul>
+	<p><b>Beyond this, there is an entire <i>art pipeline</i></b>, with a whole
+        suite of custom tools (available for Win/Mac/Linux) to help artists
+        build and prototype their assets, visual effects, and other
+        features. Custom export plugins are available for 3D packages, etc.</p>
+                <i>This area is under construction, more information will
+                appear soon.</i>
+		
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="container">
+	<div class="textbackground">
+		<a id="server"></a>
+		<center><font size="+3"><i><b>NAOS Server Overview</b></i></font></center>
+		<br>
+		<div class="textforeground">
+		<div class="content">
+		<div class="contentbackground">
+		<b>The Basic Architecture</b>
+                <p><i>Vendetta Online</i> was conceived as a single-server,
+                non-sharded game universe of potentially unlimited scale.
+                Although our engine would work equally well with sharded
+                designs (sharding is much easier), this historical point is
+                mentioned to help illustrate the background of our architectural
+                choices. The server-side needed to be able to scale
+                effectively to a very large simultaneous-player capacity,
+                while the client-side needed playability across a broad range 
+                of available hardware. We began development in 1998, during
+                the modem era, so a strong emphasis was placed on network protocol
+                efficiency; in later years this has helped us to pack a
+                great deal more activity into a smaller amount of per-client
+                bandwidth, a feature of particular value on mobile wireless
+                networks. (We have also elastically implemented the server on
+                Amazon EC2).</p>
+                <p>Like many live MMO products, <i>Vendetta Online</i> is still
+                undergoing a process of continual refinement, so some
+                aspects of architecture may fluctuate over time. That being
+                said, here are some basics:</p>
+                <b>The Server</b>
+		<ul class="bullet">
+		<li class="bullet">The <i>Core Packet Router</i>, uses tightly
+                optimized C++ with administrative Lua on top, and handles player
+                connection aggregation and logins. Per-user packet queues
+                allow variable rate shaping, packet re-ordering and
+                optimization (newer update replaces unsent older update).
+                Realtime datastream compression further improves bandwidth
+                usage, compression tables may be genetically optimized to 
+                common packet use cases. Connections to Players, Kourier 
+                (Erlang), Sector Daemons, and the SQL server are maintained. 
+                Features built-in webserver with admin functionality.</li>
+<img src="./The NAOS Engine_files/server.arch.png" style="float:right;padding-left:10px;padding-right:5px;" width="300" height="217" alt="Naos Server Architecture">
+                <li class="bullet">The <i>Sector Daemon</i> actively
+                controls an area of game geography, written in C++ and Lua. 
+                <i>Vendetta Online</i> is made up of over 7,000 different 
+                "sectors"; only those with players in them are "awake" and 
+                running at any given time. The SD can control any physically 
+                sized region, and handles the server-side of intensive tasks
+                such as collision detection, physics, and low-level AI (PRM
+                pathfinding, etc). SDs are distributed across a large
+                cluster based on monitored per-machine CPU and memory load,
+                with SDs transparently started as needed by players in the
+                game, and shut down after "idle" parameters are met. Any
+                number of sectors are possible, allowing for a game universe
+                of near-infinite scale.</li>
+                <li class="bullet"><i>Kourier</i> is the moniker given to
+                our Erlang-based subsystem, used by us to control
+                large-scale gameplay and AI. For example, an individual
+                <i>Sector Daemon</i> may handle the low-level AI for a given
+                set of NPCs, perhaps a hundred or so in a specific region, 
+                having them react to various input criteria and other areas
+                requiring high performance. Kourier, on the other hand,
+                manages the high-level behaviour across <i>tens of 
+                thousands</i> of NPCs, commanding them on a larger scale and 
+                managing the behaviour of armies, nations, economies, and
+                the like.
+                <a href="http://en.wikipedia.org/wiki/Erlang_%28programming_language%29">
+                Erlang</a> is a highly-scalable functional language and
+                runtime system, originally developed for use with always-on
+                phone switches made by Ericsson. Distributed usage and
+                lightweight threading are two of its core properties, making
+                it ideal for our application. Using this, we can maintain
+                persistent threads for <i>every</i> NPC, as well as many
+                other game cases, with minimal overhead and great
+                scalability. Should the NPC be unneeded, such as being
+                located in a non-running sector, the thread can be
+                <i>hibernated</i>, reducing the overhead even further.
+                <i>Vendetta Online</i> often has tens of thousands of
+                NPCs in production at any given time; beyond this we have tested
+                the <i>Kourier</i> system with over a million NPCs at a 10x 
+                simulation rate, without issue (each NPC
+		using two unique threads, on a single quad-core machine with 
+		4GB of ram), and we expect it to
+		scale far beyond that point. Kourier also includes an
+                advanced binary logging system, capable of recording
+                thousands of events per second, which can be used as a kind
+                of chronological database, allowing one to view only what is
+                pertinent to the task at hand.</li>
+                
+
+<!--		<b>The Server</b>
+		<p>The "game server", to which the player connects, is made 
+		up of three discrete areas of functionality, intended to be 
+		distributed across a server cluster:</p>
+                <ul class="bullet">
+                <li class="bullet">The <i>Core Packet Router</i> is a piece of
+                tightly optimized C++ code, which handles initial player
+                login and authentication, as well as connection aggregation
+                and datastream queues. Among other things, this includes
+                optimization of the queue, such that more recent packets of
+                duplicate type (such as movement updates for a given object)
+                can replace older packets that are still waiting in the
+                queue. The queueing system inherently allows a degree of
+                simple rate-limiting to be applied to any given user
+                connection. Additionally, the Core Packet Router applies
+                realtime compression to the datastream; we used genetic
+                algorithms to tailor the compression tables specifically to
+                our common packet use cases (these tables could be
+                re-optimized by licensees). On top of the C++ code sits a
+                Lua layer for administrative use, as well as connections to
+                Erlang and the SQL server.</li>
+                <li class="bullet">
+	<ul class="bullet">
+        <li class="bullet"> Runs on Linux and FreeBSD (we currently use FreeBSD in production,
+        but maintain active Linux development servers as well).</li>
+        <li class="bullet"> Highly optimized core server code (C++) handles packet
+        queue and prioritization, optimizes use of per-client bandwidth,
+        replaces older queued packets with newer, compresses datastream in
+        real time. Built-in administrative webserver, Lua and Erlang bindings
+        simplify maintenance and live "hot" expansion.</li>
+        <li class="bullet"> Sector Daemon runs on</li>
+        <li class="bullet"> AI with PRM-based pathfinding.</li>
+
+	</ul>
+</p>-->
+		
+		</ul></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="container">
+	<div class="textbackground">
+		<a id="business"></a>
+		<center><font size="+3"><i><b>The Business Model</b></i></font></center>
+		<br>
+		<div class="textforeground">
+		<div class="content">
+		<div class="contentbackground">
+<p><b>"But how much will this cost?"</b> is the obvious question. We've
+kicked around a number of notions for this, and recently come to the following
+<i>(this is still in flux, and subject to change)</i>:
+
+</p><ul>
+<li><b>The client 3D/game engine will be free</b> for single-player and
+two-player games (in binary/library form). This includes <i>all platforms</i>:
+Win, Mac, Linux, Android, iOS, WinRT.
+You can ship any kind of single-player or two-player titles you want, in any
+quantity, with no revshare or licensing fees, <i>forever</i>. If you're
+looking to make 90% of the mobile or indie games out there, and comparing engines,
+that basically means you get the "engine" for free. Build the next Angry
+Birds, make a zillion dollars, we wish you the best.</li>
+<li><b>If you want to build a real multi-player game</b>, or add serious
+multi-player features, we'll ask you to work with our <i>NAOS Cloud</i>
+offering (our NAOS Server hosted, by us, in the cloud). The NAOS Cloud will
+basically bill you at close to our "cost" for the monthly bandwidth, CPU usage
+and server resources used by your title. Beyond this, we'll ask for revenue
+share on a slow curve that will scale with your gross revenue, starting out
+very small when your revenues are small and staying small as you grow. If you
+make over a million dollars US per year, our rev-share will peak at 10% of
+the money you actually make as a developer (what you are actually paid,
+across all types of revenue streams from the title, after the cuts and fees
+from App Stores and advertising networks and the like).</li>
+</ul>
+
+<p><b>"But how can you afford to do this?"</b> is the next question. The
+above proposal differs quite a bit from the norm; we're basically "giving
+away" what everyone else sells as "the engine".</p>
+<p>The simple answer is: <i>we're game developers</i>. We made this engine
+to help us achieve our goals in game development, and games like <i>Vendetta
+Online</i> are where we make our money. Thus, we can give away the engine
+itself without really impacting our bottom line. We also have quite a low
+overhead, which we'll continue while rolling out this engine. We aren't
+likely to spend money on an expensive booth at GDC; we think developers
+would rather just try the product themselves and make their own decisions.</p>
+
+<p><b>"What if I want a specific feature? Or support? Or a source
+license?"</b> We can accomodate those things. We're always going to be
+improving the engine anyway (for our own usage), and if the community wants
+a higher priority on something, we can potentially post a bounty for that
+feature (the associated development costs for us to add it more quickly), and let the
+community crowdfund the improvement.</p>
+
+<p>Beyond this, we can do source-licenses and support a-la carte, but our
+main goals here will be the creation of a moderately self-supporting online
+community, built around the "free" binary/library engine-license. As MMO developers,
+creating this kind of community is pretty familiar territory for us.</p>
+
+<p><b>Other on-going improvements to the engine</b> will continue to get
+released over time, for free, as we make changes for our own development
+usage (our own games).</p>
+
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="container">
+	<div class="textbackground">
+		<a id="signup"></a>
+		<center><font size="+3"><i><b>Sign Up for the Alpha Test</b></i></font></center>
+		<br>
+		<div class="textforeground">
+		<div class="content">
+		<div class="contentbackground">
+
+<!--                <br />
+	<p>For more information about this upcoming product, contact
+                <i>licensing at guildsoftware dot com</i></p> -->
+
+<p><b>We're looking for developers to help us test the engine</b>, when it becomes
+available. There will be <i>no cost associated with this</i>, we're just looking
+for feedback on how to make our engine best fit your needs.</p>
+<p>If you're interested, submit your email address below, and we'll shoot
+you a message as we get closer to release.</p>
+
+<!-- MailChimp Signup Stuff -->
+<div id="mc_embed_signup">
+<form action="http://guildsoftware.us3.list-manage.com/subscribe/post?u=aea964b03118efa467cefdf55&id=5cd2e431ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+<!--	<label for="mce-EMAIL">Subscribe to our mailing list</label> -->
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+    <!-- real people should not fill this in and expect good things - do not
+remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_aea964b03118efa467cefdf55_5cd2e431ea" value=""></div>
+	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->	
+
+	<br>
+
+	<p><b>If you'd really like to directly contact us</b>, you can send
+	an email to <i>licensing</i> at <i>guildsoftware dot com</i>.
+
+	<br><br><br><br><br><br><br><br><br>
+
+		</p></div>
+		</div>
+		</div>
+	</div>
+</div>
+<br><center><font size="-2" color="#A0A0A0">© Copyright 1998-2014,
+<a href="http://www.guildsoftware.com/">Guild Software Inc</a>, All Rights
+Reserved</font></center>
+ 
+
+</body></html>
